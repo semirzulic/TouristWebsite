@@ -2,13 +2,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
-import { SliderComponent } from './components/slider/slider.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { SectionPopularComponent } from './components/section-popular/section-popular.component';
-import { PopularComponent } from './components/popular/popular.component';
-import { GaleryComponent } from './components/galery/galery.component';
-import { ContactComponent } from './components/contact/contact.component';
+import { NavbarComponent } from './components-home/navbar/navbar.component';
+import { SliderComponent } from './components-home/slider/slider.component';
+import { FooterComponent } from './components-home/footer/footer.component';
+import { PopularComponent } from './components-home/popular/popular.component';
+import { GaleryComponent } from './components-home/galery/galery.component';
+import { ContactComponent } from './components-home/contact/contact.component';
+import { SocialComponent } from './components-home/social/social.component';
 
 @NgModule({
   declarations: [
@@ -16,10 +16,10 @@ import { ContactComponent } from './components/contact/contact.component';
     NavbarComponent,
     SliderComponent,
     FooterComponent,
-    SectionPopularComponent,
     PopularComponent,
     GaleryComponent,
-    ContactComponent
+    ContactComponent,
+    SocialComponent
   ],
   imports: [
     BrowserModule
