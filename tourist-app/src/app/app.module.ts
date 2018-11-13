@@ -8,7 +8,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { PopularComponent } from './components/popular/popular.component';
 import { GaleryComponent } from './components/galery/galery.component';
 import { ContactComponent } from './components/contact/contact.component';
-import { AirportComponent } from './components/transport/airport/airport.component';
+import { AirportComponent } from './components/component-transport/transport/airport/airport.component';
 
 @NgModule({
   declarations: [
