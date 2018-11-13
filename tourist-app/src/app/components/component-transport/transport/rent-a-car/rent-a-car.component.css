@@ -27,13 +27,20 @@ img {
     margin-right: auto;
     margin-bottom: 2%;
     margin-top: 2%;
-    width: 85%;
-    max-height: 300px;
-    border: solid black 2px;
+    width: 50%;
+    height: 30%;
+    min-width: 200px;
+    text-align: right;
 }
-
+#contactRentCar {
+    border: solid black 2px;
+    background-color: white;
+    width:30%;
+    margin: auto;
+    min-width: 230px;
+}
 button {
-    margin-top: 1%;
+    margin-bottom: 2%;
 }
 
 p {
@@ -41,7 +48,7 @@ p {
 }
 
 h2 {
-    padding-top: 3%;
+    padding-top: 2%;
     padding-bottom:1%;
 }
 
