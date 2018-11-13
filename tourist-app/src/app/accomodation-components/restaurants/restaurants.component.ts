@@ -9,7 +9,7 @@ declare var $ :any;
 })
 export class RestaurantsComponent implements OnInit {
 
-  $('.collapse').collapse()
+  $('.collapse').collapse();
 
   constructor() { 
     
