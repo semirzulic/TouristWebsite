@@ -3,23 +3,21 @@
     border : solid black 2px;
 }
 
-#borderBody {
-    border-left : solid black 2px;
-}
-
 .col-sm {
     text-align: center;
 }
 .row{
     margin-top: .5%;
 }
-#backgroundImage {
-    background-image: url("../../../../../assets/airplaneAndSky.jpeg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    padding-bottom: .5%;
-  }
+
+.btn {
+    width: 100px;
+    margin-left: .5%;
+    margin-right: .5%;
+    margin-bottom: 2%;
+    background-color: teal;
+    color: white;
+}
 
 img {
     display: block;

@@ -2,11 +2,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';;
-import { AirportComponent } from './components/component-transport/transport/airport/airport.component';
+import { AirportComponent } from './component-transport/transport/airport/airport.component';
 
-import { RentACarComponent } from './components/component-transport/transport/rent-a-car/rent-a-car.component';
-import { TaxiComponent } from './components/component-transport/transport/taxi/taxi.component';
-import { PublictransportComponent } from './components/component-transport/transport/publictransport/publictransport.component';
+import { RentACarComponent } from './component-transport/transport/rent-a-car/rent-a-car.component';
+import { TaxiComponent } from './component-transport/transport/taxi/taxi.component';
+import { PublictransportComponent } from './component-transport/transport/publictransport/publictransport.component';
 import { NavbarComponent } from './components-home/navbar/navbar.component';
 import { SliderComponent } from './components-home/slider/slider.component';
 import { FooterComponent } from './components-home/footer/footer.component';
@@ -22,6 +22,7 @@ import { CityMapComponent } from './virtual-tour/city-map/city-map.component';
 
 import { SocialComponent } from './components-home/social/social.component';
 import { AppRoutingModule } from './app-routing.module';
+import { NextbikeComponent } from './component-transport/transport/nextbike/nextbike.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { AppRoutingModule } from './app-routing.module';
     MapAttractionsComponent,
     Tour360Component,
     CityMapComponent,
-    SocialComponent
+    SocialComponent,
+    NextbikeComponent
   ],
   imports: [
     BrowserModule,
