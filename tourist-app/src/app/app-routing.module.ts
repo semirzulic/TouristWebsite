@@ -11,6 +11,12 @@ import { AttractionsComponent } from './sights-components/attractions/attraction
 import { MapAttractionsComponent } from './sights-components/map-attractions/map-attractions.component';
 
 
+import { HistoryComponent } from './history/components-history/history/history.component';
+import { AttractionComponent } from './history/components-attractions/attractions/attraction.component';
+
+
+
+
 
 
 
@@ -18,12 +24,16 @@ import { MapAttractionsComponent } from './sights-components/map-attractions/map
 
 const routes: Routes = [
   {path: '', component:  MainHomeComponent},
-  {path: 'accomodation/hotels', component: HotelsComponent},
+  {path: 'accomodation/hotels', component: HotelsComponent}, 
   {path: 'accomodation/restaurants', component: RestaurantsComponent},
   {path: 'virtual-tour/tour-360', component: Tour360Component},
   {path: 'virtual-tour/city-map', component: CityMapComponent},
   {path: 'sights/attractions', component: AttractionsComponent},
-  {path: 'sights/map-attractions', component: MapAttractionsComponent}
+  {path: 'sights/map-attractions', component: MapAttractionsComponent},
+
+
+  {path: 'history', component: HistoryComponent},
+  {path: 'attraction', component: AttractionComponent}
 
 ];
 
