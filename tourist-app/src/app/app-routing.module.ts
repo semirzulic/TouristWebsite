@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 
 
@@ -13,6 +14,14 @@ import { MapAttractionsComponent } from './sights-components/map-attractions/map
 
 import { HistoryComponent } from './history/components-history/history/history.component';
 import { AttractionComponent } from './history/components-attractions/attractions/attraction.component';
+
+import { AirportComponent } from './component-transport/transport/airport/airport.component';
+import { RentACarComponent } from './component-transport/transport/rent-a-car/rent-a-car.component';
+import { TaxiComponent } from './component-transport/transport/taxi/taxi.component';
+import { PublictransportComponent } from './component-transport/transport/publictransport/publictransport.component';
+
+
+import { NextbikeComponent } from './component-transport/transport/nextbike/nextbike.component';
 
 
 
@@ -30,18 +39,27 @@ const routes: Routes = [
   {path: 'virtual-tour/city-map', component: CityMapComponent},
   {path: 'sights/attractions', component: AttractionsComponent},
   {path: 'sights/map-attractions', component: MapAttractionsComponent},
+  {path: 'airports', component: AirportComponent},
+  {path: 'rentacar', component: RentACarComponent},
+  {path: 'taxi', component: TaxiComponent},
+  {path: 'publictransport', component: PublictransportComponent},
+  {path: 'nextbike', component: NextbikeComponent},
+  {path: 'hotels', component: HotelsComponent},
+  {path: 'restaurants', component: RestaurantsComponent},
 
 
   {path: 'history', component: HistoryComponent},
   {path: 'attraction', component: AttractionComponent}
 
-];
+]
+
+
 
 @NgModule({
-
+  declarations: [],
   exports: [RouterModule],
-  
   imports: [
+    CommonModule,
     RouterModule.forRoot(routes)
   ]
 })

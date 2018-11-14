@@ -4,6 +4,12 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HistoryComponent } from './history/components-history/history/history.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
+
+import { AirportComponent } from './component-transport/transport/airport/airport.component';
+
+import { RentACarComponent } from './component-transport/transport/rent-a-car/rent-a-car.component';
+import { TaxiComponent } from './component-transport/transport/taxi/taxi.component';
+import { PublictransportComponent } from './component-transport/transport/publictransport/publictransport.component';
 import { NavbarComponent } from './components-home/navbar/navbar.component';
 import { SliderComponent } from './components-home/slider/slider.component';
 import { FooterComponent } from './components-home/footer/footer.component';
@@ -20,6 +26,7 @@ import { AttractionComponent  } from './history/components-attractions/attractio
 import { SocialComponent } from './components-home/social/social.component';
 import { AppRoutingModule } from './app-routing.module';
 import { MainHomeComponent } from './main-home/main-home.component';
+import { NextbikeComponent } from './component-transport/transport/nextbike/nextbike.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +38,12 @@ import { MainHomeComponent } from './main-home/main-home.component';
     GaleryComponent,
     ContactComponent,
     HistoryComponent,
+    AirportComponent,
+    RentACarComponent,
+    TaxiComponent,
+    PublictransportComponent,
+    HotelsComponent,
+    RestaurantsComponent,
     AttractionsComponent,
     MapAttractionsComponent,
     Tour360Component,
@@ -39,9 +52,10 @@ import { MainHomeComponent } from './main-home/main-home.component';
     MainHomeComponent,
     HotelsComponent,
     RestaurantsComponent,
-    AttractionComponent
+    AttractionComponent,
 
 
+    NextbikeComponent
   ],
   imports: [
     BrowserModule,
