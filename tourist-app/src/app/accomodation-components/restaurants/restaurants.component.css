@@ -26,6 +26,10 @@
     padding: 20px 10px;
 }
 
+h1 {
+    padding: 25px;
+}
+
 h3 {
     padding: 20px 0 10px 0;
 }
@@ -56,13 +60,18 @@ img {
 .card {
     display: block;
     margin: auto;
+    margin-bottom: 10px;
 }
 
 .card-header {
     box-shadow: -.5px 0 0 #818181;
 }
 
-@media (min-width: 481px) and (max-width: 991px) {
+.accordion {
+    margin-bottom: 5px;
+}
+
+@media (min-width: 320px) and (max-width: 991px) {
   
     #box1 {
         background: lightgrey;

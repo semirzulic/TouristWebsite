@@ -9,11 +9,12 @@ declare var $ :any;
 })
 export class RestaurantsComponent implements OnInit {
 
-  $('.collapse').collapse();
+  
+
 
   constructor() { 
-    
-   }
+    $('.collapse').collapse();
+  }
 
   ngOnInit() {
   }
