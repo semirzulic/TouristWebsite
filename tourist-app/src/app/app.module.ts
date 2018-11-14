@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components-home/navbar/navbar.component';
@@ -14,6 +15,11 @@ import { AttractionsComponent } from './sights-components/attractions/attraction
 import { MapAttractionsComponent } from './sights-components/map-attractions/map-attractions.component';
 import { SocialComponent } from './components-home/social/social.component';
 import { AppRoutingModule } from './app-routing.module';
+import { GalleriesComponent } from './culture-componenets/galleries/galleries.component';
+import { InternationalAtelierComponent } from './culture-componenets/international-atelier/international-atelier.component';
+import  {InternationalPortraitComponent} from './culture-componenets/international-portrait/international-portrait.component';
+import { MuseumsComponent } from './culture-componenets/museums/museums.component';
+import { EasterComponent } from './culture-componenets/easter/easter.component';
 
 @NgModule({
   declarations: [
@@ -28,11 +34,21 @@ import { AppRoutingModule } from './app-routing.module';
     RestaurantsComponent,
     AttractionsComponent,
     MapAttractionsComponent,
-    SocialComponent
+    SocialComponent,
+    GalleriesComponent,
+    InternationalAtelierComponent,
+    InternationalPortraitComponent,
+    MuseumsComponent,
+    EasterComponent
+    
+   
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule.forRoot()
+
+  
   ],
   providers: [],
   bootstrap: [AppComponent]
