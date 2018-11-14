@@ -1,0 +1,20 @@
+#test {
+    background: lightgrey;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    padding: 25px;
+}
+
+h3 {
+    padding: 15px 0;
+    margin-top: 25px;
+}
+
+p {
+    padding: 30px 10px;
+}
