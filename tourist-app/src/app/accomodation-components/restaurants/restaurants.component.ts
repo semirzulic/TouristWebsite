@@ -11,9 +11,10 @@ export class RestaurantsComponent implements OnInit {
 
   
 
+
   constructor() { 
     $('.collapse').collapse();
-   }
+  }
 
   ngOnInit() {
   }

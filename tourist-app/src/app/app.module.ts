@@ -12,8 +12,12 @@ import { HotelsComponent } from './accomodation-components/hotels/hotels.compone
 import { RestaurantsComponent } from './accomodation-components/restaurants/restaurants.component';
 import { AttractionsComponent } from './sights-components/attractions/attractions.component';
 import { MapAttractionsComponent } from './sights-components/map-attractions/map-attractions.component';
+import { Tour360Component } from './virtual-tour/tour360/tour360.component';
+import { CityMapComponent } from './virtual-tour/city-map/city-map.component';
+
 import { SocialComponent } from './components-home/social/social.component';
 import { AppRoutingModule } from './app-routing.module';
+import { MainHomeComponent } from './main-home/main-home.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +32,10 @@ import { AppRoutingModule } from './app-routing.module';
     RestaurantsComponent,
     AttractionsComponent,
     MapAttractionsComponent,
-    SocialComponent
+    Tour360Component,
+    CityMapComponent,
+    SocialComponent,
+    MainHomeComponent
   ],
   imports: [
     BrowserModule,

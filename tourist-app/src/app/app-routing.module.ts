@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { AppComponent } from './app.component';
+
+import { MainHomeComponent } from './main-home/main-home.component';
 import { HotelsComponent } from './accomodation-components/hotels/hotels.component';
 import { RestaurantsComponent } from './accomodation-components/restaurants/restaurants.component';
 
@@ -9,8 +10,9 @@ import { RestaurantsComponent } from './accomodation-components/restaurants/rest
 
 
 
+
 const routes: Routes = [
-  {path: '', component: AppComponent},
+  {path: '', component: MainHomeComponent},
   {path: 'hotels', component: HotelsComponent},
   {path: 'restaurants', component: RestaurantsComponent}
 

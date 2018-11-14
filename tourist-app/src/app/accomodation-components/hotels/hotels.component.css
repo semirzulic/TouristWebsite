@@ -26,6 +26,10 @@
     padding: 20px 10px;
 }
 
+h1 {
+    padding: 25px;
+}
+
 h3 {
     padding: 20px 0 10px 0;
 }
@@ -61,7 +65,7 @@ img {
     box-shadow: -.5px 0 0 #818181;
 }
 
-@media (min-width: 481px) and (max-width: 991px) {
+@media (min-width: 320px) and (max-width: 991px) {
   
     #box1 {
         background: lightgrey;
@@ -76,7 +80,4 @@ img {
         border-right: 1px solid black;
         border-top: 1px solid black;
     }
-
-
-    
-  }
+}
