@@ -12,6 +12,11 @@ import { GaleryComponent } from './components-home/galery/galery.component';
 import { ContactComponent } from './components-home/contact/contact.component';
 import { AttractionsComponent } from './sights-components/attractions/attractions.component';
 import { MapAttractionsComponent } from './sights-components/map-attractions/map-attractions.component';
+import { Tour360Component } from './virtual-tour/tour360/tour360.component';
+import { CityMapComponent } from './virtual-tour/city-map/city-map.component';
+import { HotelsComponent } from './accomodation-components/hotels/hotels.component';
+import { RestaurantsComponent } from './accomodation-components/restaurants/restaurants.component';
+
 import { SocialComponent } from './components-home/social/social.component';
 import { AppRoutingModule } from './app-routing.module';
 
@@ -28,9 +33,12 @@ import { AgmCoreModule } from '@agm/core';
     HistoryComponent,
     AttractionsComponent,
     MapAttractionsComponent,
+    Tour360Component,
+    CityMapComponent,
+    SocialComponent,
+    HotelsComponent,
+    RestaurantsComponent
 
-    
-    
 
   ],
   imports: [
