@@ -12,6 +12,7 @@ import { AirportComponent } from './components/component-transport/transport/air
 import { AppRoutingModule } from './app-routing.module';
 import { RentACarComponent } from './components/component-transport/transport/rent-a-car/rent-a-car.component';
 import { TaxiComponent } from './components/component-transport/transport/taxi/taxi.component';
+import { PublictransportComponent } from './components/component-transport/transport/publictransport/publictransport.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { TaxiComponent } from './components/component-transport/transport/taxi/t
     ContactComponent,
     AirportComponent,
     RentACarComponent,
-    TaxiComponent
+    TaxiComponent,
+    PublictransportComponent
   ],
   imports: [
     BrowserModule,
