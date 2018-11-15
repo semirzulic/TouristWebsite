@@ -27,6 +27,7 @@ import { SocialComponent } from './components-home/social/social.component';
 import { AppRoutingModule } from './app-routing.module';
 import { MainHomeComponent } from './main-home/main-home.component';
 import { NextbikeComponent } from './component-transport/transport/nextbike/nextbike.component';
+import { AboutUsComponent } from './about/about-us/about-us.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +56,10 @@ import { NextbikeComponent } from './component-transport/transport/nextbike/next
     AttractionComponent,
 
 
-    NextbikeComponent
+    NextbikeComponent,
+
+
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,

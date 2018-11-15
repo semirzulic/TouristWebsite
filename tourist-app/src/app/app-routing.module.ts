@@ -22,6 +22,7 @@ import { PublictransportComponent } from './component-transport/transport/public
 
 
 import { NextbikeComponent } from './component-transport/transport/nextbike/nextbike.component';
+import { AboutUsComponent } from './about/about-us/about-us.component';
 
 
 
@@ -49,7 +50,8 @@ const routes: Routes = [
 
 
   {path: 'history', component: HistoryComponent},
-  {path: 'attraction', component: AttractionComponent}
+  {path: 'attraction', component: AttractionComponent},
+  {path: 'aboutus', component: AboutUsComponent}
 
 ]
 
