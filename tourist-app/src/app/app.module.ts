@@ -53,8 +53,6 @@ import { NextbikeComponent } from './component-transport/transport/nextbike/next
     HotelsComponent,
     RestaurantsComponent,
     AttractionComponent,
-
-
     NextbikeComponent
   ],
   imports: [

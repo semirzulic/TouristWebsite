@@ -19,16 +19,7 @@ import { AirportComponent } from './component-transport/transport/airport/airpor
 import { RentACarComponent } from './component-transport/transport/rent-a-car/rent-a-car.component';
 import { TaxiComponent } from './component-transport/transport/taxi/taxi.component';
 import { PublictransportComponent } from './component-transport/transport/publictransport/publictransport.component';
-
-
 import { NextbikeComponent } from './component-transport/transport/nextbike/nextbike.component';
-
-
-
-
-
-
-
 
 
 const routes: Routes = [
@@ -46,8 +37,6 @@ const routes: Routes = [
   {path: 'nextbike', component: NextbikeComponent},
   {path: 'hotels', component: HotelsComponent},
   {path: 'restaurants', component: RestaurantsComponent},
-
-
   {path: 'history', component: HistoryComponent},
   {path: 'attraction', component: AttractionComponent}
 
