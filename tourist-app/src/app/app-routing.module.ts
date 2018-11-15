@@ -17,6 +17,16 @@ import { AirportComponent } from './component-transport/transport/airport/airpor
 import { RentACarComponent } from './component-transport/transport/rent-a-car/rent-a-car.component';
 import { TaxiComponent } from './component-transport/transport/taxi/taxi.component';
 import { PublictransportComponent } from './component-transport/transport/publictransport/publictransport.component';
+
+
+import { AboutUsComponent } from './about/about-us/about-us.component';
+
+
+
+
+
+
+
 import { GalleriesComponent } from './culture-componenets/galleries/galleries.component';
 import { InternationalAtelierComponent } from './culture-componenets/international-atelier/international-atelier.component';
 import { MuseumsComponent } from './culture-componenets/museums/museums.component';
@@ -45,11 +55,12 @@ const routes: Routes = [
   {path: 'rentacar', component: RentACarComponent},
   {path: 'taxi', component: TaxiComponent},
   {path: 'publictransport', component: PublictransportComponent},
-  {path: 'nextbike', component: NextbikeComponent},
+ 
   {path: 'hotels', component: HotelsComponent},
   {path: 'restaurants', component: RestaurantsComponent},
   {path: 'history', component: HistoryComponent},
   {path: 'attraction', component: AttractionComponent},
+  {path: 'aboutus', component: AboutUsComponent},
   {path:'galleries',component:GalleriesComponent},
   {path:'international',component:InternationalAtelierComponent},
   {path:'portrait',component:InternationalPortraitComponent},
