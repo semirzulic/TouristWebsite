@@ -58,8 +58,6 @@ import { NextbikeComponent } from './component-transport/transport/nextbike/next
     InternationalPortraitComponent,
     MuseumsComponent,
     EasterComponent,
-    
-   
     Tour360Component,
     CityMapComponent,
     SocialComponent,
@@ -67,8 +65,6 @@ import { NextbikeComponent } from './component-transport/transport/nextbike/next
     HotelsComponent,
     RestaurantsComponent,
     AttractionComponent,
-
-
     NextbikeComponent
   ],
   imports: [
