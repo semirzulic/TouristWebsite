@@ -1,0 +1,50 @@
+#backgroundColorAndBorderAirports{
+    background-color: darkgrey;
+    border : solid black 2px;
+}
+
+.col-sm {
+    text-align: center;
+}
+.row{
+    margin-top: .5%;
+}
+
+.carousel-indicators {
+    padding-bottom: 1%;
+}
+
+img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    max-width: 75%;
+    max-height: 530px;
+    min-height: 140px;
+    border: solid black 2px;  
+    border-radius: 2.5%;
+}
+
+.btn {
+    width: 100px;
+    margin-left: .5%;
+    margin-right: .5%;
+    background-color: teal;
+    color: white;
+}
+
+p {
+    text-align: justify;
+}
+
+h2 {
+    padding-top: 3%;
+    padding-bottom:1%;
+}
+
+h1 {
+    margin-top:75px;
+}
+
+

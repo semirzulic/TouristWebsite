@@ -1,3 +1,4 @@
+<app-navbar></app-navbar>
 <div class="container">
   <div class="row">
     <div class="jumbotron jumbotron-fluid"></div>
@@ -9,7 +10,7 @@
 </div>
   <div class="row galleries">
     <div class="  col-md-6 col-xs-6">
-     <a routerLink="/international">
+     <a [routerLink]="['/international']">
       <img class="img-fluid img-thumbnail zoom" src="https://www.fokus.ba/wp-content/uploads/2018/06/medjunarodno-atelje-ismet-mujezinovic.jpg" alt="" >
     </a>
       <span>International atelier "Ismet Mujezinovic"</span>
@@ -25,3 +26,4 @@
     
   </div>
 </div>
+<app-footer></app-footer>

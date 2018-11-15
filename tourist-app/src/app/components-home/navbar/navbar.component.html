@@ -1,6 +1,6 @@
 <div class="fixed-top">
   <nav class="navbar container  navbar-expand-lg navbar-dark bg-info">
-    <h2><a class="navbar-brand" href="#">Tuzla Tourist Website </a></h2>
+    <h2><a class="navbar-brand" [routerLink]="['/']" routerLinkActive="router-link-active" >Tuzla Tourist Website </a></h2>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -12,8 +12,8 @@
             History
           </a>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="#"> Historical attractions </a>
-            <a class="dropdown-item" href="#"> Map of attractions </a>
+            <a class="dropdown-item" [routerLink]="['/history']" routerLinkActive="router-link-active" > Historical attractions </a>
+            <a class="dropdown-item" [routerLink]="['/attraction']" routerLinkActive="router-link-active" > Map of attractions </a>
           </div>
         </li>
         <li class="nav-item dropdown">
@@ -21,8 +21,8 @@
             Sights
           </a>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">A ttractions </a>
-            <a class="dropdown-item" href="#"> Map attractions </a>
+            <a class="dropdown-item" [routerLink]="['/sights/attractions']" routerLinkActive="router-link-active" >Attractions </a>
+            <a class="dropdown-item" [routerLink]="['/sights/map-attractions']" routerLinkActive="router-link-active" > Map attractions </a>
           </div>
         </li>
         <li class="nav-item dropdown">
@@ -30,9 +30,9 @@
             Culture
           </a>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="#"> Galleries </a>
-            <a class="dropdown-item" href="#"> Museums </a>
-            <a class="dropdown-item" href="#"> Monuments </a>
+            <a class="dropdown-item" [routerLink]="['/galleries']" routerLinkActive="router-link-active"> Galleries </a>
+            <a class="dropdown-item" [routerLink]="['/museums']" routerLinkActive="router-link-active"> Museums </a>
+          
           </div>
         </li>
         <li class="nav-item dropdown">
@@ -40,11 +40,11 @@
             Transport
           </a>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="#"> Airports </a>
-            <a class="dropdown-item" href="#"> Rent a car </a>
-            <a class="dropdown-item" href="#"> Taxi </a>
-            <a class="dropdown-item" href="#"> Public transport </a>
-            <a class="dropdown-item" href="#"> Nextbike </a>
+            <a class="dropdown-item" [routerLink]="['/airports']" routerLinkActive="router-link-active" > Airports </a>
+            <a class="dropdown-item" [routerLink]="['/rentacar']" routerLinkActive="router-link-active" > Rent a car </a>
+            <a class="dropdown-item" [routerLink]="['/taxi']" routerLinkActive="router-link-active" > Taxi </a>
+            <a class="dropdown-item" [routerLink]="['/publictransport']" routerLinkActive="router-link-active" > Public transport </a>
+            <a class="dropdown-item" [routerLink]="['/nextbike']" routerLinkActive="router-link-active" > Nextbike </a>
           </div>
         </li>
         <li class="nav-item dropdown">
@@ -52,8 +52,8 @@
             Accomodation
           </a>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="#"> Hotels </a>
-            <a class="dropdown-item" href="#"> Restaurants </a>
+            <a class="dropdown-item" [routerLink]="['/accomodation/hotels']" routerLinkActive="router-link-active"  > Hotels </a>
+            <a class="dropdown-item" [routerLink]="['/accomodation/restaurants']" routerLinkActive="router-link-active" > Restaurants </a>
           </div>
         </li>
         <li class="nav-item dropdown">
@@ -61,9 +61,9 @@
             Virtual tour
           </a>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="#"> 360 </a>
-            <a class="dropdown-item" href="#"> City Map </a>
-            <a class="dropdown-item" href="#"> Monuments </a>
+            <a class="dropdown-item" [routerLink]="['/virtual-tour/tour-360']" routerLinkActive="router-link-active" > 360 </a>
+            <a class="dropdown-item" [routerLink]="['/virtual-tour/city-map']" routerLinkActive="router-link-active" > City Map </a>
+           
           </div>
         </li>
         <li class="nav-item">
