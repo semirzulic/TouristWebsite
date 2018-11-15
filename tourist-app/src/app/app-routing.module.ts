@@ -61,7 +61,6 @@ const routes: Routes = [
   {path: 'history', component: HistoryComponent},
   {path: 'attraction', component: AttractionComponent},
   {path: 'aboutus', component: AboutUsComponent},
-  
   {path:'galleries',component:GalleriesComponent},
   {path:'international',component:InternationalAtelierComponent},
   {path:'portrait',component:InternationalPortraitComponent},
