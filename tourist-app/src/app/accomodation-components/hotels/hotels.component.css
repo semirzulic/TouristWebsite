@@ -11,7 +11,7 @@
 }
 
 #box2 {
-    background: lightgrey; 
+    /* background: lightgrey;  */
     /* border: 1px solid black; */
     border-right: 0.1pt solid black; 
     border-left: 0.1pt solid black;
@@ -60,6 +60,7 @@ img {
 .card {
     display: block;
     margin: auto;
+    background: lightgrey;
 }
 
 .card-header {
