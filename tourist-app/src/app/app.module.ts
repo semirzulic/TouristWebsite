@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { HistoryComponent } from './history/components-history/history/history.component';
@@ -25,6 +26,11 @@ import { RestaurantsComponent } from './accomodation-components/restaurants/rest
 import { AttractionComponent  } from './history/components-attractions/attractions/attraction.component';
 import { SocialComponent } from './components-home/social/social.component';
 import { AppRoutingModule } from './app-routing.module';
+import { GalleriesComponent } from './culture-componenets/galleries/galleries.component';
+import { InternationalAtelierComponent } from './culture-componenets/international-atelier/international-atelier.component';
+import  {InternationalPortraitComponent} from './culture-componenets/international-portrait/international-portrait.component';
+import { MuseumsComponent } from './culture-componenets/museums/museums.component';
+import { EasterComponent } from './culture-componenets/easter/easter.component';
 import { MainHomeComponent } from './main-home/main-home.component';
 import { NextbikeComponent } from './component-transport/transport/nextbike/nextbike.component';
 
@@ -46,6 +52,14 @@ import { NextbikeComponent } from './component-transport/transport/nextbike/next
     RestaurantsComponent,
     AttractionsComponent,
     MapAttractionsComponent,
+    SocialComponent,
+    GalleriesComponent,
+    InternationalAtelierComponent,
+    InternationalPortraitComponent,
+    MuseumsComponent,
+    EasterComponent,
+    
+   
     Tour360Component,
     CityMapComponent,
     SocialComponent,
@@ -60,6 +74,9 @@ import { NextbikeComponent } from './component-transport/transport/nextbike/next
   imports: [
     BrowserModule,
     AppRoutingModule,
+    NgbModule.forRoot(),
+
+  
     AngularFontAwesomeModule
    
   ],

@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule, Routes } from '@angular/router';
- 
+import { RouterModule, Routes } from '@angular/router'; 
 
 import { MainHomeComponent } from './main-home/main-home.component';
 import { HotelsComponent } from './accomodation-components/hotels/hotels.component';
@@ -18,7 +17,11 @@ import { AirportComponent } from './component-transport/transport/airport/airpor
 import { RentACarComponent } from './component-transport/transport/rent-a-car/rent-a-car.component';
 import { TaxiComponent } from './component-transport/transport/taxi/taxi.component';
 import { PublictransportComponent } from './component-transport/transport/publictransport/publictransport.component';
-
+import { GalleriesComponent } from './culture-componenets/galleries/galleries.component';
+import { InternationalAtelierComponent } from './culture-componenets/international-atelier/international-atelier.component';
+import { MuseumsComponent } from './culture-componenets/museums/museums.component';
+import { InternationalPortraitComponent } from './culture-componenets/international-portrait/international-portrait.component';
+import { EasterComponent } from './culture-componenets/easter/easter.component';
 
 
 const routes: Routes = [
@@ -46,7 +49,12 @@ const routes: Routes = [
   {path: 'hotels', component: HotelsComponent},
   {path: 'restaurants', component: RestaurantsComponent},
   {path: 'history', component: HistoryComponent},
-  {path: 'attraction', component: AttractionComponent}
+  {path: 'attraction', component: AttractionComponent},
+  {path:'galleries',component:GalleriesComponent},
+  {path:'international',component:InternationalAtelierComponent},
+  {path:'portrait',component:InternationalPortraitComponent},
+  {path:'museums',component:MuseumsComponent},
+  {path:'museum',component:EasterComponent}
 
 ]
 
