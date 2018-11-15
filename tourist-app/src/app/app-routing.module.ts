@@ -30,6 +30,11 @@ import { AboutUsComponent } from './about/about-us/about-us.component';
 
 
 
+import { GalleriesComponent } from './culture-componenets/galleries/galleries.component';
+import { InternationalAtelierComponent } from './culture-componenets/international-atelier/international-atelier.component';
+import { MuseumsComponent } from './culture-componenets/museums/museums.component';
+import { InternationalPortraitComponent } from './culture-componenets/international-portrait/international-portrait.component';
+import { EasterComponent } from './culture-componenets/easter/easter.component';
 
 
 const routes: Routes = [
@@ -47,11 +52,15 @@ const routes: Routes = [
   {path: 'nextbike', component: NextbikeComponent},
   {path: 'hotels', component: HotelsComponent},
   {path: 'restaurants', component: RestaurantsComponent},
-
-
   {path: 'history', component: HistoryComponent},
   {path: 'attraction', component: AttractionComponent},
-  {path: 'aboutus', component: AboutUsComponent}
+  {path: 'aboutus', component: AboutUsComponent},
+  
+  {path:'galleries',component:GalleriesComponent},
+  {path:'international',component:InternationalAtelierComponent},
+  {path:'portrait',component:InternationalPortraitComponent},
+  {path:'museums',component:MuseumsComponent},
+  {path:'museum',component:EasterComponent}
 
 ]
 
