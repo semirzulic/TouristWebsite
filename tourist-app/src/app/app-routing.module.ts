@@ -19,7 +19,6 @@ import { TaxiComponent } from './component-transport/transport/taxi/taxi.compone
 import { PublictransportComponent } from './component-transport/transport/publictransport/publictransport.component';
 
 
-
 import { AboutUsComponent } from './about/about-us/about-us.component';
 
 
@@ -56,7 +55,7 @@ const routes: Routes = [
   {path: 'rentacar', component: RentACarComponent},
   {path: 'taxi', component: TaxiComponent},
   {path: 'publictransport', component: PublictransportComponent},
-  {path: 'nextbike', component: NextbikeComponent},
+ 
   {path: 'hotels', component: HotelsComponent},
   {path: 'restaurants', component: RestaurantsComponent},
   {path: 'history', component: HistoryComponent},

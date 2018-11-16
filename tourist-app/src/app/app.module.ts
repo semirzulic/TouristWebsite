@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-/* import { NgbModule } from '@ng-bootstrap/ng-bootstrap'; */
+//import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { HistoryComponent } from './history/components-history/history/history.component';
@@ -76,7 +76,7 @@ import { AboutUsComponent } from './about/about-us/about-us.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    /* NgbModule.forRoot(), */
+   // NgbModule.forRoot(),
 
   
     AngularFontAwesomeModule
