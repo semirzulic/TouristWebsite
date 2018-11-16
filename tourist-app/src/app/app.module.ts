@@ -59,8 +59,6 @@ import { AboutUsComponent } from './about/about-us/about-us.component';
     InternationalPortraitComponent,
     MuseumsComponent,
     EasterComponent,
-    
-   
     Tour360Component,
     CityMapComponent,
     SocialComponent,

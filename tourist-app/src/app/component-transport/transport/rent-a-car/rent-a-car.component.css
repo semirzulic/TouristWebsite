@@ -1,11 +1,7 @@
-#backgroundColorAndBorder{
-    background-color: lightgrey;
-    border : solid black 2px;
+#backgroundColorAndBorder {
+    border-top: solid black 1px;
 }
 
-#borderBody {
-    border-left : solid black 2px;
-}
 
 .col-sm {
     text-align: center;
