@@ -66,16 +66,12 @@ import { AboutUsComponent } from './about/about-us/about-us.component';
     HotelsComponent,
     RestaurantsComponent,
     AttractionComponent,
-<<<<<<< HEAD
-    NextbikeComponent
-=======
 
 
     NextbikeComponent,
 
 
     AboutUsComponent
->>>>>>> a0552b379eeb8f6b7ccb6d613c204821f92d8c25
   ],
   imports: [
     BrowserModule,
