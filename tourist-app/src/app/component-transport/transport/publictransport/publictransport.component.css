@@ -1,8 +1,6 @@
-#backgroundColorAndBorder{
-    background-color: lightgrey;
-    border : solid black 2px;
+#backgroundColorAndBorder {
+    border-top: solid black 1px;
 }
-
 
 .col-sm {
     text-align: center;
@@ -19,7 +17,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2%;
-    margin-top: 2%;
+    margin-top: 10%;
     max-width: 90%;
     max-height: 530px;
     min-height: 120px;

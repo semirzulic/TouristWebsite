@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+//import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { HistoryComponent } from './history/components-history/history/history.component';
@@ -33,6 +33,7 @@ import { MuseumsComponent } from './culture-componenets/museums/museums.componen
 import { EasterComponent } from './culture-componenets/easter/easter.component';
 import { MainHomeComponent } from './main-home/main-home.component';
 import { NextbikeComponent } from './component-transport/transport/nextbike/nextbike.component';
+import { AboutUsComponent } from './about/about-us/about-us.component';
 
 @NgModule({
   declarations: [
@@ -58,8 +59,6 @@ import { NextbikeComponent } from './component-transport/transport/nextbike/next
     InternationalPortraitComponent,
     MuseumsComponent,
     EasterComponent,
-    
-   
     Tour360Component,
     CityMapComponent,
     SocialComponent,
@@ -67,12 +66,21 @@ import { NextbikeComponent } from './component-transport/transport/nextbike/next
     HotelsComponent,
     RestaurantsComponent,
     AttractionComponent,
+<<<<<<< HEAD
     NextbikeComponent
+=======
+
+
+    NextbikeComponent,
+
+
+    AboutUsComponent
+>>>>>>> a0552b379eeb8f6b7ccb6d613c204821f92d8c25
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule.forRoot(),
+   // NgbModule.forRoot(),
 
   
     AngularFontAwesomeModule
