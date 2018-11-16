@@ -1,5 +1,5 @@
-#backgroundColorAndBorderAirports{
-    background-color: darkgrey;
+#backgroundColorAndBorder{
+    background-color: lightgrey;
     border : solid black 2px;
 }
 
@@ -15,7 +15,6 @@
     margin-left: .5%;
     margin-right: .5%;
     margin-bottom: 2%;
-    background-color: teal;
     color: white;
 }
 
@@ -34,7 +33,7 @@ img {
     background-color: white;
     width:30%;
     margin: auto;
-    min-width: 200px;
+    min-width: 180px;
 }
 button {
     margin-bottom: 2%;
