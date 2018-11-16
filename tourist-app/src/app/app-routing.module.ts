@@ -16,16 +16,7 @@ import { AirportComponent } from './component-transport/transport/airport/airpor
 import { RentACarComponent } from './component-transport/transport/rent-a-car/rent-a-car.component';
 import { TaxiComponent } from './component-transport/transport/taxi/taxi.component';
 import { PublictransportComponent } from './component-transport/transport/publictransport/publictransport.component';
-
-
 import { AboutUsComponent } from './about/about-us/about-us.component';
-
-
-
-
-
-
-
 import { GalleriesComponent } from './culture-componenets/galleries/galleries.component';
 import { InternationalAtelierComponent } from './culture-componenets/international-atelier/international-atelier.component';
 import { MuseumsComponent } from './culture-componenets/museums/museums.component';
