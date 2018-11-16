@@ -31,8 +31,6 @@ img {
 #contactRentCar {
     border: solid black 2px;
     background-color: white;
-    width:40%;
-    margin: auto;
     min-width: 180px;
 }
 button {
