@@ -1,5 +1,6 @@
+
 h4, p {
-    border: 1px seashell solid;
+    /* border: 1px seashell solid; */
 }
 
 h1, h4 {
@@ -9,10 +10,18 @@ h1, h4 {
 
 .container {
     box-sizing: border-box;
-    background: lightgrey;
+    background: rgb(255, 255, 255);
  
 }
 
 #contact .card:hover i,#contact .card:hover h4{
 	color: #87d37c;
+}
+
+h3 {
+    padding-top: 60px;
+}
+.col-md-4 {
+    background: rgb(230, 235, 235);
+    border: 1px solid black;
 }
