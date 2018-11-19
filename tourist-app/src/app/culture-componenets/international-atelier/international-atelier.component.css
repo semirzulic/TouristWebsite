@@ -23,12 +23,12 @@
     
  }
  h1{
-    text-align: center;
-    font-size: 40px;
+    
+    font-size: 30px;
     margin-bottom: 40px;
 }
 #frame{
-    margin-top: 110px;
+    margin-top: 60px;
     margin-bottom: 90px;
     text-align: center;
 }
@@ -40,8 +40,26 @@ h2{
 }
 .rest-left {
     padding-right: 20px;
+    margin-bottom: 50px;
 }
 .rest-right {
-    margin-top: 20px;
+    margin-top: px;
     
+}
+hr{
+    background-color: #caf8fd;
+    
+}
+.block {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #4CAF50;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+.btn-success{
+    background-color: #6dd7d8;
 }

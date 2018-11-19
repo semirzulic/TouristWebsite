@@ -1,133 +1,103 @@
 <app-navbar></app-navbar>
 <div class="container">
 
-<h1 class="center">International portrait gallery</h1>
+  <h1 class="">International portrait gallery</h1>
+</div>
 <div class="row">
-  <div class="col-lg-9 col-md-9 col-sm-12">
+  <div class=" col-lg-9 col-md-9 col-sm-12">
+    <div id="demo" class="carousel slide" data-ride="carousel">
 
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
 
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="img-fluid center" src="assets/culture-img/portrait1.jpg" alt="Los Angeles">
+        </div>
+        <div class="carousel-item ">
+          <img class="img-fluid center" src="assets/culture-img/portrait2.jpg" alt="Chicago">
+        </div>
+        <div class="carousel-item ">
+          <img class="img-fluid center" src="assets/culture-img/portrait3.jpg" alt="New York">
+        </div>
+      </div>
 
-<div id="demo" class="carousel slide" data-ride="carousel">
-
-<!-- Indicators -->
-<ul class="carousel-indicators">
-  <li data-target="#demo" data-slide-to="0" class="active"></li>
-  <li data-target="#demo" data-slide-to="1"></li>
-  <li data-target="#demo" data-slide-to="2"></li>
-</ul>
-
-<!-- The slideshow -->
-<div class="carousel-inner">
-  <div class="carousel-item active">
-    <img class="img-fluid center" src="assets/culture-img/portrait3.jpg" alt="Los Angeles" width="1100" height="500">
-  </div>
-  <div class="carousel-item ">
-    <img  class="img-fluid center" src="assets/culture-img/portrait2.jpg" alt="Chicago" width="1100" height="500">
-  </div>
-  <div class="carousel-item ">
-    <img  class="img-fluid center" src="assets/culture-img/portrait1.jpg" alt="New York" width="1100" height="500">
-  </div>
-</div>
-
-<!-- Left and right controls -->
-<a class="carousel-control-prev" href="#demo" data-slide="prev">
-  <span class="carousel-control-prev-icon"></span>
-</a>
-<a class="carousel-control-next" href="#demo" data-slide="next">
-  <span class="carousel-control-next-icon"></span>
-</a>
-</div>
-  </div>
-<br>
-<div class="rest-right col-lg-3 col-md-2 col-sm-12">
-<div>
-  <h5>Adress</h5>
-  <i class="fas  fa-map-marker-alt"> </i>  II Tuzlanske brigade 13, Tuzla 75000 <br>
-</div>
-<hr>
-<div class="info">
-<div class="left">
-  <h5>Mail</h5>
-  <i class="fas fa-envelope-open"></i> <a href="mailto:galllerytuzla@outlook.com"> galllerytuzla@outlook.com  </a>
-</div> 
-<hr>
-<h5>Website</h5>
-<div class="left">
-  <i class="fas fa-home"></i> <a href="" target="_blank"> https://centarzakulturutuzla.ba  </a>
-</div>
-<hr>
-<h5>Contact</h5>
-  <div class="left">
-   <i class="fas fa-phone"></i>+387 35 252 002
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+      <p id="aboutA">
+        Over the last three decades the Gallery emerged as a fine arts institution of considerable
+        importance organizing review exhibitions of contemporary portraits and retrospective exhibitions
+        of the most famous artists from Bosnia and Herzegovina. The Portrait Gallery also organizes the
+        well-known exhibition “Tuzlanski salon 2x13”, as well as exhibitions of works by young
+        artists in the Gallery Club. The Gallery expanded the range of its activities by creating the
+        first biennial festival of drawings and graphics INTERBIFEP, an international event taking place
+        in Bosnia and Herzegovina and one of the four of this kind in former Yugoslavia. Thanks to its regular
+        and part-time activities the Gallery has gathered several valuable collections.
+        Each of the collections represents a cultural treasure for the Gallery and the country,
+        making it unique as regards cultural inheritage.
+      </p>
+      <!-- Map -->
+      <h2 class="center">How to get to international atelier?</h2>
+      <iframe class="center embed-responsive-item" id="frame" width="850" height="400" frameborder="0" src="https://widgets.scribblemaps.com/sm/?d&z&l&gc&af&mc&lat=44.537050049250425&lng=18.6809869318688&vz=19&type=custom_style&ti&s&width=550&height=400&id=LoLaX_pzt7"
+        style="border:0; max-width: 100%;" allowfullscreen allow="geolocation"></iframe>
+    </div>
   </div>
   <br>
-  <hr>
-  <div>
-      <ul class="list-group">Opening hours:
+      <!-- Contact section-->
+  <div class="rest-right col-lg-3 col-md-3 col-sm-12">
+    <div>
+      <h5>Adress</h5>
+      <i class="fas  fa-map-marker-alt"> </i> II Tuzlanske brigade 13 <br>
+    </div>
+    <hr>
+    <div class="info">
+      <div class="left">
+        <h5>Mail</h5>
+        <i class="fas fa-envelope-open "></i> <a href="mailto:galllerytuzla@outlook.com"> galllerytuzla@outlook.com </a>
+      </div>
+      <hr>
+      <h5>Website</h5>
+      <div class="left">
+        <i class="fas fa-home "></i> <a href="https://centarzakulturutuzla.ba" target="_blank">
+          centarzakulturutuzla.ba </a>
+      </div>
+      <hr>
+      <div class="left">
+        <h5>Phone</h5>
+        <i class="fas fa-phone "></i>+387 35 252 002
+      </div>
+    </div>
+    <hr>
+    <div>
+      <ul class="list-group" style="list-style-type:none">
+        <h5>Opening hours:</h5>
         <li class="list-item-group">Tuesday – Saturday 08:00-15:00</li>
         <li class="list-item-group">Sunday 09:00-13:00</li>
       </ul>
+      <hr>
+      <h5>Admission</h5>
+      Free
+      <hr>
+      <h5 style="color:red">Closed now!</h5>
+      <hr>
+      <button class="block btn btn-success "> News/Events</button>
+      <hr>
+      <!-- FB page section-->
+      <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fmedjunarodna.galerija.portreta%2F&tabs=timeline&width=250&height=250&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+        width="250" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"
+        allow="encrypted-media"></iframe>
     </div>
   </div>
-</div>
-
-  <div class="row">
-    <div class="col">
-<p id="aboutA">
-    The International Portrait Gallery of Tuzla started through a donation made by artists from former Yugoslavia in 1964. Its professional interest is focused on studying, presentations and increasing the prestige of fine arts, mostly in the field of portrait.
-
-  Over the last three decades the Gallery emerged as a fine arts institution of considerable importance organizing review exhibitions of contemporary portraits and retrospective exhibitions of the most famous artists from Bosnia and Herzegovina. The Portrait Gallery also organizes the well-known exhibition “Tuzlanski salon 2x13”, as well as exhibitions of works by young artists in the Gallery Club. The Gallery expanded the range of its activities by creating the first biennial festival of drawings and graphics INTERBIFEP, an international event taking place in Bosnia and Herzegovina and one of the four of this kind in former Yugoslavia.
-  
-  Thanks to its regular and part-time activities the Gallery has gathered several valuable collections. Each of the collections represents a cultural treasure for the Gallery and the country, making it unique as regards cultural inheritage.
-  
-  By relying on the tradition of this region of Bosnia and Herzegovina, which is a breeding-ground for fine arts, the Gallery has gathered:
-  
-  - A COLLECTION OF XIXth AND XXth CENTURIES CONTEMPORARY PORTRAIT
-  
-  - A COLLECTION OF DRAWINGS, WATER COLOURS, TEMPERAS AND OIL
-  
-  - PAINTINGS MADE BY ISMET MUJEZINOVIĆ
-</p>
-</div>
-<div class="col">
-    <p id="aboutA">
-        - A COLLECTION OF DRAWINGS, GRAPHICS AND OIL PAINTINGS MADE BY ADELA BEHR VUKIĆ
-  
-  - THE JAMES HAIM PINTO LEGACY COLLECTION
-  
-  - AN INTERNATIONAL COLLECTION OF PORTRAITS, DRAWINGS AND GRAPHICS
-  
-  - A GENERAL COLLECTION
-  
-  - THE COLLECTION “TITO IN THE PAINTER’S WORKS”
-  
-  - A COLLECTION OF KASEL SCHOOL
-  
-  By expanding its activity towards various aspects of fine arts the Gallery has so far introduced several forms of exhibitions such as:
-  
-  - CONTEMPORARY PORTRAIT QUADRENNIAL
-  
-  - TUZLANSKI SALON 13
-  
-  - TUZLANSKI SALON 2x13
-  
-  - INTERBIFEP
-  
-  - THE GALLERY CLUB
-  
-  - THE INTERNATIONAL STUDIO ISMET MUJEZINOVIĆ
-  
-  - TUZLA ARTISTS RETROSPECTS
-  
-  - DAYS OF MURALS IN TUZLA
-  
-  The Gallery also dedicates itself to publishing, for example issuing the monograph ISMET MUJEZINOVIĆ in Bosnian and English is certainly a remarkable publishing feat. It also issued local artists' monographs, an art map TUZLA NEKAD (Tuzla once), catalogues of review exhibitions, portrait quadrennials, international festival of portraits - drawings and graphics, monographic catalogues of the SALON 13 and TUZLANSKI SALON 2x13, as well as the monograph Zlatko Ugljen.
-    </p>
-    </div>
-</div>
-
-
-<h2 class="center">How to get to international portrait gallery?</h2>
-<iframe class="center embed-responsive-item" id="frame" width="850" height="400" frameborder="1" src="https://widgets.scribblemaps.com/sm/?d&z&l&gc&af&mc&lat=44.535824527234986&lng=18.68692802483679&vz=19&type=custom_style&ti&s&width=550&height=400&id=qSMEh5WkiV" style="border:0; max-width: 100%;" allowfullscreen allow="geolocation"></iframe>
+  <br>
 </div>
 <app-footer></app-footer>
