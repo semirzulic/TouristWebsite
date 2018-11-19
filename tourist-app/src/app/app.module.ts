@@ -34,6 +34,9 @@ import { EasterComponent } from './culture-componenets/easter/easter.component';
 import { MainHomeComponent } from './main-home/main-home.component';
 import { NextbikeComponent } from './component-transport/transport/nextbike/nextbike.component';
 import { AboutUsComponent } from './about/about-us/about-us.component';
+import { SnippetComponent } from './components-home/snippet/snippet.component';
+import { NewsComponent } from './components-home/news/news.component';
+
 
 @NgModule({
   declarations: [
@@ -66,12 +69,10 @@ import { AboutUsComponent } from './about/about-us/about-us.component';
     HotelsComponent,
     RestaurantsComponent,
     AttractionComponent,
-
-
     NextbikeComponent,
-
-
-    AboutUsComponent
+    AboutUsComponent,
+    SnippetComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,
