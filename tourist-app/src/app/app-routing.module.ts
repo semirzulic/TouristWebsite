@@ -4,7 +4,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { MainHomeComponent } from './main-home/main-home.component';
 import { HotelsComponent } from './accomodation-components/hotels/hotels.component';
 import { RestaurantsComponent } from './accomodation-components/restaurants/restaurants.component';
-import { NextbikeComponent } from './component-transport/transport/nextbike/nextbike.component';
 import { Tour360Component } from './virtual-tour/tour360/tour360.component';
 import { CityMapComponent } from './virtual-tour/city-map/city-map.component';
 import { AttractionsComponent } from './sights-components/attractions/attractions.component';
@@ -29,7 +28,6 @@ const routes: Routes = [
   {path: 'rentacar', component: RentACarComponent},
   {path: 'taxi', component: TaxiComponent},
   {path: 'publictransport', component: PublictransportComponent},
-  {path: 'nextbike', component: NextbikeComponent},
   {path: 'hotels', component: HotelsComponent},
   {path: 'restaurants', component: RestaurantsComponent},
   {path: 'accomodation/hotels', component: HotelsComponent},
