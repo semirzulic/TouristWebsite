@@ -2,7 +2,6 @@
     border-top: solid black 1px;
 }
 
-
 .col-sm {
     text-align: center;
 }
@@ -22,15 +21,17 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 2%;
-    margin-top: 2%;
-    width: 50%;
-    height: 30%;
-    min-width: 150px;
+    margin-bottom: -5%;
+    margin-top: -5%;
+    width: 30%;
+    height: 15%;
+    min-width: 200px;
 }
 #contactRentCar {
     border: solid black 2px;
     background-color: white;
+    width:30%;
+    margin: auto;
     min-width: 180px;
 }
 button {
