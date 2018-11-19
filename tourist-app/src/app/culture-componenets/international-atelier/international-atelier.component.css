@@ -1,4 +1,4 @@
-.carousel-inner img {
+ .carousel-inner img {
 
     width: 100%;
      max-height: 530px;
@@ -7,9 +7,11 @@
  }
  .container{
      margin-top: 90px;
+     margin-bottom: 20px;
  }
  #aboutA{
      margin-top: 40px;
+     text-align: justify;
  }
  
  .center {
@@ -27,6 +29,19 @@
 }
 #frame{
     margin-top: 110px;
-    margin-bottom: 70px;
+    margin-bottom: 90px;
     text-align: center;
+}
+h2{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-top: 70px;
+}
+.rest-left {
+    padding-right: 20px;
+}
+.rest-right {
+    margin-top: 20px;
+    
 }
