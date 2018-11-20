@@ -74,7 +74,8 @@ import { NewsComponent } from './components-home/news/news.component';
     NextbikeComponent,
     AboutUsComponent,
     SnippetComponent,
-    NewsComponent
+    NewsComponent,
+    NgModule
     
   ],
   imports: [
