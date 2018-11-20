@@ -12,6 +12,7 @@ export class RentACarComponent implements OnInit {
   openedPerfect: boolean = false;
   openedIntercar: boolean = false;
   openedDalton: boolean = false;
+  showedInformation: boolean = false;
   time: any;
   day: any;
   workDays: string[] = ['Mon','Tue','Wed','Thu','Fri','Sat'];
@@ -49,6 +50,7 @@ checkOpened(timeEndSunday:any) {
 }
 }
 }
+
 
 
 }
