@@ -38,6 +38,8 @@ import { SnippetComponent } from './components-home/snippet/snippet.component';
 import { NewsComponent } from './components-home/news/news.component';
 
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -73,10 +75,13 @@ import { NewsComponent } from './components-home/news/news.component';
     AboutUsComponent,
     SnippetComponent,
     NewsComponent
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+  
+   
    // NgbModule.forRoot(),
 
   
