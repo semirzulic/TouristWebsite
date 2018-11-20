@@ -57,7 +57,7 @@ img {
     margin: 10px auto;
 }
 
-.card {
+/* .card {
     display: block;
     margin: auto;
     background: lightgrey;
@@ -65,7 +65,43 @@ img {
 
 .card-header {
     box-shadow: -.5px 0 0 #818181;
+} */
+
+.card {
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    
 }
+
+
+.card-header {
+    box-shadow: -.5px 0 0 #818181;
+}
+
+.card-body {
+    background: lightgrey;
+    border: 1px lightgrey solid;
+    border-radius: 1%;
+}
+
+.accordion {
+    margin-bottom: 5px;
+    /* width: 30%; */
+}
+
+.row {
+    margin-top: 230px;
+}
+
+
+.fixed-top {
+    
+    background: white;
+    border-bottom: 1px solid black;
+    
+} 
+
 
 @media (min-width: 320px) and (max-width: 991px) {
   

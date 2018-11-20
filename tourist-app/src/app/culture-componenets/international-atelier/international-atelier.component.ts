@@ -12,4 +12,6 @@ export class InternationalAtelierComponent implements OnInit {
   ngOnInit() {
   }
 
+  
+
 }

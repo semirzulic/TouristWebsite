@@ -12,4 +12,7 @@ export class FooterComponent implements OnInit {
   ngOnInit() {
   }
 
+  onEdit(){
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
+  }
 }
