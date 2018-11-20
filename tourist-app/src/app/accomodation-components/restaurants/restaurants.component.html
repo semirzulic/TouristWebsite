@@ -1,14 +1,112 @@
-<app-navbar></app-navbar>
 <div class="container">
-  <h1 class="text-center">Restaurants</h1>
+  <div class="fixed-top">
+    <h1 class="text-center">Restaurants</h1>
+
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        Restaurants
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" (click)="window.location = '#row1';" [routerLink]="['/accomodation/restaurants']" fragment="row1" routerLinkActive="router-link-active">Pub Taverna</a>
+        <a class="dropdown-item" (click)="window.location = '#row2';" [routerLink]="['/accomodation/restaurants']" fragment="row2" routerLinkActive="router-link-active">Zlatnik</a>
+        <a class="dropdown-item" (click)="window.location = '#row3';" [routerLink]="['/accomodation/restaurants']" fragment="row3" routerLinkActive="router-link-active">Sezam</a>
+        <a class="dropdown-item" (click)="window.location = '#row4';" [routerLink]="['/accomodation/restaurants']" fragment="row4" routerLinkActive="router-link-active">Royal</a>
+        <a class="dropdown-item" (click)="window.location = '#row5';" [routerLink]="['/accomodation/restaurants']" fragment="row5" routerLinkActive="router-link-active">Citta del Sale</a>
+        <a class="dropdown-item" (click)="window.location = '#row6';" [routerLink]="['/accomodation/restaurants']" fragment="row6" routerLinkActive="router-link-active">Česma</a>
+        <a class="dropdown-item" (click)="window.location = '#row7';" [routerLink]="['/accomodation/restaurants']" fragment="row7" routerLinkActive="router-link-active">Heartland</a>
+        <a class="dropdown-item" (click)="window.location = '#row8';" [routerLink]="['/accomodation/restaurants']" fragment="row8" routerLinkActive="router-link-active">Panonski Lovac</a>
+      </div>
+    </div>
+
+  </div>
+
+  <app-navbar></app-navbar>
+
+
+
+  <!--  <div class="btn-group">
+      <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Action
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Separated link</a>
+      </div>
+    </div>
+ -->
+
+
 
   <div class="row">
 
+    <!--  Fixed navbar  -->
+
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Restaurants Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home </a>
+          </li><br>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li><br>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li><br>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </nav> -->
+
+    <!-- <nav> -->
+    <!-- <ul>
+        <li>
+            <a class="" href="#">Home </a>
+        </li>
+        <li>
+            <a class="" href="#">Home </a>
+        </li>
+        <li>
+            <a class="" href="#">Home </a>
+        </li>
+        <li>
+            <a class="" href="#">Home </a>
+        </li>
+      </ul> -->
+    <!-- </nav> -->
+
+    <!--   End of fixed navbar  -->
+
     <!-- Pub Taverna -->
 
-    <div id="box1" class="col-12 col-sm-12 col-md-12 col-lg-6">
+    <div id="row1" class="col-12 col-sm-12 col-md-12 col-lg-6 box1">
       <h3 class="text-center">Pub Taverna</h3>
-      <button class="btn btn-info"><a target="_blank" href="http://www.pivaratuzla.ba/PivnicaTaverna/">Website</a></button>
+
+
+
+      <!-- <button class="btn" (click)="showReservation()">Informations</button>
+
+      <p class="card-text card-body" *ngIf="show">
+        <i class="far fa-address-card"></i> Address: Aleja Alija Izetbegović no. 3
+        <br>
+        <i class="fas fa-phone-square"></i> Phone: +387 35 365 500
+        <br>
+        <i class="fas fa-envelope"></i> Email: info@mellainhotel.com
+        <br>
+        <i class="fas fa-home"><a href="http://www.pivaratuzla.ba/PivnicaTaverna/">www.pivaratuzla.ba/PivnicaTaverna/</a></i>
+        
+      </p> -->
       <img src="../../../assets/restaurants-img/taverna.jpg" alt="Hotel Mallain">
       <p>
         With many years of tradition and a new ambiance, Pub Taverna is an indispensable place for those who are
@@ -16,7 +114,22 @@
         lunch, relaxing drinks after work or evening with friends. <br><br><br><br>
       </p>
 
-      <div class="accordion" id="accordionExample">
+      <div class="card border-dark mb-3" style="max-width: 95%;">
+        <div class="card-header">Reservation</div>
+        <div class="card-body text-dark">
+          <p class="card-text">
+            <i class="far fa-address-card"></i> Address: Aleja Alija Izetbegović no. 3
+            <br>
+            <i class="fas fa-phone-square"></i> Phone: +387 35 365 500
+            <br>
+            <i class="fas fa-envelope"></i> Email: info@mellainhotel.com
+          </p>
+        </div>
+      </div>
+
+
+
+      <!-- <div class="accordion" id="accordionExample">
         <div class="card">
           <div class="card-header" id="headingOne">
             <h5 class="mb-0">
@@ -44,8 +157,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="card">
+      </div> -->
+      <!-- <div class="card">
         <div class="card-header" id="headingTwo">
           <h5 class="mb-0">
             <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
@@ -64,16 +177,27 @@
             <img src="http://www.pivaratuzla.ba/PivnicaTaverna/galerija4/Pivnica%20Taverna%204%205.JPG" alt="" class="zoom">
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
 
     <!-- End of Pub Taverna -->
 
     <!-- Zlatnik -->
 
-    <div id="box2" class="col-12 col-sm-12 col-md-12 col-lg-6">
+    <div id="row2" class="col-12 col-sm-12 col-md-12 col-lg-6 box2">
       <h3 class="text-center">Zlatnik</h3>
-      <button class="btn btn-info"><a target="_blank" href="https://www.restoranzlatnik.com/">Website</a></button>
+      <!-- <button class="btn" (click)="showReservation()">Informations</button>
+
+      <p class="card-text card-body" *ngIf="show">
+        <i class="far fa-address-card"></i> Address: Aleja Alija Izetbegović no. 3
+        <br>
+        <i class="fas fa-phone-square"></i> Phone: +387 35 365 500
+        <br>
+        <i class="fas fa-envelope"></i> Email: info@mellainhotel.com
+        <br>
+        <i class="fas fa-home"><a href="http://www.pivaratuzla.ba/PivnicaTaverna/">www.pivaratuzla.ba/PivnicaTaverna/</a></i>
+        
+      </p> -->
       <img src="https://tztz.ba/ba/wp-content/uploads/2018/07/zlatnik.jpg" alt="Zlatnik">
       <p>
         In the very center of the city, next to the Slana Banja promenade, Restaurant Zlatnik is located. In the heart
@@ -82,7 +206,20 @@
         international dishes to the most demanding guest, will provide the ultimate pleasure in every bit of food.
       </p>
 
-      <div class="accordion" id="accordionExample">
+      <div class="card border-dark mb-3" style="max-width: 95%;">
+        <div class="card-header">Reservation</div>
+        <div class="card-body text-dark">
+          <p class="card-text">
+            <i class="far fa-address-card"></i> Address: Šetalište Slana banja, Tuzla
+            <br>
+            <i class="fas fa-phone-square"></i> Phone: 035 261-225
+            <br>
+            <i class="fas fa-envelope"></i> Email:
+          </p>
+        </div>
+      </div>
+
+      <!-- <div class="accordion" id="accordionExample">
         <div class="card">
           <div class="card-header" id="headingOne">
             <h5 class="mb-0">
@@ -110,8 +247,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="card">
+      </div> -->
+      <!-- <div class="card">
         <div class="card-header" id="headingTwo">
           <h5 class="mb-0">
             <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
@@ -132,16 +269,25 @@
               alt="" class="zoom">
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
 
     <!-- End of Zlatnik -->
-                        
+
     <!-- Sezam -->
 
-    <div id="box1" class="col-12 col-sm-12 col-md-12 col-lg-6">
+    <div id="row3" class="col-12 col-sm-12 col-md-12 col-lg-6 box1">
       <h3 class="text-center">Sezam</h3>
-      <button class="btn btn-info"><a target="_blank" href="https://www.restoranisezam.com/">Website</a></button>
+      <!-- <button class="btn btn-info"><a target="_blank" href="https://www.restoranisezam.com/">Website</a></button>
+      <button class="btn" (click)="showReservation()">Reservation</button>
+
+      <p class="card-text card-body" *ngIf="show">
+        <i class="far fa-address-card"></i> Address: Aleja Alija Izetbegović no. 3
+        <br>
+        <i class="fas fa-phone-square"></i> Phone: +387 35 365 500
+        <br>
+        <i class="fas fa-envelope"></i> Email: info@mellainhotel.com
+      </p> -->
       <img src="https://tztz.ba/ba/wp-content/uploads/2018/07/tenis.jpg" alt="Sezam">
       <p>
         Restaurants 'Sezam'have long been known for their name and brand in Tuzla, as well as for visitors and for sure
@@ -150,7 +296,20 @@
         selection of cakes and treats.
       </p>
 
-      <div class="accordion" id="accordionExample">
+      <div class="card border-dark mb-3" style="max-width: 95%;">
+        <div class="card-header">Reservation</div>
+        <div class="card-body text-dark">
+          <p class="card-text">
+            <i class="far fa-address-card"></i> Address: Šetalište Slana Banja bb
+            <br>
+            <i class="fas fa-phone-square"></i> Phone: 035 273-544
+            <br>
+            <i class="fas fa-envelope"></i> Email:
+          </p>
+        </div>
+      </div>
+
+      <!-- <div class="accordion" id="accordionExample">
         <div class="card">
           <div class="card-header" id="headingOne">
             <h5 class="mb-0">
@@ -178,8 +337,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="card">
+      </div> -->
+      <!-- <div class="card">
         <div class="card-header" id="headingTwo">
           <h5 class="mb-0">
             <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
@@ -200,16 +359,25 @@
               alt="" class="zoom">
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
 
     <!-- End of Sezam -->
 
     <!-- Royal -->
 
-    <div id="box2" class="col-12 col-sm-12 col-md-12 col-lg-6">
+    <div id="row4" class="col-12 col-sm-12 col-md-12 col-lg-6 box2">
       <h3 class="text-center">Royal</h3>
-      <button class="btn btn-info"><a target="_blank" href="https://www.royalmotel.ba/o-nama/">Website</a></button>
+      <!-- <button class="btn btn-info"><a target="_blank" href="https://www.royalmotel.ba/o-nama/">Website</a></button>
+      <button class="btn" (click)="showReservation()">Reservation</button>
+
+      <p class="card-text card-body" *ngIf="show">
+        <i class="far fa-address-card"></i> Address: Aleja Alija Izetbegović no. 3
+        <br>
+        <i class="fas fa-phone-square"></i> Phone: +387 35 365 500
+        <br>
+        <i class="fas fa-envelope"></i> Email: info@mellainhotel.com
+      </p> -->
       <img src="https://tztz.ba/ba/wp-content/uploads/2018/07/restoranlovac.jpg" alt="Royal">
       <p>
         The restaurant 'Royal' in a pleasant ambience offers its guests a diverse Mediterranean but also imaginative
@@ -218,7 +386,20 @@
         memory.
       </p>
 
-      <div class="accordion" id="accordionExample">
+      <div class="card border-dark mb-3" style="max-width: 95%;">
+        <div class="card-header">Reservation</div>
+        <div class="card-body text-dark">
+          <p class="card-text">
+            <i class="far fa-address-card"></i> Address: Bosne srebrene 105/A
+            <br>
+            <i class="fas fa-phone-square"></i> Phone: +387 35 315 666
+            <br>
+            <i class="fas fa-envelope"></i> Email: info@royalmotel.ba
+          </p>
+        </div>
+      </div>
+
+      <!-- <div class="accordion" id="accordionExample">
         <div class="card">
           <div class="card-header" id="headingOne">
             <h5 class="mb-0">
@@ -246,8 +427,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="card">
+      </div> -->
+      <!-- <div class="card">
         <div class="card-header" id="headingTwo">
           <h5 class="mb-0">
             <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
@@ -268,16 +449,25 @@
               alt="" class="zoom">
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
 
     <!-- End of Royal -->
 
     <!-- Citta del Sale -->
 
-    <div id="box1" class="col-12 col-sm-12 col-md-12 col-lg-6">
+    <div id="row5" class="col-12 col-sm-12 col-md-12 col-lg-6 box1">
       <h3 class="text-center">Citta del Sale</h3>
-      <button class="btn btn-info"><a target="_blank" href="https://www.tripadvisor.com/Restaurant_Review-g303197-d1094154-Reviews-Citta_del_Sale-Tuzla_Tuzla_Canton.html">Website</a></button>
+      <!--  <button class="btn btn-info"><a target="_blank" href="https://www.tripadvisor.com/Restaurant_Review-g303197-d1094154-Reviews-Citta_del_Sale-Tuzla_Tuzla_Canton.html">Website</a></button>
+      <button class="btn" (click)="showReservation()">Reservation</button>
+
+      <p class="card-text card-body" *ngIf="show">
+        <i class="far fa-address-card"></i> Address: Aleja Alija Izetbegović no. 3
+        <br>
+        <i class="fas fa-phone-square"></i> Phone: +387 35 365 500
+        <br>
+        <i class="fas fa-envelope"></i> Email: info@mellainhotel.com
+      </p> -->
       <img src="https://tztz.ba/ba/wp-content/uploads/2018/07/cittadelsale.jpg" alt="Royal">
       <p>
         In the Citta del Sale, you can enjoy grilled specialties, top-class Bosnian cuisine, prepared meals, a variety
@@ -285,7 +475,20 @@
         selected ingredients are certainly a recipe for their success. <br><br><br>
       </p>
 
-      <div class="accordion" id="accordionExample">
+      <div class="card border-dark mb-3" style="max-width: 95%;">
+        <div class="card-header">Reservation</div>
+        <div class="card-body text-dark">
+          <p class="card-text">
+            <i class="far fa-address-card"></i> Address: Korzo, Tuzla
+            <br>
+            <i class="fas fa-phone-square"></i> Phone: +387 62 860 105
+            <br>
+            <i class="fas fa-envelope"></i> Email:
+          </p>
+        </div>
+      </div>
+
+      <!-- <div class="accordion" id="accordionExample">
         <div class="card">
           <div class="card-header" id="headingOne">
             <h5 class="mb-0">
@@ -314,8 +517,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="card">
+      </div> -->
+      <!-- <div class="card">
         <div class="card-header" id="headingTwo">
           <h5 class="mb-0">
             <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
@@ -329,16 +532,25 @@
 
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
 
     <!-- End of Citta del Sale -->
 
     <!-- Česma -->
 
-    <div id="box2" class="col-12 col-sm-12 col-md-12 col-lg-6">
+    <div id="row6" class="col-12 col-sm-12 col-md-12 col-lg-6 box2">
       <h3 class="text-center">Česma</h3>
-      <button class="btn btn-info"><a target="_blank" href="https://restoran-carsijska-cesma.business.site/">Website</a></button>
+      <!-- <button class="btn btn-info"><a target="_blank" href="https://restoran-carsijska-cesma.business.site/">Website</a></button>
+      <button class="btn" (click)="showReservation()">Reservation</button>
+
+      <p class="card-text card-body" *ngIf="show">
+        <i class="far fa-address-card"></i> Address: Aleja Alija Izetbegović no. 3
+        <br>
+        <i class="fas fa-phone-square"></i> Phone: +387 35 365 500
+        <br>
+        <i class="fas fa-envelope"></i> Email: info@mellainhotel.com
+      </p> -->
       <img src="https://tztz.ba/ba/wp-content/uploads/2018/07/restorancesma.jpg" alt="Česma">
       <p>
         The 'Česma', as the Tuzlaci call this restaurant, is entirely decorated in Bosnian style. The exterior of the
@@ -347,7 +559,20 @@
         of tourists who come to visit the city.
       </p>
 
-      <div class="accordion" id="accordionExample">
+      <div class="card border-dark mb-3" style="max-width: 95%;">
+        <div class="card-header">Reservation</div>
+        <div class="card-body text-dark">
+          <p class="card-text">
+            <i class="far fa-address-card"></i> Address: Trg žrtava genocida u Srebrenici
+            <br>
+            <i class="fas fa-phone-square"></i> Phone: 035 258-408
+            <br>
+            <i class="fas fa-envelope"></i> Email:
+          </p>
+        </div>
+      </div>
+
+      <!-- <div class="accordion" id="accordionExample">
         <div class="card">
           <div class="card-header" id="headingOne">
             <h5 class="mb-0">
@@ -376,8 +601,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="card">
+      </div> -->
+      <!-- <div class="card">
         <div class="card-header" id="headingTwo">
           <h5 class="mb-0">
             <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
@@ -398,7 +623,7 @@
               alt="" class="zoom">
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
 
     <!-- End of Česma -->
@@ -406,9 +631,18 @@
     <!-- Heartland -->
 
 
-    <div id="box1" class="col-12 col-sm-12 col-md-12 col-lg-6">
+    <div id="row7" class="col-12 col-sm-12 col-md-12 col-lg-6 box1">
       <h3 class="text-center">Heartland</h3>
-      <button class="btn btn-info"><a target="_blank" href="http://heartland.ba/">Website</a></button>
+      <!-- <button class="btn btn-info"><a target="_blank" href="http://heartland.ba/">Website</a></button>
+      <button class="btn" (click)="showReservation()">Reservation</button>
+
+      <p class="card-text card-body" *ngIf="show">
+        <i class="far fa-address-card"></i> Address: Aleja Alija Izetbegović no. 3
+        <br>
+        <i class="fas fa-phone-square"></i> Phone: +387 35 365 500
+        <br>
+        <i class="fas fa-envelope"></i> Email: info@mellainhotel.com
+      </p> -->
       <img src="https://tztz.ba/ba/wp-content/uploads/2018/07/heartland.jpg" alt="Heartland">
       <p>
         It will be a pleasure to welcome you to our newly opened City Hotel located in center of Tuzla, at Kazanmahala
@@ -417,7 +651,20 @@
         traditional salt water healing. Hotel is located 200 meters from the Pannonian lake with healing salt water.
       </p>
 
-      <div class="accordion" id="accordionExample">
+      <div class="card border-dark mb-3" style="max-width: 95%;">
+        <div class="card-header">Reservation</div>
+        <div class="card-body text-dark">
+          <p class="card-text">
+            <i class="far fa-address-card"></i> Address: Kazan mahala 10, Tuzla
+            <br>
+            <i class="fas fa-phone-square"></i> Phone: +387 35 255 111
+            <br>
+            <i class="fas fa-envelope"></i> Email: info@heartland.ba
+          </p>
+        </div>
+      </div>
+
+      <!-- <div class="accordion" id="accordionExample">
         <div class="card">
           <div class="card-header" id="headingOne">
             <h5 class="mb-0">
@@ -446,8 +693,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="card">
+      </div> -->
+      <!-- <div class="card">
         <div class="card-header" id="headingTwo">
           <h5 class="mb-0">
             <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
@@ -464,7 +711,7 @@
             <img src="http://heartland.ba/wp-content/uploads/2016/10/DSCF0516_resize_resize.jpg" alt="" class="zoom">
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
 
     <!-- End of Heartland -->
@@ -472,9 +719,18 @@
     <!-- Panonski lovac -->
 
 
-    <div id="box1" class="col-12 col-sm-12 col-md-12 col-lg-6">
+    <div id="row8" class="col-12 col-sm-12 col-md-12 col-lg-6 box1">
       <h3 class="text-center">Panonski lovac</h3>
-      <button class="btn btn-info"><a target="_blank" href="https://www.facebook.com/PanonskiLovac/">Website</a></button>
+      <!-- <button class="btn btn-info"><a target="_blank" href="https://www.facebook.com/PanonskiLovac/">Website</a></button>
+      <button class="btn" (click)="showReservation()">Reservation</button>
+
+      <p class="card-text card-body" *ngIf="show">
+        <i class="far fa-address-card"></i> Address: Aleja Alija Izetbegović no. 3
+        <br>
+        <i class="fas fa-phone-square"></i> Phone: +387 35 365 500
+        <br>
+        <i class="fas fa-envelope"></i> Email: info@mellainhotel.com
+      </p> -->
       <img src="https://tztz.ba/ba/wp-content/uploads/2018/07/lovac.jpg" alt="Panonski lovac">
       <p>
         On the third Pannonian Lake there is a restaurant ' Panonski Lovac ' which offers a rich gastronomic offer,
@@ -482,7 +738,20 @@
         weddings, graduations, March 8th and all other forms of entertainment and celebrations with live music. <br><br><br>
       </p>
 
-      <div class="accordion" id="accordionExample">
+      <div class="card border-dark mb-3" style="max-width: 95%;">
+        <div class="card-header">Reservation</div>
+        <div class="card-body text-dark">
+          <p class="card-text">
+            <i class="far fa-address-card"></i> Address: Džindić Mahala 13
+            <br>
+            <i class="fas fa-phone-square"></i> Phone: + 387 62 154 433
+            <br>
+            <i class="fas fa-envelope"></i> Email: panonica@bih.net.ba
+          </p>
+        </div>
+      </div>
+
+      <!-- <div class="accordion" id="accordionExample">
         <div class="card">
           <div class="card-header" id="headingOne">
             <h5 class="mb-0">
@@ -511,8 +780,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="card">
+      </div> -->
+      <!-- <div class="card">
         <div class="card-header" id="headingTwo">
           <h5 class="mb-0">
             <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
@@ -533,32 +802,12 @@
               alt="" class="zoom">
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
 
     <!-- End of Panonski lovac -->
 
 
-    <!-- <div id="box" class="col-12 col-sm-12 col-md-12 col-lg-6">
-      <h3 class="text-center">So i Sol Hotel</h3>
-      <button class="btn btn-info"><a target="_blank" href="http://www.soisolhotel.ba/">Website</a></button>
-      <img src="https://tztz.ba/ba/wp-content/uploads/2018/08/soisol.jpg" alt="So i Sol Hotel">
-      <p>
-        Accommodation capacity of the hotel is 7 modern rooms, of which 6 are with terrace. Buffet / continental breakfast is served from 07:30 until 10:00. Smoking is not allowed in the rooms. Reception services are available from 08:00 to 22:00, until you can make reservations. Children are welcome. Pets are not allowed. The price of bed and breakfast services includes a residence tax, insurance, parking and VAT.
-      </p>
-      <div class="card border-dark mb-3" style="max-width: 95%;">
-        <div class="card-header">Reservation</div>
-          <div class="card-body text-dark">
-            <p class="card-text">
-              Address: Aleja Alija Izetbegović no. 3
-              <br>
-              Phone: +387 35 365 500
-              <br>
-              Email: info@mellainhotel.com
-            </p>
-          </div>
-        </div>
-      </div> -->
 
 
   </div>

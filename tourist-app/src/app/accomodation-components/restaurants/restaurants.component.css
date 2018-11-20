@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-#box1 {
+.box1 {
     /* background: lightgrey; */
     /* border: 1px solid black; */
     border-left: 0.1pt solid black; 
@@ -10,7 +10,7 @@
 
 }
 
-#box2 {
+.box2 {
     /* background: lightgrey; */
     /* border: 1px solid black; */
     border-right: 0.1pt solid black; 
@@ -18,11 +18,11 @@
     border-top: 0.1pt solid black;
 }
 
-#box1 p {
+.box1 p {
     padding: 20px 10px;
 }
 
-#box2 p {
+.box2 p {
     padding: 20px 10px;
 }
 
@@ -72,11 +72,26 @@ img {
 
 .card-body {
     background: lightgrey;
+    border: 1px lightgrey solid;
+    border-radius: 1%;
 }
 
 .accordion {
     margin-bottom: 5px;
+    /* width: 30%; */
 }
+
+
+.row {
+    margin-top: 230px;
+}
+
+
+.fixed-top {
+    
+    background: white;
+    
+} 
 
 @media (min-width: 320px) and (max-width: 991px) {
   
