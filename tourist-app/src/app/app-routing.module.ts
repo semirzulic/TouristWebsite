@@ -23,6 +23,7 @@ import { InternationalPortraitComponent } from './culture-componenets/internatio
 import { EasterComponent } from './culture-componenets/easter/easter.component';
 
 
+
 const routes: Routes = [
   {path: '', component: MainHomeComponent},
   {path: 'airports', component: AirportComponent},
@@ -53,8 +54,8 @@ const routes: Routes = [
   {path:'international',component:InternationalAtelierComponent},
   {path:'portrait',component:InternationalPortraitComponent},
   {path:'museums',component:MuseumsComponent},
-  {path:'museum',component:EasterComponent}
-
+  {path:'museum',component:EasterComponent},
+  
 ]
 
 
