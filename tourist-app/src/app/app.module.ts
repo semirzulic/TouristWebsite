@@ -1,13 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-//import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
 import { AppComponent } from './app.component';
 import { HistoryComponent } from './history/components-history/history/history.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
-
 import { AirportComponent } from './component-transport/transport/airport/airport.component';
-
 import { RentACarComponent } from './component-transport/transport/rent-a-car/rent-a-car.component';
 import { TaxiComponent } from './component-transport/transport/taxi/taxi.component';
 import { PublictransportComponent } from './component-transport/transport/publictransport/publictransport.component';
@@ -36,6 +32,7 @@ import { NextbikeComponent } from './component-transport/transport/nextbike/next
 import { AboutUsComponent } from './about/about-us/about-us.component';
 import { SnippetComponent } from './components-home/snippet/snippet.component';
 import { NewsComponent } from './components-home/news/news.component';
+
 
 
 
@@ -75,19 +72,13 @@ import { NewsComponent } from './components-home/news/news.component';
     AboutUsComponent,
     SnippetComponent,
     NewsComponent,
-    NgModule
+    
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-  
-   
-   // NgbModule.forRoot(),
-
-  
     AngularFontAwesomeModule
-   
   ],
  
   providers: [],
