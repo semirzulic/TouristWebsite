@@ -62,19 +62,19 @@ import {
     };
   
     actions: CalendarEventAction[] = [
-      {
-        label: '<i class="fa fa-fw fa-pencil"></i>',
-        onClick: ({ event }: { event: CalendarEvent }): void => {
-          this.handleEvent('Edited', event);
-        }
-      },
-      {
-        label: '<i class="fa fa-fw fa-times"></i>',
-        onClick: ({ event }: { event: CalendarEvent }): void => {
-          this.events = this.events.filter(iEvent => iEvent !== event);
-          this.handleEvent('Deleted', event);
-        }
-      }
+      // {
+      //   label: '<i class="fa fa-fw fa-pencil"></i>',
+      //   onClick: ({ event }: { event: CalendarEvent }): void => {
+      //     this.handleEvent('Edited', event);
+      //   }
+      // },
+      // {
+      //   label: '<i class="fa fa-fw fa-times"></i>',
+      //   onClick: ({ event }: { event: CalendarEvent }): void => {
+      //     this.events = this.events.filter(iEvent => iEvent !== event);
+      //     this.handleEvent('Deleted', event);
+      //   }
+      // }
     ];
   
     refresh: Subject<any> = new Subject();
@@ -83,8 +83,9 @@ import {
       {
         start: subDays(startOfDay(new Date()), 1),
         end: addDays(new Date(), 1),
-        title: 'A 3 day event',
+        title:  'A 3 day event, 20:00',
         color: colors.red,
+
         actions: this.actions,
         allDay: true,
         resizable: {
@@ -96,19 +97,16 @@ import {
       {
         start: subDays(startOfDay(new Date()), 1),
         end: addDays(new Date(), 1),
-        title: 'Dan drzavnosti',
+        title: 'Dan drzavnosti, 20:00 BKC',
         color: colors.red,
         actions: this.actions,
         allDay: true,
-        resizable: {
-          beforeStart: true,
-          afterEnd: true
-        },
+        
         draggable: true
       },
       {
-        start: startOfDay('Tue Nov 24 2018 00:00:00 GMT+0100 (Central European Standard Time)'),
-        title: 'An event with no  date',
+        start: startOfDay('Sun Nov 25 2018 00:00:00 GMT+0100 (Central European Standard Time)'),
+        title: 'Dan drzavnosti',
         color: colors.yellow,
         actions: this.actions
       },
@@ -133,7 +131,7 @@ import {
       }
     ];
   
-    activeDayIsOpen: boolean = true;
+    activeDayIsOpen: boolean = false;
   
     constructor(private modal: NgbModal) {}
   

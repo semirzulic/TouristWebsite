@@ -1,8 +1,8 @@
 
-  
+    <h2 class="text-center">Events calendar</h2>
   <div class="row text-center">
     
-    <div class="col-md-4">
+    <div class="col-md-4" id="first">
       <div class="btn-group">
         <div
           class="btn btn-primary"
@@ -52,7 +52,7 @@
       (eventTimesChanged)="eventTimesChanged($event)"
       [ngStyle]="{width:'30%'}">
     </mwl-calendar-month-view>
-    <mwl-calendar-week-view
+    <!-- <mwl-calendar-week-view
       *ngSwitchCase="CalendarView.Week"
       [viewDate]="viewDate"
       [events]="events"
@@ -69,12 +69,12 @@
       (eventClicked)="handleEvent('Clicked', $event.event)"
       (eventTimesChanged)="eventTimesChanged($event)"
       [ngStyle]="{width:'30%'}">
-    </mwl-calendar-day-view>
+    </mwl-calendar-day-view> -->
   </div>
   
   <br><br><br>
   
-  <h3>
+  <!-- <h3>
     Edit events
     <button
       class="btn btn-primary pull-right"
@@ -82,7 +82,7 @@
       Add new
     </button>
     <div class="clearfix"></div>
-  </h3>
+  </h3> -->
   
   <table class="table table-bordered">
   

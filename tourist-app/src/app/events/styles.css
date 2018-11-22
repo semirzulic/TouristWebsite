@@ -8,7 +8,7 @@ h3 {
   }
   .oo{
     background-color:#58b3c2;
-    width: 100%;
+    width: 80%;
     
     display: block;
     margin-left: auto;
@@ -20,6 +20,13 @@ h3 {
     margin-left: auto;
     margin-right: auto;
   }
-  .col-md-4{
-    margin-top: 100px;
+  #first{
+    margin-top: 50px;
+  }
+  .btn-primary{
+    background-color: #58b3c2;
+  }
+  h2{
+    margin-top:80px;
+    margin-bottom: 30px;
   }
