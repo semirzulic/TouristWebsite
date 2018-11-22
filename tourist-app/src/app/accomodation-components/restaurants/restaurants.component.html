@@ -1,25 +1,35 @@
 <div class="container">
-  <div class="fixed-top">
-    <h1 class="text-center">Restaurants</h1>
+  
+    <div class="fixed-top container">
+      <h1 class="text-center">Restaurants</h1>
 
-    <div class="dropdown">
-      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-        aria-haspopup="true" aria-expanded="false">
-        Restaurants
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" (click)="window.location = '#row1';" [routerLink]="['/accomodation/restaurants']" fragment="row1" routerLinkActive="router-link-active">Pub Taverna</a>
-        <a class="dropdown-item" (click)="window.location = '#row2';" [routerLink]="['/accomodation/restaurants']" fragment="row2" routerLinkActive="router-link-active">Zlatnik</a>
-        <a class="dropdown-item" (click)="window.location = '#row3';" [routerLink]="['/accomodation/restaurants']" fragment="row3" routerLinkActive="router-link-active">Sezam</a>
-        <a class="dropdown-item" (click)="window.location = '#row4';" [routerLink]="['/accomodation/restaurants']" fragment="row4" routerLinkActive="router-link-active">Royal</a>
-        <a class="dropdown-item" (click)="window.location = '#row5';" [routerLink]="['/accomodation/restaurants']" fragment="row5" routerLinkActive="router-link-active">Citta del Sale</a>
-        <a class="dropdown-item" (click)="window.location = '#row6';" [routerLink]="['/accomodation/restaurants']" fragment="row6" routerLinkActive="router-link-active">Česma</a>
-        <a class="dropdown-item" (click)="window.location = '#row7';" [routerLink]="['/accomodation/restaurants']" fragment="row7" routerLinkActive="router-link-active">Heartland</a>
-        <a class="dropdown-item" (click)="window.location = '#row8';" [routerLink]="['/accomodation/restaurants']" fragment="row8" routerLinkActive="router-link-active">Panonski Lovac</a>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          List of Restaurants
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" (click)="window.location = '#row1';" [routerLink]="['/accomodation/restaurants']"
+            fragment="row1" routerLinkActive="router-link-active">Pub Taverna</a>
+          <a class="dropdown-item" (click)="window.location = '#row2';" [routerLink]="['/accomodation/restaurants']"
+            fragment="row2" routerLinkActive="router-link-active">Zlatnik</a>
+          <a class="dropdown-item" (click)="window.location = '#row3';" [routerLink]="['/accomodation/restaurants']"
+            fragment="row3" routerLinkActive="router-link-active">Sezam</a>
+          <a class="dropdown-item" (click)="window.location = '#row4';" [routerLink]="['/accomodation/restaurants']"
+            fragment="row4" routerLinkActive="router-link-active">Royal</a>
+          <a class="dropdown-item" (click)="window.location = '#row5';" [routerLink]="['/accomodation/restaurants']"
+            fragment="row5" routerLinkActive="router-link-active">Citta del Sale</a>
+          <a class="dropdown-item" (click)="window.location = '#row6';" [routerLink]="['/accomodation/restaurants']"
+            fragment="row6" routerLinkActive="router-link-active">Česma</a>
+          <a class="dropdown-item" (click)="window.location = '#row7';" [routerLink]="['/accomodation/restaurants']"
+            fragment="row7" routerLinkActive="router-link-active">Heartland</a>
+          <a class="dropdown-item" (click)="window.location = '#row8';" [routerLink]="['/accomodation/restaurants']"
+            fragment="row8" routerLinkActive="router-link-active">Panonski Lovac</a>
+        </div>
       </div>
-    </div>
 
-  </div>
+    </div>
+  
 
   <app-navbar></app-navbar>
 

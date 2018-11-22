@@ -1,27 +1,28 @@
 <div class="container">
+  
     <div class="fixed-top container">
         <h1 class="text-center">Hotels</h1>
     
         <div class="dropdown">
           <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
-            Hotels
+            List of Hotels
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" [routerLink]="['/accomodation/restaurants#row1']" routerLinkActive="router-link-active">Mellain</a>
-            <a class="dropdown-item" [routerLink]="['/accomodation/restaurants#row1']" routerLinkActive="router-link-active">Hotel Tuzla</a>
-            <a class="dropdown-item" [routerLink]="['/accomodation/restaurants#row2']" routerLinkActive="router-link-active">Dom penzionera</a>
-            <a class="dropdown-item" [routerLink]="['/accomodation/restaurants#row2']" routerLinkActive="router-link-active">Tehnograd</a>
-            <a class="dropdown-item" [routerLink]="['/accomodation/restaurants#row2']" routerLinkActive="router-link-active">President</a>
-            <a class="dropdown-item" [routerLink]="['/accomodation/restaurants#row2']" routerLinkActive="router-link-active">Heartland City</a>
-            <a class="dropdown-item" [routerLink]="['/accomodation/restaurants#row2']" routerLinkActive="router-link-active">Miris Dunja 88</a>
-            <a class="dropdown-item" [routerLink]="['/accomodation/restaurants#row2']" routerLinkActive="router-link-active">Golden star</a>
-            <a class="dropdown-item" [routerLink]="['/accomodation/restaurants#row2']" routerLinkActive="router-link-active">Motel Rudar</a>
-            <a class="dropdown-item" [routerLink]="['/accomodation/restaurants#row2']" routerLinkActive="router-link-active">Motel Royal</a>
-            <a class="dropdown-item" [routerLink]="['/accomodation/restaurants#row2']" routerLinkActive="router-link-active">Motel Iveljić</a>
-            <a class="dropdown-item" [routerLink]="['/accomodation/restaurants#row2']" routerLinkActive="router-link-active">Pansion Centar</a>
-            <a class="dropdown-item" [routerLink]="['/accomodation/restaurants#row2']" routerLinkActive="router-link-active">Pansion Nargalić</a>
-            <a class="dropdown-item" [routerLink]="['/accomodation/restaurants#row2']" routerLinkActive="router-link-active">Pansion Kipovi</a>
+            <a class="dropdown-item" (click)="window.location = '#row1';" [routerLink]="['/accomodation/hotels']" fragment="row1" routerLinkActive="router-link-active">Mellain</a>
+            <a class="dropdown-item" (click)="window.location = '#row1';" [routerLink]="['/accomodation/hotels']" fragment="row1" routerLinkActive="router-link-active">Hotel Tuzla</a>
+            <a class="dropdown-item" (click)="window.location = '#row2';" [routerLink]="['/accomodation/hotels']" fragment="row2" routerLinkActive="router-link-active">Dom penzionera</a>
+            <a class="dropdown-item" (click)="window.location = '#row2';" [routerLink]="['/accomodation/hotels']" fragment="row2" routerLinkActive="router-link-active">Tehnograd</a>
+            <a class="dropdown-item" (click)="window.location = '#row3';" [routerLink]="['/accomodation/hotels']" fragment="row3" routerLinkActive="router-link-active">President</a>
+            <a class="dropdown-item" (click)="window.location = '#row3';" [routerLink]="['/accomodation/hotels']" fragment="row3" routerLinkActive="router-link-active">Heartland City</a>
+            <a class="dropdown-item" (click)="window.location = '#row4';" [routerLink]="['/accomodation/hotels']" fragment="row4" routerLinkActive="router-link-active">Miris Dunja 88</a>
+            <a class="dropdown-item" (click)="window.location = '#row4';" [routerLink]="['/accomodation/hotels']" fragment="row4" routerLinkActive="router-link-active">Golden star</a>
+            <a class="dropdown-item" (click)="window.location = '#row5';" [routerLink]="['/accomodation/hotels']" fragment="row5" routerLinkActive="router-link-active">Motel Rudar</a>
+            <a class="dropdown-item" (click)="window.location = '#row5';" [routerLink]="['/accomodation/hotels']" fragment="row5" routerLinkActive="router-link-active">Motel Royal</a>
+            <a class="dropdown-item" (click)="window.location = '#row6';" [routerLink]="['/accomodation/hotels']" fragment="row6" routerLinkActive="router-link-active">Motel Iveljić</a>
+            <a class="dropdown-item" (click)="window.location = '#row6';" [routerLink]="['/accomodation/hotels']" fragment="row6" routerLinkActive="router-link-active">Pansion Centar</a>
+            <a class="dropdown-item" (click)="window.location = '#row7';" [routerLink]="['/accomodation/hotels']" fragment="row7" routerLinkActive="router-link-active">Pansion Nargalić</a>
+            <a class="dropdown-item" (click)="window.location = '#row7';" [routerLink]="['/accomodation/hotels']" fragment="row7" routerLinkActive="router-link-active">Pansion Kipovi</a>
           </div>
         </div>
     
@@ -34,7 +35,7 @@
 
     <!-- Hotel Mellain -->
 
-    <div id="box1" class="col-12 col-sm-12 col-md-12 col-lg-6">
+    <div id="row1" class="col-12 col-sm-12 col-md-12 col-lg-6 box1">
       <h3 class="text-center">Hotel Mellain</h3>
       <!-- <button class="btn btn-info"><a target="_blank" href="http://mellainhotel.com/">Website</a></button> -->
       <img src="https://tztz.ba/ba/wp-content/uploads/2018/07/mellain.jpg" alt="Hotel Mallain">
@@ -65,7 +66,7 @@
 
     <!-- Hotel Tuzla -->
 
-    <div id="box2" class="col-12 col-sm-12 col-md-12 col-lg-6">
+    <div id="row1"  class="col-12 col-sm-12 col-md-12 col-lg-6 box2">
       <h3 class="text-center">Hotel Tuzla</h3>
       <!-- <button class="btn btn-info"><a target="_blank" href="https://www.facebook.com/Hotel-Tuzla-1683395918560374/">Website</a></button> -->
       <img src="https://tztz.ba/ba/wp-content/uploads/2018/07/hoteltuzla.jpg" alt="Hotel Tuzla">
@@ -97,7 +98,7 @@
 
     <!-- Hotel Dom penzionera -->
 
-    <div id="box1" class="col-12 col-sm-12 col-md-12 col-lg-6">
+    <div id="row2" class="col-12 col-sm-12 col-md-12 col-lg-6 box1">
       <h3 class="text-center">Hotel Dom penzionera</h3>
       <!-- <button class="btn btn-info"><a target="_blank" href="https://dompenzionera.ba/">Website</a></button> -->
       <img src="https://tztz.ba/ba/wp-content/uploads/2018/07/hoteldompenzionera.jpg" alt="Hotel 'Dom penzionera'">
@@ -131,7 +132,7 @@
 
     <!-- Hotel Tehnograd -->
 
-    <div id="box2" class="col-12 col-sm-12 col-md-12 col-lg-6">
+    <div id="row2" class="col-12 col-sm-12 col-md-12 col-lg-6 box2">
       <h3 class="text-center">Hotel Tehnograd</h3>
       <!-- <button class="btn btn-info"><a target="_blank" href="http://hotel-tehnograd.com/">Website</a></button> -->
       <img src="https://tztz.ba/ba/wp-content/uploads/2018/07/hoteltehnograd.jpg" alt="Hotel 'Tehnograd'">
@@ -164,7 +165,7 @@
 
     <!-- Hotel President -->
 
-    <div id="box1" class="col-12 col-sm-12 col-md-12 col-lg-6">
+    <div id="row3" class="col-12 col-sm-12 col-md-12 col-lg-6 box1">
       <h3 class="text-center">Hotel President</h3>
       <!-- <button class="btn btn-info"><a target="_blank" href="http://presidenthotel.ba/">Website</a></button> -->
       <img src="https://tztz.ba/ba/wp-content/uploads/2018/07/hotelpresident.jpg" alt="Hotel 'President'">
@@ -199,7 +200,7 @@
 
     <!-- Hotel Heartland City -->
 
-    <div id="box2" class="col-12 col-sm-12 col-md-12 col-lg-6">
+    <div id="row3" class="col-12 col-sm-12 col-md-12 col-lg-6 box2">
       <h3 class="text-center">Hotel Heartland City</h3>
       <!-- <button class="btn btn-info"><a target="_blank" href="https://hotel-heartland-city.business.site/">Website</a></button> -->
       <img src="https://tztz.ba/ba/wp-content/uploads/2018/07/hotelhartland.jpg" alt="Hotel 'Heartland City'">
@@ -231,7 +232,7 @@
 
     <!-- Hotel Miris Dunja 88 -->
 
-    <div id="box1" class="col-12 col-sm-12 col-md-12 col-lg-6">
+    <div id="row4" class="col-12 col-sm-12 col-md-12 col-lg-6 box1">
       <h3 class="text-center">Hotel Miris Dunja 88</h3>
       <!-- <button class="btn btn-info"><a target="_blank" href="http://mirisdunja88.ba/">Website</a></button> -->
       <img src="https://tztz.ba/ba/wp-content/uploads/2018/07/mirisdunja.jpg" alt="Hotel 'Miris Dunja 88'">
@@ -263,7 +264,7 @@
 
     <!-- Hotel Golden star -->
 
-    <div id="box2" class="col-12 col-sm-12 col-md-12 col-lg-6">
+    <div id="row4" class="col-12 col-sm-12 col-md-12 col-lg-6 box2">
       <h3 class="text-center">Hotel Golden star</h3>
       <!-- <button class="btn btn-info"><a target="_blank" href="http://goldenstarhotel.ba/">Website</a></button> -->
       <img src="https://tztz.ba/ba/wp-content/uploads/2018/07/hotelgoldenstar.jpg" alt="Hotel 'Golden star'">
@@ -296,7 +297,7 @@
 
     <!-- Motel Rudar -->
 
-    <div id="box1" class="col-12 col-sm-12 col-md-12 col-lg-6">
+    <div id="row5" class="col-12 col-sm-12 col-md-12 col-lg-6 box1">
       <h3 class="text-center">Motel Rudar</h3>
       <!-- <button class="btn btn-info"><a target="_blank" href="https://rudar.ba/motel/">Website</a></button> -->
       <img src="https://tztz.ba/ba/wp-content/uploads/2018/07/motelrudar.jpg" alt="Motel 'Rudar'">
@@ -333,7 +334,7 @@
 
     <!-- Motel Royal -->
 
-    <div id="box2" class="col-12 col-sm-12 col-md-12 col-lg-6">
+    <div id="row5" class="col-12 col-sm-12 col-md-12 col-lg-6 box2">
       <h3 class="text-center">Motel Royal</h3>
       <!-- <button class="btn btn-info"><a target="_blank" href="https://www.royalmotel.ba/">Website</a></button> -->
       <img src="https://tztz.ba/ba/wp-content/uploads/2018/07/motelroyal.jpg" alt="Motel 'Royal'">
@@ -368,7 +369,7 @@
 
     <!-- Motel Iveljić Tuzla -->
 
-    <div id="box1" class="col-12 col-sm-12 col-md-12 col-lg-6">
+    <div id="row6" class="col-12 col-sm-12 col-md-12 col-lg-6 box1">
       <h3 class="text-center">Motel Iveljić Tuzla</h3>
       <!-- <button class="btn btn-info"><a target="_blank" href="http://www.motel-iveljic.com.ba/">Website</a></button> -->
       <img src="https://tztz.ba/ba/wp-content/uploads/2018/07/moteliveljic.jpg" alt="Motel Iveljić Tuzla">
@@ -399,7 +400,7 @@
 
     <!-- Pansion Centar Tuzla -->
 
-    <div id="box2" class="col-12 col-sm-12 col-md-12 col-lg-6">
+    <div id="row6" class="col-12 col-sm-12 col-md-12 col-lg-6 box2">
       <h3 class="text-center">Pansion Centar Tuzla</h3>
       <!-- <button class="btn btn-info"><a target="_blank" href="http://www.pansioncentar.com/">Website</a></button> -->
       <img src="https://tztz.ba/ba/wp-content/uploads/2018/07/pansioncentar.jpg" alt="Pansion 'Centar' Tuzla">
@@ -430,7 +431,7 @@
 
     <!-- Pansion Nargalić -->
 
-    <div id="box1" class="col-12 col-sm-12 col-md-12 col-lg-6">
+    <div id="row7" class="col-12 col-sm-12 col-md-12 col-lg-6 box1">
       <h3 class="text-center">Pansion Nargalić</h3>
       <!-- <button class="btn btn-info"><a target="_blank" href="http://www.pansion-nargalic.com/">Website</a></button> -->
       <img src="https://tztz.ba/ba/wp-content/uploads/2018/07/pansionnargalic.jpg" alt="Pansion 'Nargalić'">
@@ -460,7 +461,7 @@
 
     <!-- Pansion Kipovi -->
 
-    <div id="box2" class="col-12 col-sm-12 col-md-12 col-lg-6">
+    <div id="row7" class="col-12 col-sm-12 col-md-12 col-lg-6 box2">
       <h3 class="text-center">Pansion Kipovi</h3>
       <!-- <button class="btn btn-info"><a target="_blank" href="http://www.pansionkipovi.com/">Website</a></button> -->
       <img src="https://tztz.ba/ba/wp-content/uploads/2018/07/pansionkipovi.jpg" alt="Pansion' Kipovi'">
@@ -514,7 +515,9 @@
         </div>
       </div> -->
 
+      <app-booking></app-booking>
 
+      
   </div>
 </div>
 <app-footer></app-footer>

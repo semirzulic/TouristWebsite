@@ -2,6 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 //import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
+
+import { FormsModule } from '@angular/forms';
+
 import { AppComponent } from './app.component';
 import { HistoryComponent } from './history/components-history/history/history.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
@@ -36,6 +39,8 @@ import { NextbikeComponent } from './component-transport/transport/nextbike/next
 import { AboutUsComponent } from './about/about-us/about-us.component';
 import { SnippetComponent } from './components-home/snippet/snippet.component';
 import { NewsComponent } from './components-home/news/news.component';
+import { BookingComponent, SearchPipe } from './booking/booking.component';
+
 
 
 @NgModule({
@@ -72,11 +77,14 @@ import { NewsComponent } from './components-home/news/news.component';
     NextbikeComponent,
     AboutUsComponent,
     SnippetComponent,
-    NewsComponent
+    NewsComponent,
+    BookingComponent,
+    SearchPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
    // NgbModule.forRoot(),
 
   

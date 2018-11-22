@@ -32,12 +32,6 @@ export class RestaurantsComponent implements OnInit {
     console.log(this.show);
   }
 
-  
-
-  
-
-  
-
 
   ngAfterViewInit(): void {
     try {
