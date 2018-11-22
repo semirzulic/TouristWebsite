@@ -2,7 +2,6 @@ import { Component, OnInit, Pipe, PipeTransform } from '@angular/core';
 
 import { ActivatedRoute } from '@angular/router';
 
-
 @Pipe({
   name: 'search'
 })
@@ -15,8 +14,6 @@ export class SearchPipe implements PipeTransform {
   }
 }
 
-
-
 @Component({
   selector: 'app-booking',
   templateUrl: './booking.component.html',
@@ -24,7 +21,20 @@ export class SearchPipe implements PipeTransform {
 })
 export class BookingComponent implements OnInit {
 
-  
+  query: string = '';
+  showSearch() {
+
+    console.log(this.query);
+    console.log(this.query.length);
+    if (this.query.length <= 1) {
+      console.log(this.query);
+      this.show = false;
+    } else {
+      this.show = true;
+      console.log(this.query);
+    }
+  }
+
   items = [
     {
       title: 'History of Tuzla',
@@ -436,46 +446,13 @@ export class BookingComponent implements OnInit {
       A map of Tuzla is a valuable tool to use as you plan your trip, but it's also really helpful once you arrive. With this Tuzla map, you'll be able to find your way around more easily (and wander without fear of getting totally lost!), and plan your days in Tuzla more effectively.`
     }
 
-
-
   ];
 
- 
+  show: boolean = false;
 
-  show = false; 
- 
+  ngOnInit() {
 
-  ngOnInit(){
-    
   }
-
-  
-
-  query: string = '';
-  showSearch() {
-    /* console.log(this.query);
-    console.log(this.query.length);
-    if (this.query.length != '') {
-      console.log(this.query);
-      this.show = true;
-    } else {
-      this.show = false;
-      console.log(this.query);
-    } */
-    console.log(this.query);
-    console.log(this.query.length);
-    if (this.query.length <= 1) {
-      console.log(this.query);
-      this.show = false;
-    } else {
-      this.show = true;
-      console.log(this.query);
-    }
-  }
-
-
-
-
 
 }
 
