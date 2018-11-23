@@ -1,24 +1,149 @@
-<div class="fixed-top" style="background-color:white;">
-   <h1 class="text-center py-3"> Airports </h1>
+<div class="container fixed-top">
+<div class="pb-3" style="background-color: #f5f5f0; margin-top:60px; border: solid 1px black; margin-left: -15px; margin-right: -15px;">
+   <h1 class="text-center" style="margin-top:30px;"> Airports </h1>
     <div class="dropdown" style="text-align:center;">
-        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" 
-        aria-haspopup="true" aria-expanded="false">
-          Airports:
-        </a>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" 
+          aria-haspopup="true" aria-expanded="false">
+          Airports: </button>
+        
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" (click)="window.location = '#ariport1';" [routerLink]="['/airports']" fragment="airport1" routerLinkActive="router-link-active">Tuzla</a>
+                <a class="dropdown-item" (click)="window.location = '#airport2';" [routerLink]="['/airports']" fragment="airport2" routerLinkActive="router-link-active">Sarajevo</a>
+                <a class="dropdown-item" (click)="window.location = '#airport3';" [routerLink]="['/airports']" fragment="airport3" routerLinkActive="router-link-active">Belgrade</a>
+                <a class="dropdown-item" (click)="window.location = '#airport4';" [routerLink]="['/airports']" fragment="airport4" routerLinkActive="router-link-active">Zagreb</a>
+                </div>
+                <button class="btn btn-secondary" (click) = showHideFind()> Find Flight </button>
       </div>
-  </div>
+    </div>
+
+
+    <!-- Block for searching flights -->
+    
+      <div *ngIf="showFind" style="background-color:darkorange; border: solid 2px black; margin-left:auto; 
+      margin-right:auto; padding-top: 5px; padding-bottom: 5px; text-align: center; width:69%; overflow-x: hidden; 
+      overflow-y:inherit; height: 320px;">
+ 
+  <!-- Choose Destination -->
+
+  <h6><b class="fa fa-plane fa-lg"> </b> Destination </h6>
+
+    <!-- Choose Start Destination -->
+
+    <div class="input-group mb-1">
+          <div class="input-group-prepend ml-1">
+            <label class="input-group-text" for="inputGroupSelect01">From</label>
+          </div>
+          <select #selectFrom class="custom-select mr-1" id="inputGroupSelect01">
+              <option selected value=''>Choose...</option>
+              <option [value]="airport.id" *ngFor="let airport of listAirports" >{{airport.name}}</option>
+          </select>
+        </div>
+
+        <!-- Choose Return Destination -->
+
+          <div class="input-group mb-1">
+          <div class="input-group-prepend ml-1">
+            <label class="input-group-text" for="inputGroupSelect01">To</label>
+          </div>
+          <select #selectTo class="custom-select mr-1" id="inputGroupSelect01">
+            <option selected>Choose...</option>
+            <option [value]="airport.id" *ngFor="let airport of listAirports">{{airport.name}}</option>
+          </select>
+        </div>
+  
+        <!-- Choose Depart Date -->
+
+        <h6> <b class="fa fa-calendar fa-lg"> </b> Depart Date </h6>
+
+        <!-- Choose Depart Year -->
+  
+        <div class="input-group mb-1">
+
+        <div class="input-group-prepend ml-1" style="width:150px;">
+          <label class="input-group-text" for="inputGroupSelect01">Year</label>
+        <select #selectStartYear class="custom-select mr-1" id="inputGroupSelect01">
+              <option selected disabled hidden> {{yearNow}} </option>
+          <option  *ngFor="let year of yearsForFlight">{{year}}</option>>
+        </select>
+      </div>
+  
+        <!-- Choose Depart Month -->
+  
+          <div class="input-group-prepend ml-1" style="width:270px;">
+            <label class="input-group-text" for="inputGroupSelect01">Month</label>
+          <select  #selectStartMonth (change)="setNumberDays(selectStartMonth.value, selectStartYear.value)"
+          class="custom-select mr-1" id="inputGroupSelect01">
+            <option value={{monthNowNumber}} selected disabled hidden> {{monthNowName}} </option>
+            <option [value]="month.id" *ngFor="let month of months">{{month.name}}</option>
+          </select>
+         </div>
+  
+          <!-- Choose Depart Day -->
+  
+          <div class="input-group-prepend ml-1" style="width:150px;">
+              <label class="input-group-text" for="inputGroupSelect01">Day</label>
+            <select #selectStartDay class="custom-select mr-1" id="inputGroupSelect01">
+              <option selected disabled hidden> {{daysNow}} </option>
+              <option *ngFor="let noDays of arrayNumberDays">{{noDays}}</option>
+            </select>
+          </div>
+      </div>
+  
+  
+      <!-- Choose Return Date -->
+
+      <h6><b class="fa fa-calendar fa-lg"> </b> Return Date </h6>
+
+      <!-- Choose Return Year -->
+  
+      <div class="input-group mb-1">
+        <div class="input-group-prepend ml-1" style="width:150px;">
+          <label class="input-group-text" for="inputGroupSelect01">Year</label>
+        <select #selectReturnYear class="custom-select mr-1" id="inputGroupSelect01">
+              <option selected disabled hidden> {{datePlusDay | date: 'yyyy'}} </option>
+          <option  *ngFor="let year of yearsForFlight">{{year}}</option>>
+        </select>
+      </div>
+  
+      <!-- Choose Return Month -->
+  
+        <div class="input-group-prepend ml-1" style="width:270px;">
+          <label class="input-group-text" for="inputGroupSelect01">Month</label>
+        <select #selectReturnMonth (change)="setNumberDays(selectReturnMonth.value, selectReturnYear.value)" 
+        class="custom-select mr-1" id="inputGroupSelect01">
+              <option value={{monthNowNumber}} selected disabled hidden> {{datePlusDay | date: 'MMMM'}} </option>
+              <option [value]="month.id" *ngFor="let month of months">{{month.name}}</option>
+            </select>
+            </div>
+  
+            <!-- Choose Return Day -->
+  
+              <div class="input-group-prepend ml-1" style="width:150px;">
+                <label class="input-group-text" for="inputGroupSelect01">Day</label>
+              <select #selectReturnDay class="custom-select mr-1" id="inputGroupSelect01">
+              <option selected disabled hidden> {{datePlusDay | date: 'dd'}} </option>
+              <option *ngFor="let noDays of arrayNumberDays">{{noDays}}</option>
+            </select>
+          </div>
+        </div>
+        
+        <a class="btn btn-info" (click)="findFlight(selectFrom.value, selectTo.value, 
+        selectStartYear.value, selectStartMonth.value, selectStartDay.value,
+        selectReturnYear.value, selectReturnMonth.value, selectReturnDay.value)" 
+        href={{fullLinkCheapFlights}} target="_blank" role="button" style="border: solid 1px black"><b class="fa fa-search"></b> Find </a>
+      </div>
+    </div>
+  
+ 
 <app-navbar></app-navbar>
 
-<div class="mb-2" style="margin-top:240px;">
-   
+
+<div class="pt-3 mb-2" style="margin-top:200px;">
+  
+     
 <!-- Section Airport Tuzla -->
 
-<div id="backgroundColorAndBorder" class="row mx-auto" style="width:100%;">
+<div id="airport1" class="row mx-auto" style="width:100%; border-top: solid black 1px;">
 <div class="col-sm">
     <span class="float-left">
       <h2> Tuzla </h2>
@@ -32,11 +157,12 @@
     the diaspora and travelers from neighboring countries Croatia and Serbia. 
     The airport is a civilian airport and a military airbase.
   </span>
+  
 </div>
 </div>
 
 <!-- Section Airport Sarajevo -->
-<div id="backgroundColorAndBorder" class="row mx-auto" style="width:100%">
+<div id="airport2" class="row mx-auto" style="width:100%; border-top: solid black 1px;">
     <div class="col-sm">
     <span class="float-left">
         <h2> Sarajevo </h2>
@@ -54,7 +180,7 @@
 
 <!-- Section Airport Belgrade -->
 
-<div id="backgroundColorAndBorder" class="row mx-auto" style="width:100%">
+<div id="airport3" class="row mx-auto" style="width:100%; border-top: solid black 1px;">
     <div class="col-sm">
         <span class="float-left">
           <h2> Belgrade </h2>
@@ -76,7 +202,7 @@
 
 <!-- Section Airport Zagreb -->
 
-<div id="backgroundColorAndBorder" class="row mx-auto" style="width:100%">
+<div id="airport4" class="row mx-auto" style="width:100%; border-top: solid black 1px;">
     <div class="col-sm">
         <span class="float-left">
             <h2> Zagreb </h2>
@@ -102,4 +228,5 @@
     </div>
     </div>
     </div>
+
 <app-footer></app-footer>

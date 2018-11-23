@@ -1,7 +1,25 @@
-<app-navbar></app-navbar>
-<div class="mb-2">
-    <h1 class="text-center py-2"> Rent a Car </h1> 
-<div id="backgroundColorAndBorder" class="row mx-auto" style="width:75%">
+<div class="container fixed-top pb-2" style="background-color: #f5f5f0; margin-top:60px; border: solid 1px black;">
+    <h1 class="text-center" style="margin-top:30px;"> Rent a car </h1>
+     <div class="dropdown" style="text-align:center;">
+         <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" 
+         aria-haspopup="true" aria-expanded="false" style="width:125px;">
+           Rent a car:
+         </a>
+             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                 <a class="dropdown-item" (click)="window.location = '#rent1';" [routerLink]="['/rentacar']" 
+                 fragment="rent1" routerLinkActive="router-link-active">Perfect</a>
+                 <a class="dropdown-item" (click)="window.location = '#rent2';" [routerLink]="['/rentacar']" 
+                 fragment="rent2" routerLinkActive="router-link-active">Intercar</a>
+                 <a class="dropdown-item" (click)="window.location = '#rent3';" [routerLink]="['/rentacar']" 
+                 fragment="rent3" routerLinkActive="router-link-active">Dalton</a>
+                 </div>
+       </div>
+   </div>
+ <app-navbar></app-navbar>
+ 
+ <div class="pt-4 mb-2" style="margin-top:200px;">
+
+<div id="rent1" class="row mx-auto" style="width:75%; border-top: solid black 1px;">
 <div class="col-sm">
     <span>    
         <div>
@@ -29,9 +47,9 @@
 
           <div class="card border-dark mb-3" style="min-width: 180px; max-width: 70%;">
               <div class="card-header"> Informations
-                  <p *ngIf='openedIntercar' style="font-size:20px; color: green;">
+                  <p *ngIf='openedIntercar' style="font-size:20px; color: green; margin-bottom:-5px;">
                       <b> Opened now</b></p>
-                      <p *ngIf='!openedIntercar' style="font-size:20px; margin-bottom: -1%; color:red;">
+                      <p *ngIf='!openedIntercar' style="font-size:20px; margin-bottom:-5px; color:red;">
                         <b> Closed now</b></p>
               </div>
               <div class="card-body text-dark">
@@ -52,41 +70,13 @@
                 </p>
               </div>
             </div>
-
-
-
-
-
-
-          <!-- <div class="row justify-content-center" >
-        <div id="contactRentCar" class="col-6 mb-2 mx-1" >
-          <h5 class="pt-2"> <u> Contact </u> </h5>
-          <p class="px-2">
-             <b  class="fa fa-phone"> </b> <b> Phone:</b> +387(0) 35 255 535 <br>
-            <b class="fa fa-envelope-o"> </b> <b> Email: </b> info@perfect.ba <br>
-            <b class="fas fa-map-marker-alt"> </b> <b> Address: </b> Zavnobih-a 13 Hotel Tuzla, 75000 Tuzla, Bosna i Hercegovina <br> 
-            </p>
-            <a class="btn btn-info" href="https://www.perfect.ba/?page_id=157" target="_blank" role="button"> Website </a> 
-        </div>
-        <div id="contactRentCar" class="col-4 mb-2 mx-1 text-left" >
-          <h5 class="pt-2 text-center"> <u> Working hours </u> </h5>
-          <b> Mon-Fri: </b> <br> 
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 08-17 <br>
-            <b>Saturday: </b> <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 08-14 <br>
-            <p *ngIf='openedPerfect' class="text-center pt-2" style="font-size:30px; color: green;">
-              <b> Opened now</b></p>
-              <p *ngIf='!openedPerfect' class="text-center pt-2" style="font-size:30px; color: red;">
-                <b> Closed now</b></p>
-        </div>
-      </div> -->
   </span>
 </div>
 </div>
 
 <!-- Section Agency Intercar -->
 
-<div id="backgroundColorAndBorder" class="row mx-auto" style="width:75%">
+<div id="rent2" class="row mx-auto" style="width:75%; border-top: solid black 1px;">
     <div class="col-sm">
     <span>
         <div>
@@ -119,9 +109,9 @@
 
              <div class="card border-dark mb-3" style="min-width: 180px; max-width: 70%;">
                 <div class="card-header"> Informations
-                    <p *ngIf='openedIntercar' style="font-size:20px; color: green;">
+                    <p *ngIf='openedIntercar' style="font-size:20px; color: green; margin-bottom:-5px;">
                         <b> Opened now</b></p>
-                        <p *ngIf='!openedIntercar' style="font-size:20px; margin-bottom: -1%; color:red;">
+                        <p *ngIf='!openedIntercar' style="font-size:20px; margin-bottom:-5px; color:red;">
                           <b> Closed now</b></p>
                 </div>
                 <div class="card-body text-dark">
@@ -142,40 +132,13 @@
                   </p>
                 </div>
               </div>
-
-
-
-
-
-        <!--     <div class="row justify-content-center" >
-                <div id="contactRentCar" class="col-6 mb-2 mx-1" >
-                  <h5 class="pt-2"> <u> Contact </u> </h5>
-                  <p class="px-2">
-                     <b  class="fa fa-phone"> </b> <b> Phone:</b> +387 35 247 247 <br>
-                    <b class="fa fa-envelope-o"> </b> <b> Email: </b> tuzla@intercar.ba <br>
-                    <b class="fas fa-map-marker-alt"> </b> <b> Address: </b> Turalibegova bb, Tuzla <br> 
-                    </p>
-                  <a class="btn btn-info" href="https://www.intercar.ba/o-nama.php" target="_blank" role="button"> Website </a> 
-              </div>
-              <div id="contactRentCar" class="col-4 mb-2 mx-1 text-left" >
-                  <h5 class="pt-2 text-center"> <u> Working hours </u> </h5>
-                  <b> Mon-Fri: </b> <br> 
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 08-17 <br>
-                    <b>Saturday: </b> <br>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 08-15 <br>
-                    <p *ngIf='openedIntercar' class="text-center pt-2" style="font-size:30px; color: green;">
-                      <b> Opened now</b></p>
-                      <p *ngIf='!openedIntercar' class="text-center pt-2" style="font-size:30px; color: red;">
-                        <b> Closed now</b></p>
-                </div>
-              </div>-->
    </span>
 </div>
 </div>
 
 <!-- Section Agency Dalton -->
 
-<div id="backgroundColorAndBorder" class="row mx-auto" style="width:75%">
+<div id="rent3" class="row mx-auto" style="width:75%; border-top: solid black 1px;">
     <div class="col-sm">
         <span>
           <div>
@@ -203,29 +166,12 @@
                   </p>
                   <hr>
                       <b> Opening hours: </b> <br>
-                      <p class="text-center" style="font-size:20px; color: red;">
+                      <p class="text-center" style="font-size:20px; color: red; margin-bottom:-5px;">
                           <b> Unavailable</b>
                         </p>
                 </div>
               </div>
              
-             
-             <!-- <div class="row justify-content-center" >
-                <div id="contactRentCar" class="col-6 mb-2 mx-1" >
-                  <h5 class="pt-2"> <u> Contact </u> </h5>
-                  <p class="px-2">
-                     <b  class="fa fa-phone"> </b> <b> Phone:</b> +387(0) 35 255 535 <br>
-                    <b class="fa fa-envelope-o"> </b> <b> Email: </b> ingo@dalton.ba <br>
-                    <b class="fas fa-map-marker-alt"> </b> <b> Address: </b> Armije BiH, Tuzla 75000 <br> 
-                    </p>
-                <a class="btn btn-info" href="https://dalton.ba/cars.php?lang=en" target="_blank" role="button"> Website </a> 
-            </div>
-            <div id="contactRentCar" class="col-4 mb-2 mx-1 text-left" >
-                <h5 class="pt-2 text-center"> <u> Working hours </u> </h5>
-                    <p class="text-center" style="font-size:20px; color: red; padding-top:20%;">
-                      <b> Unavailable</b></p>
-              </div>
-            </div> -->
       </span>
     </div>
 </div>

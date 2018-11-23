@@ -38,6 +38,7 @@ import { SnippetComponent } from './components-home/snippet/snippet.component';
 import { NewsComponent } from './components-home/news/news.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
