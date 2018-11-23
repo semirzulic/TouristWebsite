@@ -18,3 +18,7 @@ a, a:focus , a:hover{
 	background-color: #289dcc;
 }
 
+.card {
+	margin: 10px;
+}
+
