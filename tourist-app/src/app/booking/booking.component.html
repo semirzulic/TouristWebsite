@@ -1,12 +1,18 @@
-<!-- <input (keydown.enter)="showSearch()" [(ngModel)]="query" #searchTerm > -->
-<input [(ngModel)]="query" (keydown)="showSearch()">
-<button>Search</button>
-<!-- <div *ngFor="let item of items | search:'naslov,id,text':query">{{item.title}}</div> -->
-<div style="overflow-y: scroll; height:100px; width: 450px;">
-<ul *ngIf="show">
-  <li  *ngFor="let item of items | search:'naslov,text':query"><a target="_blank" href="{{item.url}}">{{item.title}}</a>
-  <!-- <p>{{item.summary}}</p> -->
-  </li>
-</ul>
+<div class="main-search">
+  <h2 class="text-center">Search</h2>
+  <div class="searchbar input-group input-group-lg">
+    <input class="form-control input-lg" type="text" placeholder="Search..." [(ngModel)]="query" (keydown)="showSearch()"
+      aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+  </div>
 </div>
 
+<div class="searchResults" style="overflow-y: scroll; height: 100px;">
+
+  <ul class="list-group" *ngIf="show">
+    <li class="list-group-item" *ngFor="let item of items | search:'naslov,text':query">
+
+      <a [routerLink]=item.url routerLinkActive="router-link-active">{{item.title}}</a>
+
+    </li>
+  </ul>
+</div>

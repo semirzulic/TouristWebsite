@@ -3,16 +3,12 @@
 }
 
 .box1 {
-    /* background: lightgrey; */
-    /* border: 1px solid black; */
     border-left: 0.1pt solid black; 
     border-top: 0.1pt solid black; 
 
 }
 
 .box2 {
-    /* background: lightgrey;  */
-    /* border: 1px solid black; */
     border-right: 0.1pt solid black; 
     border-left: 0.1pt solid black;
     border-top: 0.1pt solid black;
@@ -43,6 +39,10 @@ h4 {
     text-align: center;
 }
 
+p {
+    text-align: justify;
+}
+
 img {
     width: 100%;
 }
@@ -61,15 +61,6 @@ img {
     margin-top: 0;
 }
 
-/* .card {
-    display: block;
-    margin: auto;
-    background: lightgrey;
-}
-
-.card-header {
-    box-shadow: -.5px 0 0 #818181;
-} */
 
 .card {
     display: block;
@@ -91,7 +82,7 @@ img {
 
 .accordion {
     margin-bottom: 5px;
-    /* width: 30%; */
+    
 }
 
 .row {

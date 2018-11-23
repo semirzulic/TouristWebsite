@@ -5,7 +5,11 @@ import { ActivatedRoute } from '@angular/router';
 @Pipe({
   name: 'search'
 })
+
 export class SearchPipe implements PipeTransform {
+
+  // Custom pipe
+
   public transform(value, keys: string, term: string) {
 
     if (!term) return value;
@@ -22,24 +26,24 @@ export class SearchPipe implements PipeTransform {
 export class BookingComponent implements OnInit {
 
   query: string = '';
+
   showSearch() {
 
-    console.log(this.query);
-    console.log(this.query.length);
+    // Function to hide search results if there is no input data
+
     if (this.query.length <= 1) {
-      console.log(this.query);
       this.show = false;
     } else {
       this.show = true;
-      console.log(this.query);
     }
   }
+
+  // items is array with objects with search datas
 
   items = [
     {
       title: 'History of Tuzla',
-      url: 'https://getbootstrap.com/docs/4.1/content/reboot/',
-      /* id: 1, */
+      url: '/history',
       summary: `Tuzla is one of the oldest settlements in Europe with a continuity of living. In Tuzla was found the oldest resort in Europe, dating back to the Neolithic Age (the youngest stone age), unlike other foundations of the so-called settlements in Europe dating from the Iron Age. A large number of Neolithic objects were found in Tuzla, among which a special place is the storage tanks, ie salted water salt vessels.`,
       text: `Tuzla is one of the oldest settlements in Europe with a continuity of living. In Tuzla was found the oldest resort in Europe, dating back to the Neolithic Age (the youngest stone age), unlike other foundations of the so-called settlements in Europe dating from the Iron Age. A large number of Neolithic objects were found in Tuzla, among which a special place is the storage tanks, ie salted water salt vessels. These archeological finds confirm that other Neolithic inhabitants in this area exploited salty springs. The earliest European cultures used by it were dated to the Copper Age, meaning that the neolithic finds in Tuzla move the boundaries of knowledge and use of salt in human nutrition from the age of eneolite to the neolithic age. It should be noted that the Neolithic settlement was found in the very center of today's town of Tuzla, which is a unique case and proof that this settlement was the beginning of the continuity of living in the area of today's city, throughout all historical periods, from Neolith to today.
       
@@ -51,15 +55,13 @@ export class BookingComponent implements OnInit {
     },
     {
       title: 'Tuzla attractions map',
-      url: 'https://getbootstrap.com/docs/4.1/getting-started/accessibility/',
-      /* id: 2, */
+      url: '/attraction',
       summary: `Tuzla attractions map`,
       text: "Tuzla attractions map"
     },
     {
       title: "Pannonian lakes",
-      url: 'https://getbootstrap.com/docs/4.1/migration/',
-      /* id: 3, */
+      url: '/sights/attractions',
       summary: `The complex of salted Pannonian lakes is the only salt lake and unique tourist attraction in Europe.`,
       text: `
       The complex of salted Pannonian lakes is the only salt lake and unique tourist attraction in Europe. The city of Tuzla is the winner of the highest award of the World Tourism Organization Odyssey, "United Nations" (2012 UNWTO ULYSSES AWARD) awarded for innovation in the field of tourism. Tuzla is the only city in Europe that has salt lake and the only city in the world whose salt lakes, beaches and beaches are located in the city center. The complex of the Pannonian Lakes consists of three lakes of different sizes and depths, and Slani waterfalls. Within the complex of the Pannonian Lakes, there is the Archeological Park Neolithic-Shared settlement and the Museum geological setting "Pannonica" , children's amusement park, sports fields, and many other catering, cultural and entertainment facilities. In 15 years Panonika complex has visited more than 3.7 million tourists.
@@ -67,51 +69,44 @@ export class BookingComponent implements OnInit {
     },
     {
       title: 'The central city park',
-      url: 'https://getbootstrap.com/docs/4.1/content/reboot/',
-      /* id: 4, */
+      url: '/sights/attractions',
       summary: `Tuzla is the city with the largest park areas in Bosnia and Herzegovina. The central city park is located in the pedestrian zone of the historical core of Tuzla.`,
       text: `Tuzla is the city with the largest park areas in Bosnia and Herzegovina. The central city park is located in the pedestrian zone of the historical core of Tuzla. It consists of pedestrian paths paved with granite, a bench for relaxation and relaxation. Wi-Fi is available to visitors to the park. The City Park has monuments inspired by the Bosnian Middle Ages, and the central place occupies the statue of the first Bosnian king Tvrtko I Kotromanić. There is also a stone obelisk, on which the text of the Kulina Bana Charter is printed. The bridge is provided with a quality pedestrian connection of the Central City Park with the complex of the Pannonian Lakes. Pasarela is the cluster of the two largest pedestrian zones in the center - the complex of Slana Spa and the historical city core.`
     },
     {
       title: 'Archaeological Park-Neolithic Shared Settlement',
-      url: 'https://getbootstrap.com/docs/4.1/content/reboot/',
-      /* id: 5, */
+      url: '/sights/attractions',
       summary: `Tuzla is a city that links its name and its past to the salt, the natural wealth that remained below Tuzla after the Pannonian Sea withdrew to the Black Sea 10 million years ago, in the form of salt water and stone salt.`,
       text: `Tuzla is a city that links its name and its past to the salt, the natural wealth that remained below Tuzla after the Pannonian Sea withdrew to the Black Sea 10 million years ago, in the form of salt water and stone salt. The cost and cultural tradition of the city of Tuzla goes far in past, until the Neolithic - the young Stone Age, and perhaps still. Within the Pannonian Complex, there is an Archaeological Park-Neolithic Shared Settlement. Neolithic settlement is a reconstruction of the way of life that existed in this region more than 7,000 years ago, based on discovered objects from the Neolithic period, and whose time of origin was confirmed by the Archaeological Institute in Vienna using the C4 method. This, unique space has a multifaceted meaning, not only for the tourist offer of Tuzla and the region, but also in terms of valorization of the cultural and historical heritage.`
     },
     {
       title: 'Sports and recreational complex Slana banja',
-      url: 'https://getbootstrap.com/docs/4.1/content/reboot/',
-      /* id: 6, */
+      url: '/sights/attractions',
       summary: `The complex of the Pannonian Lakes continues directly to the sports and recreational complex Slana banja, which is one of the most wide-ranging and best-kept central parks in BiH.`,
       text: `The complex of the Pannonian Lakes continues directly to the sports and recreational complex Slana banja, which is one of the most wide-ranging and best-kept central parks in BiH. In addition to walking and jogging tracks, this complex includes a complex of tennis courts, a playground for small football and basketball, and some of the memorials from the recent history of the city. In this area are the memorials of the heroes and victims of the Second World War, the war veterans 1992-1995, and the civilian victims of the war, that is, the Tuzla youth that had been killed at the Gate in 1995. Within the Slana spa there is the House of the Flame of Peace, intended for activities of young people, their creative initiatives and ideas, as well as several catering facilities. The central part of the complex is decorated with fountain with sculpture Leda, by the work of the famous Tuzla sculptor Franjo Leder.`
     },
     {
       title: "Children's amusement park",
-      url: 'https://getbootstrap.com/docs/4.1/content/reboot/',
-      /* id: 7, */
+      url: '/sights/attractions',
       summary: `In the children's amusement park, all toys and devices are divided over the age limit, such as toys for children up to 3 years, from 3 to 6 years and from 6 to 14 years.`,
       text: `In the children's amusement park, all toys and devices are divided over the age limit, such as toys for children up to 3 years, from 3 to 6 years and from 6 to 14 years. In this unusual amusement park, which has about a mile of asphalt paths, various entertainment devices have been installed - slides, swings, skaters, houses, even a boat, and a number of other game devices. For safety reasons, around the appliance are tartan rubber and sawdust pads to alleviate possible falls, as well as resting benches.`
     },
     {
       title: "Bingo ZOO",
-      url: 'https://getbootstrap.com/docs/4.1/content/reboot/',
-      /* id: 8, */
+      url: '/sights/attractions',
       summary: `Zoo Garden Bingo is located near the town of Tuzla, 800 meters away from the Tuzla-Sarajevo main road. `,
       text: `Zoo Garden Bingo is located near the town of Tuzla, 800 meters away from the Tuzla-Sarajevo main road. Within the ZOO garden there is a restaurant, playground, football pitch and promenade, and there is also a small lake that gives this ambiance a special charm.`
     },
     {
       title: `International atelier "Ismet Mujezinovic"`,
-      url: 'https://getbootstrap.com/docs/4.1/content/reboot/',
-      /* id: 9, */
+      url: '/international',
       summary: `The international atelier "Ismet Mujezinovic" is unique that there lived and worked one of the most important Bosnian artist, cultural worker and painter Ismet Mujezinovic.`,
       text: `
       The international atelier "Ismet Mujezinovic" is unique that there lived and worked one of the most important Bosnian artist, cultural worker and painter Ismet Mujezinovic. Family members donated his house and atelier to the City of Tuzla. Staying at the International Atelier means a six-month stay and work of fine artists, as well as organizing a solo exhibition of works created during the stay in Tuzla. A number of art workshops are held in the studio, an apartment is also equipped in which artists from all over Europe come 2 to 3 times a year. It is a place where concerts, exhibitions, promotional books, art galleries in the center of the city are organized, a place for organizing and many other events`
     },
     {
       title: `International portrait gallery`,
-      url: 'https://getbootstrap.com/docs/4.1/content/reboot/',
-      /* id: 9, */
+      url: '/portrait',
       summary: `
       Over the last three decades the Gallery emerged as a fine arts institution of considerable importance organizing review exhibitions of contemporary portraits and retrospective exhibitions of the most famous artists from Bosnia and Herzegovina. `,
       text: `
@@ -119,17 +114,7 @@ export class BookingComponent implements OnInit {
     },
     {
       title: `International atelier "Ismet Mujezinovic"`,
-      url: 'https://getbootstrap.com/docs/4.1/content/reboot/',
-      /* id: 9, */
-      summary: `
-      The museum in Tuzla was founded in 1947 as a National Liberation museum. In 1962 it received the name Museum of East Bosnia, which is still holds`,
-      text: `
-      The museum in Tuzla was founded in 1947 as a National Liberation museum. In 1962 it received the name Museum of East Bosnia, which is still holds. Since its beginnings it worked to collect exhibits from the national liberation war, archaeology, art history and mineral riches from northeast Bosnia. Museum of East Bosnia holds an archaeological, ethnologica, historical, numizmatic, art and biological collections. Among the 50.000 exhibits, continuity of the past 6500 years of life in Tuzla can be observed.`
-    },
-    {
-      title: `International atelier "Ismet Mujezinovic"`,
-      url: 'https://getbootstrap.com/docs/4.1/content/reboot/',
-      /* id: 9, */
+      url: '/museum',
       summary: `
       The museum in Tuzla was founded in 1947 as a National Liberation museum. In 1962 it received the name Museum of East Bosnia, which is still holds`,
       text: `
@@ -137,8 +122,7 @@ export class BookingComponent implements OnInit {
     },
     {
       title: `Airports`,
-      url: 'https://getbootstrap.com/docs/4.1/content/reboot/',
-      /* id: 9, */
+      url: '/airports',
       summary: `
       Tuzla International Airport (Bosnian: Međunarodni aerodrom Tuzla) is an airport near Tuzla, Bosnia and Herzegovina. Tuzla International Airport is second largest airport in Bosnia and Herzegovina, after Sarajevo International Airport.`,
       text: `
@@ -147,8 +131,7 @@ export class BookingComponent implements OnInit {
     },
     {
       title: `Rent a Car`,
-      url: 'https://getbootstrap.com/docs/4.1/content/reboot/',
-      /* id: 9, */
+      url: '/rentacar',
       summary: `
       The museum in Tuzla was founded in 1947 as a National Liberation museum. In 1962 it received the name Museum of East Bosnia, which is still holds`,
       text: `
@@ -159,8 +142,7 @@ export class BookingComponent implements OnInit {
     },
     {
       title: `Taxi Service`,
-      url: 'https://getbootstrap.com/docs/4.1/content/reboot/',
-      /* id: 9, */
+      url: '/taxi',
       summary: `
       The museum in Tuzla was founded in 1947 as a National Liberation museum. In 1962 it received the name Museum of East Bosnia, which is still holds`,
       text: `
@@ -169,8 +151,7 @@ export class BookingComponent implements OnInit {
     },
     {
       title: `Public Transport`,
-      url: 'https://getbootstrap.com/docs/4.1/content/reboot/',
-      /* id: 9, */
+      url: '/publictransport',
       summary: `
       The museum in Tuzla was founded in 1947 as a National Liberation museum. In 1962 it received the name Museum of East Bosnia, which is still holds`,
       text: `
@@ -178,8 +159,7 @@ export class BookingComponent implements OnInit {
     },
     {
       title: `Nextbike`,
-      url: 'https://getbootstrap.com/docs/4.1/content/reboot/',
-      /* id: 9, */
+      url: '/nextbike',
       summary: `
       The museum in Tuzla was founded in 1947 as a National Liberation museum. In 1962 it received the name Museum of East Bosnia, which is still holds`,
       text: `
@@ -187,8 +167,7 @@ export class BookingComponent implements OnInit {
     },
     {
       title: `Hotels`,
-      url: 'https://getbootstrap.com/docs/4.1/content/reboot/',
-      /* id: 9, */
+      url: '/accomodation/hotels',
       summary: `
       The museum in Tuzla was founded in 1947 as a National Liberation museum. In 1962 it received the name Museum of East Bosnia, which is still holds`,
       text: `
@@ -343,8 +322,7 @@ export class BookingComponent implements OnInit {
     },
     {
       title: `Restaurants`,
-      url: 'https://getbootstrap.com/docs/4.1/content/reboot/',
-      /* id: 9, */
+      url: '/accomodation/restaurants',
       summary: `
       The museum in Tuzla was founded in 1947 as a National Liberation museum. In 1962 it received the name Museum of East Bosnia, which is still holds`,
       text: `
@@ -429,8 +407,7 @@ export class BookingComponent implements OnInit {
     },
     {
       title: `Tour 360`,
-      url: 'https://getbootstrap.com/docs/4.1/content/reboot/',
-      /* id: 9, */
+      url: '/virtual-tour/tour-360',
       summary: `
       The museum in Tuzla was founded in 1947 as a National Liberation museum. In 1962 it received the name Museum of East Bosnia, which is still holds`,
       text: `
@@ -438,8 +415,7 @@ export class BookingComponent implements OnInit {
     },
     {
       title: `Tuzla City map`,
-      url: 'https://getbootstrap.com/docs/4.1/content/reboot/',
-      /* id: 9, */
+      url: '/virtual-tour/city-map',
       summary: `
       The museum in Tuzla was founded in 1947 as a National Liberation museum. In 1962 it received the name Museum of East Bosnia, which is still holds`,
       text: `

@@ -8,6 +8,9 @@
           aria-haspopup="true" aria-expanded="false">
           List of Restaurants
         </button>
+
+        <!-- Routing inside a components -->
+
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
           <a class="dropdown-item" (click)="window.location = '#row1';" [routerLink]="['/accomodation/restaurants']"
             fragment="row1" routerLinkActive="router-link-active">Pub Taverna</a>

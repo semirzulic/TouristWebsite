@@ -15,6 +15,9 @@ export class RestaurantsComponent implements OnInit {
   private fragment: string;
 
   constructor(private route: ActivatedRoute) { 
+
+    // Enable bootstrap components
+
     $('.collapse').collapse();
     
 
@@ -23,15 +26,11 @@ export class RestaurantsComponent implements OnInit {
     });
   }
 
+  // Enable routing inside a component
+
   ngOnInit() {
     this.route.fragment.subscribe(fragment => { this.fragment = fragment; });
   }
-
-  showReservation() {
-    this.show = !this.show;
-    console.log(this.show);
-  }
-
 
   ngAfterViewInit(): void {
     try {
