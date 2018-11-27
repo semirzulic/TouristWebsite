@@ -1,0 +1,43 @@
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    margin-top: 4%;
+  
+}
+ p {
+    margin-top: 4%;
+  
+ }
+
+ .title{
+     margin-top: 8%;
+     margin-bottom: 4%;
+     text-align: center;
+ }
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.aligncenter {
+    display: block;
+    margin: 0px auto;
+}
+
+.size-large {
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Titillium Web', sans-serif;
+    overflow-x: hidden;
+}
+
+
