@@ -23,6 +23,7 @@ import { InternationalPortraitComponent } from './culture-componenets/internatio
 import { EasterComponent } from './culture-componenets/easter/easter.component';
 
 
+
 const routes: Routes = [
   {path: '', component: MainHomeComponent},
   {path: 'airports', component: AirportComponent},
@@ -49,12 +50,12 @@ const routes: Routes = [
   {path: 'history', component: HistoryComponent},
   {path: 'attraction', component: AttractionComponent},
   {path: 'aboutus', component: AboutUsComponent},
-  {path: 'galleries',component:GalleriesComponent},
-  {path: 'international',component:InternationalAtelierComponent},
-  {path: 'portrait',component:InternationalPortraitComponent},
-  {path: 'museums',component:MuseumsComponent},
-  {path: 'museum',component:EasterComponent}
-
+  {path:'galleries',component:GalleriesComponent},
+  {path:'international',component:InternationalAtelierComponent},
+  {path:'portrait',component:InternationalPortraitComponent},
+  {path:'museums',component:MuseumsComponent},
+  {path:'museum',component:EasterComponent},
+  
 ]
 
 

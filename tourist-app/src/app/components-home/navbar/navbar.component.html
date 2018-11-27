@@ -30,8 +30,8 @@
             Culture
           </a>
           <div class="dropdown-menu">
-            <a class="dropdown-item" [routerLink]="['/galleries']" routerLinkActive="router-link-active"> Galleries </a>
-            <a class="dropdown-item" [routerLink]="['/museums']" routerLinkActive="router-link-active"> Museums </a>
+            <a class="dropdown-item" [routerLink]="['/international']" routerLinkActive="router-link-active"> Galleries </a>
+            <a class="dropdown-item" [routerLink]="['/museum']" routerLinkActive="router-link-active"> Museums </a>
           
           </div>
         </li>
@@ -40,11 +40,16 @@
             Transport
           </a>
           <div class="dropdown-menu">
-            <a class="dropdown-item" [routerLink]="['/airports']" routerLinkActive="router-link-active" > Airports </a>
-            <a class="dropdown-item" [routerLink]="['/rentacar']" routerLinkActive="router-link-active" > Rent a car </a>
-            <a class="dropdown-item" [routerLink]="['/taxi']" routerLinkActive="router-link-active" > Taxi </a>
-            <a class="dropdown-item" [routerLink]="['/publictransport']" routerLinkActive="router-link-active" > Public transport </a>
-            <a class="dropdown-item" [routerLink]="['/nextbike']" routerLinkActive="router-link-active" > Nextbike </a>
+            <a class="dropdown-item" [routerLink]="['/airports']" routerLinkActive="router-link-active"> 
+              <b class="fa fa-plane"></b> Airports </a>
+            <a class="dropdown-item" [routerLink]="['/rentacar']" routerLinkActive="router-link-active"> 
+              <b class="fa fa-car"></b> Rent a car </a>
+            <a class="dropdown-item" [routerLink]="['/taxi']" routerLinkActive="router-link-active"> 
+              <b class="fa fa-taxi"></b> Taxi </a>
+            <a class="dropdown-item" [routerLink]="['/publictransport']" routerLinkActive="router-link-active"> 
+              <b class="fa fa-bus"></b> Public transport </a>
+            <a class="dropdown-item" [routerLink]="['/nextbike']" routerLinkActive="router-link-active"> 
+              <b class="fa fa-bicycle"></b> Nextbike </a>
           </div>
         </li>
         <li class="nav-item dropdown">
@@ -70,6 +75,8 @@
           <a class="nav-link" [routerLink]="['/aboutus']" routerLinkActive="router-link-active" >About us</a>
         </li>
         
+
+       
       </ul>
     
     </div>
