@@ -1,0 +1,18 @@
+<div class="main-search">
+  <h2 class="text-center">Search</h2>
+  <div class="searchbar input-group input-group-lg">
+    <input class="form-control input-lg" type="text" placeholder="Search..." [(ngModel)]="query" (keydown)="showSearch()"
+      aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+  </div>
+</div>
+
+<div class="searchResults" style="overflow-y: scroll; height: 100px;">
+
+  <ul class="list-group" *ngIf="show">
+    <li class="list-group-item" *ngFor="let item of items | search:'naslov,text':query">
+
+      <a [routerLink]=item.url routerLinkActive="router-link-active">{{item.title}}</a>
+
+    </li>
+  </ul>
+</div>

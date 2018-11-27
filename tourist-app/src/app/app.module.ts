@@ -1,5 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+//import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
+
+import { FormsModule } from '@angular/forms';
+
 import { AppComponent } from './app.component';
 import { HistoryComponent } from './history/components-history/history/history.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
@@ -12,7 +17,6 @@ import { SliderComponent } from './components-home/slider/slider.component';
 import { FooterComponent } from './components-home/footer/footer.component';
 import { PopularComponent } from './components-home/popular/popular.component';
 import { GaleryComponent } from './components-home/galery/galery.component';
-import { ContactComponent } from './components-home/contact/contact.component';
 import { AttractionsComponent } from './sights-components/attractions/attractions.component';
 import { MapAttractionsComponent } from './sights-components/map-attractions/map-attractions.component';
 import { Tour360Component } from './virtual-tour/tour360/tour360.component';
@@ -32,6 +36,8 @@ import { NextbikeComponent } from './component-transport/transport/nextbike/next
 import { AboutUsComponent } from './about/about-us/about-us.component';
 import { SnippetComponent } from './components-home/snippet/snippet.component';
 import { NewsComponent } from './components-home/news/news.component';
+import { BookingComponent, SearchPipe } from './booking/booking.component';
+
 
 
 
@@ -45,7 +51,6 @@ import { NewsComponent } from './components-home/news/news.component';
     FooterComponent,
     PopularComponent,
     GaleryComponent,
-    ContactComponent,
     HistoryComponent,
     AirportComponent,
     RentACarComponent,
@@ -72,12 +77,16 @@ import { NewsComponent } from './components-home/news/news.component';
     AboutUsComponent,
     SnippetComponent,
     NewsComponent,
-    
-    
+    BookingComponent,
+    SearchPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+   // NgbModule.forRoot(),
+
+  
     AngularFontAwesomeModule
   ],
  

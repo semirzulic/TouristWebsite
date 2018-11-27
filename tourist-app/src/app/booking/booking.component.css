@@ -1,0 +1,45 @@
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+.main-search {
+    padding: 10px;
+    background: #17a2b8;
+} 
+
+.searchbar {
+    
+    width: 70%;
+    margin: auto;
+}
+
+.searchResults {
+    display: block;
+    width: 70%;
+    margin: auto;
+}
+
+ul {
+    display: block;
+    width: 70%;
+    margin: auto;
+}
+
+ul li {
+    list-style: none;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
