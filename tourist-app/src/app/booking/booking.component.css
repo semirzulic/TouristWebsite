@@ -16,6 +16,7 @@ html {
 .main-search {
     padding: 10px;
     background: #17a2b8;
+    border-radius: 5px;
 } 
 
 .searchbar {
@@ -42,4 +43,5 @@ ul li {
 
 h2 {
     margin-bottom: 15px;
+    color: white;
 }
