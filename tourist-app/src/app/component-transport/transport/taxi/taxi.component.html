@@ -1,11 +1,29 @@
+<div class="container fixed-top pb-2" style="background-color: #f5f5f0; margin-top:60px; border: solid 1px black;">
+    <h1 class="text-center" style="margin-top:30px;"> Taxi </h1>
+     <div class="dropdown" style="text-align:center;">
+         <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" 
+         aria-haspopup="true" aria-expanded="false" style="width:125px;">
+           Taxi:
+         </a>
+             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                 <a class="dropdown-item" (click)="window.location = '#taxi1';" [routerLink]="['/taxi']" 
+                 fragment="taxi1" routerLinkActive="router-link-active">Tuzla taxi</a>
+                 <a class="dropdown-item" (click)="window.location = '#taxi2';" [routerLink]="['/taxi']" 
+                 fragment="taxi2" routerLinkActive="router-link-active">Gradski taxi</a>
+                 <a class="dropdown-item" (click)="window.location = '#taxi3';" [routerLink]="['/taxi']" 
+                 fragment="taxi3" routerLinkActive="router-link-active">Radio taxi non-stop </a>
+                 </div>
+       </div>
+   </div>
+
+
 <app-navbar></app-navbar>
-<div class="mb-2">
-    <h1 class="text-center py-2"> Taxi Service </h1> 
-    <img src="../../../../../assets/logoTaxi.png" class="img-fluid" alt="Logo Taxi">
+
+<div class="pt-4 mb-2" style="margin-top:200px;">
 
 <!-- Section Tuzla taxi -->
 
-<div id="backgroundColorAndBorder" class="row mx-auto" style="width:75%">
+<div id="taxi1" class="row mx-auto" style="width:75%; border-top: solid black 1px;">
 <div class="col-sm">
     <span>    
       <h2> Tuzla taxi <br>(15-17) </h2>
@@ -32,7 +50,7 @@
 
 <!-- Section Gradski taxi -->
 
-<div id="backgroundColorAndBorder" class="row mx-auto" style="width:75%">
+<div id="taxi2" class="row mx-auto" style="width:75%; border-top: solid black 1px;">
     <div class="col-sm">
     <span class="float-left">
             <h2> Gradski taxi <br> (15-25) </h2>
@@ -51,7 +69,7 @@
 
 <!-- Section Radio taxi non-stop -->
 
-<div id="backgroundColorAndBorder" class="row mx-auto" style="width:75%">
+<div id="taxi3" class="row mx-auto" style="width:75%; border-top: solid black 1px;">
     <div class="col-sm">
         <span class="float-left">
             <h2> Radio taxi non-stop <br> (15-01) </h2>

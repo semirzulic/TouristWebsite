@@ -24,8 +24,12 @@
     "@fortawesome/fontawesome-free-solid": "^5.0.13",
     "@ng-bootstrap/ng-bootstrap": "^4.0.0",
     "@types/jquery": "^3.3.22",
+
     "angular-calendar": "^0.26.4",
     "angular-flatpickr": "^3.6.4",
+
+    "angular-bootstrap-datetimepicker": "^2.2.1",
+
     "angular-font-awesome": "^3.1.2",
     "angularx-flatpickr": "^6.1.0",
     "awesome": "0.0.7",
@@ -38,7 +42,9 @@
     "font": "0.0.4",
     "font-awesome": "^4.7.0",
     "jquery": "^3.3.1",
+    "moment": "^2.22.2",
     "ngx-bootstrap": "^3.1.1",
+    "open-iconic": "^1.1.1",
     "popper.js": "^1.14.5",
     "rxjs": "~6.3.3",
     "rxjs-compat": "^6.3.3",

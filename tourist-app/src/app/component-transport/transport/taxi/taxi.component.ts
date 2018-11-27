@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+declare var jquery:any;
+declare var $ :any;
 
 @Component({
   selector: 'app-taxi',
@@ -7,7 +10,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TaxiComponent implements OnInit {
 
-  constructor() { }
+  private fragment: string;
+
+  constructor(private route: ActivatedRoute) { 
+    $('.collapse').collapse();
+    
+
+    $(document).ready(function() {
+      $(".dropdown-toggle").dropdown();
+    });
+  }
 
   ngOnInit() {
   }
