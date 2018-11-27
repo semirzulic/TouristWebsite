@@ -1,5 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+//import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
+
+import { FormsModule } from '@angular/forms';
+
 import { AppComponent } from './app.component';
 import { HistoryComponent } from './history/components-history/history/history.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
@@ -36,10 +41,11 @@ import { DemoComponent } from './events/component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CalendarModule, DateAdapter } from 'angular-calendar';
 import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
-import { FormsModule } from '@angular/forms';
 
 
 
+
+import { BookingComponent, SearchPipe } from './booking/booking.component';
 
 
 
@@ -78,11 +84,14 @@ import { FormsModule } from '@angular/forms';
     AboutUsComponent,
     SnippetComponent,
     NewsComponent,
-    DemoComponent    
+    DemoComponent,    
+    BookingComponent,
+    SearchPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
    // NgbModule.forRoot(),
    BrowserAnimationsModule,
     CalendarModule.forRoot({

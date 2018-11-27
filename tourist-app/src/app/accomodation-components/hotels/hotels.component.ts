@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {ActivatedRoute} from '@angular/router'; // <-- do not forget to import
+declare var jquery:any;
+declare var $ :any;
 
 @Component({
   selector: 'app-hotels',
@@ -7,9 +10,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HotelsComponent implements OnInit {
 
-  constructor() { }
+  private fragment: string;
 
-  ngOnInit() {
+  constructor(private route: ActivatedRoute) { 
+    $('.collapse').collapse();
+    
+
+    $(document).ready(function() {
+      $(".dropdown-toggle").dropdown();
+    });
+   }
+
+   ngOnInit() {
+    this.route.fragment.subscribe(fragment => { this.fragment = fragment; });
+  }
+
+  ngAfterViewInit(): void {
+    try {
+      document.querySelector('#' + this.fragment).scrollIntoView();
+    } catch (e) { }
   }
 
 }

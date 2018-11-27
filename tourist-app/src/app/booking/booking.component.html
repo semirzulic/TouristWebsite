@@ -1,0 +1,12 @@
+<!-- <input (keydown.enter)="showSearch()" [(ngModel)]="query" #searchTerm > -->
+<input [(ngModel)]="query" (keydown)="showSearch()">
+<button>Search</button>
+<!-- <div *ngFor="let item of items | search:'naslov,id,text':query">{{item.title}}</div> -->
+<div style="overflow-y: scroll; height:100px; width: 450px;">
+<ul *ngIf="show">
+  <li  *ngFor="let item of items | search:'naslov,text':query"><a target="_blank" href="{{item.url}}">{{item.title}}</a>
+  <!-- <p>{{item.summary}}</p> -->
+  </li>
+</ul>
+</div>
+

@@ -27,8 +27,11 @@
 }
 
 h1 {
-    padding: 25px;
+    padding: 15px;
+    padding-bottom: 5px;
     margin-top: 60px;
+    margin-bottom: 0;
+    
 }
 
 h3 {
@@ -56,6 +59,7 @@ img {
 .btn {
     display: block;
     margin: 10px auto;
+    margin-top: 0;
 }
 
 .card {
@@ -89,7 +93,10 @@ img {
 
 .fixed-top {
     
-    background: white;
+    background: #f5f5f0;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
     
 } 
 
@@ -118,41 +125,3 @@ img {
     height: 250px;
 }
 
-/* .zoom {      
-    -webkit-transition: all 0.35s ease-in-out;    
-    -moz-transition: all 0.35s ease-in-out;    
-    transition: all 0.35s ease-in-out;     
-    cursor: -webkit-zoom-in;      
-    cursor: -moz-zoom-in;      
-    cursor: zoom-in;  
-    }     
-    
-    .zoom:hover,  
-    .zoom:active,   
-    .zoom:focus { */
-    /**adjust scale to desired size, 
-    add browser prefixes**/
-
-    /* -ms-transform: scale(2.5);    
-    -moz-transform: scale(2.5);  
-    -webkit-transform: scale(2.5);  
-    -o-transform: scale(2.5);  
-    transform: scale(2.5);    
-    position:relative;      
-    z-index:100;  
-    } */
-    
-    /**To keep upscaled images visible on mobile, 
-    increase left & right margins a bit**/  
-
-    /* @media only screen and (max-width: 768px) {   
-    ul.gallery {      
-    margin-left: 15vw;       
-    margin-right: 15vw;
-    } */
-    
-    /**TIP: Easy escape for touch screens,
-    give gallery's parent container a cursor: pointer.**/
-
-    /* .DivName {cursor: pointer}
-    }  */

@@ -1,32 +1,47 @@
 <div class="container">
-    <div class="fixed-top container">
-        <h1 class="text-center">Hotels</h1>
-    
-        <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Hotels
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" [routerLink]="['/accomodation/restaurants#row1']" routerLinkActive="router-link-active">Mellain</a>
-            <a class="dropdown-item" [routerLink]="['/accomodation/restaurants#row1']" routerLinkActive="router-link-active">Hotel Tuzla</a>
-            <a class="dropdown-item" [routerLink]="['/accomodation/restaurants#row2']" routerLinkActive="router-link-active">Dom penzionera</a>
-            <a class="dropdown-item" [routerLink]="['/accomodation/restaurants#row2']" routerLinkActive="router-link-active">Tehnograd</a>
-            <a class="dropdown-item" [routerLink]="['/accomodation/restaurants#row2']" routerLinkActive="router-link-active">President</a>
-            <a class="dropdown-item" [routerLink]="['/accomodation/restaurants#row2']" routerLinkActive="router-link-active">Heartland City</a>
-            <a class="dropdown-item" [routerLink]="['/accomodation/restaurants#row2']" routerLinkActive="router-link-active">Miris Dunja 88</a>
-            <a class="dropdown-item" [routerLink]="['/accomodation/restaurants#row2']" routerLinkActive="router-link-active">Golden star</a>
-            <a class="dropdown-item" [routerLink]="['/accomodation/restaurants#row2']" routerLinkActive="router-link-active">Motel Rudar</a>
-            <a class="dropdown-item" [routerLink]="['/accomodation/restaurants#row2']" routerLinkActive="router-link-active">Motel Royal</a>
-            <a class="dropdown-item" [routerLink]="['/accomodation/restaurants#row2']" routerLinkActive="router-link-active">Motel Iveljić</a>
-            <a class="dropdown-item" [routerLink]="['/accomodation/restaurants#row2']" routerLinkActive="router-link-active">Pansion Centar</a>
-            <a class="dropdown-item" [routerLink]="['/accomodation/restaurants#row2']" routerLinkActive="router-link-active">Pansion Nargalić</a>
-            <a class="dropdown-item" [routerLink]="['/accomodation/restaurants#row2']" routerLinkActive="router-link-active">Pansion Kipovi</a>
-          </div>
-        </div>
-    
+
+  <div class="fixed-top container">
+    <h1 class="text-center">Hotels</h1>
+
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        List of Hotels
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" (click)="window.location = '#row1';" [routerLink]="['/accomodation/hotels']" fragment="row1"
+          routerLinkActive="router-link-active">Mellain</a>
+        <a class="dropdown-item" (click)="window.location = '#row1';" [routerLink]="['/accomodation/hotels']" fragment="row1"
+          routerLinkActive="router-link-active">Hotel Tuzla</a>
+        <a class="dropdown-item" (click)="window.location = '#row2';" [routerLink]="['/accomodation/hotels']" fragment="row2"
+          routerLinkActive="router-link-active">Dom penzionera</a>
+        <a class="dropdown-item" (click)="window.location = '#row2';" [routerLink]="['/accomodation/hotels']" fragment="row2"
+          routerLinkActive="router-link-active">Tehnograd</a>
+        <a class="dropdown-item" (click)="window.location = '#row3';" [routerLink]="['/accomodation/hotels']" fragment="row3"
+          routerLinkActive="router-link-active">President</a>
+        <a class="dropdown-item" (click)="window.location = '#row3';" [routerLink]="['/accomodation/hotels']" fragment="row3"
+          routerLinkActive="router-link-active">Heartland City</a>
+        <a class="dropdown-item" (click)="window.location = '#row4';" [routerLink]="['/accomodation/hotels']" fragment="row4"
+          routerLinkActive="router-link-active">Miris Dunja 88</a>
+        <a class="dropdown-item" (click)="window.location = '#row4';" [routerLink]="['/accomodation/hotels']" fragment="row4"
+          routerLinkActive="router-link-active">Golden star</a>
+        <a class="dropdown-item" (click)="window.location = '#row5';" [routerLink]="['/accomodation/hotels']" fragment="row5"
+          routerLinkActive="router-link-active">Motel Rudar</a>
+        <a class="dropdown-item" (click)="window.location = '#row5';" [routerLink]="['/accomodation/hotels']" fragment="row5"
+          routerLinkActive="router-link-active">Motel Royal</a>
+        <a class="dropdown-item" (click)="window.location = '#row6';" [routerLink]="['/accomodation/hotels']" fragment="row6"
+          routerLinkActive="router-link-active">Motel Iveljić</a>
+        <a class="dropdown-item" (click)="window.location = '#row6';" [routerLink]="['/accomodation/hotels']" fragment="row6"
+          routerLinkActive="router-link-active">Pansion Centar</a>
+        <a class="dropdown-item" (click)="window.location = '#row7';" [routerLink]="['/accomodation/hotels']" fragment="row7"
+          routerLinkActive="router-link-active">Pansion Nargalić</a>
+        <a class="dropdown-item" (click)="window.location = '#row7';" [routerLink]="['/accomodation/hotels']" fragment="row7"
+          routerLinkActive="router-link-active">Pansion Kipovi</a>
       </div>
-  
+    </div>
+
+  </div>
+
 
 
   <app-navbar></app-navbar>
@@ -34,9 +49,9 @@
 
     <!-- Hotel Mellain -->
 
-    <div id="box1" class="col-12 col-sm-12 col-md-12 col-lg-6">
+    <div id="row1" class="col-12 col-sm-12 col-md-12 col-lg-6 box1">
       <h3 class="text-center">Hotel Mellain</h3>
-      <!-- <button class="btn btn-info"><a target="_blank" href="http://mellainhotel.com/">Website</a></button> -->
+
       <img src="https://tztz.ba/ba/wp-content/uploads/2018/07/mellain.jpg" alt="Hotel Mallain">
       <p>
         Hotel Mellain is located in the center of Tuzla, one of the most attractive locations connecting the most
@@ -51,9 +66,9 @@
           <p class="card-text">
             <i class="far fa-address-card"></i> Address: Aleja Alija Izetbegović no. 3
             <br>
-            <i class="fas fa-phone-square"></i>  Phone: +387 35 365 500
+            <i class="fas fa-phone-square"></i> Phone: +387 35 365 500
             <br>
-            <i class="fas fa-envelope"></i>  Email: info@mellainhotel.com
+            <i class="fas fa-envelope"></i> Email: info@mellainhotel.com
             <br>
             <i class="fas fa-home"></i>Website: <a target="_blank" href="http://mellainhotel.com/">mellainhotel.com</a>
           </p>
@@ -65,9 +80,9 @@
 
     <!-- Hotel Tuzla -->
 
-    <div id="box2" class="col-12 col-sm-12 col-md-12 col-lg-6">
+    <div id="row1" class="col-12 col-sm-12 col-md-12 col-lg-6 box2">
       <h3 class="text-center">Hotel Tuzla</h3>
-      <!-- <button class="btn btn-info"><a target="_blank" href="https://www.facebook.com/Hotel-Tuzla-1683395918560374/">Website</a></button> -->
+
       <img src="https://tztz.ba/ba/wp-content/uploads/2018/07/hoteltuzla.jpg" alt="Hotel Tuzla">
       <p>
         Hotel 'Tuzla' has 12 floors, the first three floors of which are completely renovated. The hotel has de luxe
@@ -83,11 +98,12 @@
           <p class="card-text">
             <i class="far fa-address-card"></i> Address: ZAVNOBIH-a 13
             <br>
-            <i class="fas fa-phone-square"></i>  Phone: 035 369-600
+            <i class="fas fa-phone-square"></i> Phone: 035 369-600
             <br>
-            <i class="fas fa-envelope"></i>  Email: info@a-hoteli.com
+            <i class="fas fa-envelope"></i> Email: info@a-hoteli.com
             <br>
-            <i class="fas fa-home"></i>Website: <a target="_blank" href="https://www.facebook.com/Hotel-Tuzla-1683395918560374/">Hotel Tuzla</a>
+            <i class="fas fa-home"></i>Website: <a target="_blank" href="https://www.facebook.com/Hotel-Tuzla-1683395918560374/">Hotel
+              Tuzla</a>
           </p>
         </div>
       </div>
@@ -97,9 +113,9 @@
 
     <!-- Hotel Dom penzionera -->
 
-    <div id="box1" class="col-12 col-sm-12 col-md-12 col-lg-6">
+    <div id="row2" class="col-12 col-sm-12 col-md-12 col-lg-6 box1">
       <h3 class="text-center">Hotel Dom penzionera</h3>
-      <!-- <button class="btn btn-info"><a target="_blank" href="https://dompenzionera.ba/">Website</a></button> -->
+
       <img src="https://tztz.ba/ba/wp-content/uploads/2018/07/hoteldompenzionera.jpg" alt="Hotel 'Dom penzionera'">
       <p>
         The "Pensioners' House" is located in the very center of the city, close to the numerous facilities needed by
@@ -117,9 +133,9 @@
           <p class="card-text">
             <i class="far fa-address-card"></i> Address: Filipa Kljajića br. 22
             <br>
-            <i class="fas fa-phone-square"></i>  Phone: 035/ 270-002
+            <i class="fas fa-phone-square"></i> Phone: 035/ 270-002
             <br>
-            <i class="fas fa-envelope"></i>  Email: dompenzionera@bih.net.ba
+            <i class="fas fa-envelope"></i> Email: dompenzionera@bih.net.ba
             <br>
             <i class="fas fa-home"></i>Website: <a target="_blank" href="https://dompenzionera.ba/">dompenzionera.ba</a>
           </p>
@@ -131,9 +147,9 @@
 
     <!-- Hotel Tehnograd -->
 
-    <div id="box2" class="col-12 col-sm-12 col-md-12 col-lg-6">
+    <div id="row2" class="col-12 col-sm-12 col-md-12 col-lg-6 box2">
       <h3 class="text-center">Hotel Tehnograd</h3>
-      <!-- <button class="btn btn-info"><a target="_blank" href="http://hotel-tehnograd.com/">Website</a></button> -->
+
       <img src="https://tztz.ba/ba/wp-content/uploads/2018/07/hoteltehnograd.jpg" alt="Hotel 'Tehnograd'">
       <p>
         Hotel 'Tehnograd' is located in the town of Slavinovići and as such provides a pleasant stay away from the city
@@ -150,9 +166,9 @@
           <p class="card-text">
             <i class="far fa-address-card"></i> Address: Lazerević bb
             <br>
-            <i class="fas fa-phone-square"></i>  Phone: +387 35 226-396
+            <i class="fas fa-phone-square"></i> Phone: +387 35 226-396
             <br>
-            <i class="fas fa-envelope"></i>  Email: info@hotel-tehnograd.com
+            <i class="fas fa-envelope"></i> Email: info@hotel-tehnograd.com
             <br>
             <i class="fas fa-home"></i>Website: <a target="_blank" href="http://hotel-tehnograd.com/">hotel-tehnograd.com</a>
           </p>
@@ -164,9 +180,9 @@
 
     <!-- Hotel President -->
 
-    <div id="box1" class="col-12 col-sm-12 col-md-12 col-lg-6">
+    <div id="row3" class="col-12 col-sm-12 col-md-12 col-lg-6 box1">
       <h3 class="text-center">Hotel President</h3>
-      <!-- <button class="btn btn-info"><a target="_blank" href="http://presidenthotel.ba/">Website</a></button> -->
+
       <img src="https://tztz.ba/ba/wp-content/uploads/2018/07/hotelpresident.jpg" alt="Hotel 'President'">
       <p>
         Hotel 'President' has a capacity of 14 rooms and 1 apartment. The rooms are modernly furnished,
@@ -184,12 +200,12 @@
           <p class="card-text">
             <i class="far fa-address-card"></i> Address: Magistralni put A224 Tuzla - Sarajevo
             <br>
-            <i class="fas fa-phone-square"></i>  Phone: +387 35 808-549
+            <i class="fas fa-phone-square"></i> Phone: +387 35 808-549
             <br>
-            <i class="fas fa-envelope"></i>  Email: info@presidenthotel.ba
+            <i class="fas fa-envelope"></i> Email: info@presidenthotel.ba
             <br>
             <i class="fas fa-home"></i>Website: <a target="_blank" href="http://presidenthotel.ba/">presidenthotel.ba</a>
-            
+
           </p>
         </div>
       </div>
@@ -199,9 +215,9 @@
 
     <!-- Hotel Heartland City -->
 
-    <div id="box2" class="col-12 col-sm-12 col-md-12 col-lg-6">
+    <div id="row3" class="col-12 col-sm-12 col-md-12 col-lg-6 box2">
       <h3 class="text-center">Hotel Heartland City</h3>
-      <!-- <button class="btn btn-info"><a target="_blank" href="https://hotel-heartland-city.business.site/">Website</a></button> -->
+
       <img src="https://tztz.ba/ba/wp-content/uploads/2018/07/hotelhartland.jpg" alt="Hotel 'Heartland City'">
       <p>
         Heartland City Hotel is located in the city center of Tuzla at Kazan Mahala No.10. has a capacity of 550 square
@@ -217,9 +233,9 @@
           <p class="card-text">
             <i class="far fa-address-card"></i> Address: Kazan mahala 10
             <br>
-            <i class="fas fa-phone-square"></i>  Phone: 035 255-111
+            <i class="fas fa-phone-square"></i> Phone: 035 255-111
             <br>
-            <i class="fas fa-envelope"></i>  Email:
+            <i class="fas fa-envelope"></i> Email:
             <br>
             <i class="fas fa-home"></i>Website: <a target="_blank" href="https://hotel-heartland-city.business.site/">hotel-heartland-city</a>
           </p>
@@ -231,9 +247,9 @@
 
     <!-- Hotel Miris Dunja 88 -->
 
-    <div id="box1" class="col-12 col-sm-12 col-md-12 col-lg-6">
+    <div id="row4" class="col-12 col-sm-12 col-md-12 col-lg-6 box1">
       <h3 class="text-center">Hotel Miris Dunja 88</h3>
-      <!-- <button class="btn btn-info"><a target="_blank" href="http://mirisdunja88.ba/">Website</a></button> -->
+
       <img src="https://tztz.ba/ba/wp-content/uploads/2018/07/mirisdunja.jpg" alt="Hotel 'Miris Dunja 88'">
       <p>
         We are located in the strict center of Tuzla and pedestrian zone in the immediate vicinity of the complex of
@@ -249,9 +265,9 @@
           <p class="card-text">
             <i class="far fa-address-card"></i> Address: Goli brijeg 8
             <br>
-            <i class="fas fa-phone-square"></i>  Phone: 035 296-453
+            <i class="fas fa-phone-square"></i> Phone: 035 296-453
             <br>
-            <i class="fas fa-envelope"></i>  Email: info@mirisdunja88.ba
+            <i class="fas fa-envelope"></i> Email: info@mirisdunja88.ba
             <br>
             <i class="fas fa-home"></i>Website: <a target="_blank" href="http://mirisdunja88.ba/">mirisdunja88.ba</a>
           </p>
@@ -263,9 +279,9 @@
 
     <!-- Hotel Golden star -->
 
-    <div id="box2" class="col-12 col-sm-12 col-md-12 col-lg-6">
+    <div id="row4" class="col-12 col-sm-12 col-md-12 col-lg-6 box2">
       <h3 class="text-center">Hotel Golden star</h3>
-      <!-- <button class="btn btn-info"><a target="_blank" href="http://goldenstarhotel.ba/">Website</a></button> -->
+
       <img src="https://tztz.ba/ba/wp-content/uploads/2018/07/hotelgoldenstar.jpg" alt="Hotel 'Golden star'">
       <p>
         Guests can use the hotel parking about 50 meters from the hotel. Hotel Golden star is a top choice for
@@ -282,9 +298,9 @@
           <p class="card-text">
             <i class="far fa-address-card"></i> Address: Jevrejska 5
             <br>
-            <i class="fas fa-phone-square"></i>  Phone: 035 258-100
+            <i class="fas fa-phone-square"></i> Phone: 035 258-100
             <br>
-            <i class="fas fa-envelope"></i>  Email: info@goldenstarhotel.ba
+            <i class="fas fa-envelope"></i> Email: info@goldenstarhotel.ba
             <br>
             <i class="fas fa-home"></i>Website: <a target="_blank" href="http://goldenstarhotel.ba/">goldenstarhotel.ba</a>
           </p>
@@ -296,9 +312,9 @@
 
     <!-- Motel Rudar -->
 
-    <div id="box1" class="col-12 col-sm-12 col-md-12 col-lg-6">
+    <div id="row5" class="col-12 col-sm-12 col-md-12 col-lg-6 box1">
       <h3 class="text-center">Motel Rudar</h3>
-      <!-- <button class="btn btn-info"><a target="_blank" href="https://rudar.ba/motel/">Website</a></button> -->
+
       <img src="https://tztz.ba/ba/wp-content/uploads/2018/07/motelrudar.jpg" alt="Motel 'Rudar'">
       <p>
         Motel 'Rudar' is located in Tuzla and contains air-conditioned accommodation, restaurant and bar. Guests can
@@ -319,9 +335,9 @@
           <p class="card-text">
             <i class="far fa-address-card"></i> Address: MITRA TRIFUNOVICA UCE BR 9
             <br>
-            <i class="fas fa-phone-square"></i>  Phone: +387 35 281-297
+            <i class="fas fa-phone-square"></i> Phone: +387 35 281-297
             <br>
-            <i class="fas fa-envelope"></i>  Email:
+            <i class="fas fa-envelope"></i> Email:
             <br>
             <i class="fas fa-home"></i>Website: <a target="_blank" href="https://rudar.ba/motel/">rudar.ba</a>
           </p>
@@ -333,9 +349,9 @@
 
     <!-- Motel Royal -->
 
-    <div id="box2" class="col-12 col-sm-12 col-md-12 col-lg-6">
+    <div id="row5" class="col-12 col-sm-12 col-md-12 col-lg-6 box2">
       <h3 class="text-center">Motel Royal</h3>
-      <!-- <button class="btn btn-info"><a target="_blank" href="https://www.royalmotel.ba/">Website</a></button> -->
+
       <img src="https://tztz.ba/ba/wp-content/uploads/2018/07/motelroyal.jpg" alt="Motel 'Royal'">
       <p>
         Motel 'Royal' has ten rooms equipped with plasma televisions, air conditioning, mini bar and unlimited internet
@@ -354,9 +370,9 @@
           <p class="card-text">
             <i class="far fa-address-card"></i> Address: Bosne srebrene 105/A
             <br>
-            <i class="fas fa-phone-square"></i>  Phone: +387 35 315 666
+            <i class="fas fa-phone-square"></i> Phone: +387 35 315 666
             <br>
-            <i class="fas fa-envelope"></i>  Email: info@royalmotel.ba
+            <i class="fas fa-envelope"></i> Email: info@royalmotel.ba
             <br>
             <i class="fas fa-home"></i>Website: <a target="_blank" href="https://www.royalmotel.ba/">royalmotel.ba</a>
           </p>
@@ -368,9 +384,9 @@
 
     <!-- Motel Iveljić Tuzla -->
 
-    <div id="box1" class="col-12 col-sm-12 col-md-12 col-lg-6">
+    <div id="row6" class="col-12 col-sm-12 col-md-12 col-lg-6 box1">
       <h3 class="text-center">Motel Iveljić Tuzla</h3>
-      <!-- <button class="btn btn-info"><a target="_blank" href="http://www.motel-iveljic.com.ba/">Website</a></button> -->
+
       <img src="https://tztz.ba/ba/wp-content/uploads/2018/07/moteliveljic.jpg" alt="Motel Iveljić Tuzla">
       <p>
         Motel Iveljić is situated at the very entrance to Tuzla on the main road in the industrial zone, not far from
@@ -385,9 +401,9 @@
           <p class="card-text">
             <i class="far fa-address-card"></i> Address: Bukinjska ulica
             <br>
-            <i class="fas fa-phone-square"></i>  Phone: +387 35 207 123
+            <i class="fas fa-phone-square"></i> Phone: +387 35 207 123
             <br>
-            <i class="fas fa-envelope"></i>  Email:
+            <i class="fas fa-envelope"></i> Email:
             <br>
             <i class="fas fa-home"></i>Website: <a target="_blank" href="http://www.motel-iveljic.com.ba/">motel-iveljic.com.ba</a>
           </p>
@@ -399,9 +415,9 @@
 
     <!-- Pansion Centar Tuzla -->
 
-    <div id="box2" class="col-12 col-sm-12 col-md-12 col-lg-6">
+    <div id="row6" class="col-12 col-sm-12 col-md-12 col-lg-6 box2">
       <h3 class="text-center">Pansion Centar Tuzla</h3>
-      <!-- <button class="btn btn-info"><a target="_blank" href="http://www.pansioncentar.com/">Website</a></button> -->
+
       <img src="https://tztz.ba/ba/wp-content/uploads/2018/07/pansioncentar.jpg" alt="Pansion 'Centar' Tuzla">
       <p>
         Pansion "Centar" is located in the center of the city, more precisely on the Soln square. Rooms are equipped
@@ -416,9 +432,9 @@
           <p class="card-text">
             <i class="far fa-address-card"></i> Address: Trg Stara Tržnica 8
             <br>
-            <i class="fas fa-phone-square"></i>  Phone: +387 61 149 291
+            <i class="fas fa-phone-square"></i> Phone: +387 61 149 291
             <br>
-            <i class="fas fa-envelope"></i>  Email: pansioncentar@hotmail.com
+            <i class="fas fa-envelope"></i> Email: pansioncentar@hotmail.com
             <br>
             <i class="fas fa-home"></i>Website: <a target="_blank" href="http://www.pansioncentar.com/">pansioncentar.com</a>
           </p>
@@ -430,9 +446,9 @@
 
     <!-- Pansion Nargalić -->
 
-    <div id="box1" class="col-12 col-sm-12 col-md-12 col-lg-6">
+    <div id="row7" class="col-12 col-sm-12 col-md-12 col-lg-6 box1">
       <h3 class="text-center">Pansion Nargalić</h3>
-      <!-- <button class="btn btn-info"><a target="_blank" href="http://www.pansion-nargalic.com/">Website</a></button> -->
+
       <img src="https://tztz.ba/ba/wp-content/uploads/2018/07/pansionnargalic.jpg" alt="Pansion 'Nargalić'">
       <p>
         The pension is located in the city center, not far from the old city center. It has 3 apartments and 4 rooms.
@@ -446,9 +462,9 @@
           <p class="card-text">
             <i class="far fa-address-card"></i> Address: Kazan Mahala 40
             <br>
-            <i class="fas fa-phone-square"></i>  Phone: +387 35 256160
+            <i class="fas fa-phone-square"></i> Phone: +387 35 256160
             <br>
-            <i class="fas fa-envelope"></i>  Email:
+            <i class="fas fa-envelope"></i> Email:
             <br>
             <i class="fas fa-home"></i>Website: <a target="_blank" href="http://www.pansion-nargalic.com/">pansion-nargalic.com</a>
           </p>
@@ -460,9 +476,9 @@
 
     <!-- Pansion Kipovi -->
 
-    <div id="box2" class="col-12 col-sm-12 col-md-12 col-lg-6">
+    <div id="row7" class="col-12 col-sm-12 col-md-12 col-lg-6 box2">
       <h3 class="text-center">Pansion Kipovi</h3>
-      <!-- <button class="btn btn-info"><a target="_blank" href="http://www.pansionkipovi.com/">Website</a></button> -->
+
       <img src="https://tztz.ba/ba/wp-content/uploads/2018/07/pansionkipovi.jpg" alt="Pansion' Kipovi'">
       <p>
         Pension ' Kipovi ' is located in the center of the city at " Mosta Kipovi ". It offers guests a quality
@@ -480,9 +496,9 @@
           <p class="card-text">
             <i class="far fa-address-card"></i> Address: Franjevačka bb
             <br>
-            <i class="fas fa-phone-square"></i>  Phone: +387 62 389 478
+            <i class="fas fa-phone-square"></i> Phone: +387 62 389 478
             <br>
-            <i class="fas fa-envelope"></i>  Email: pansionkipovi@gmail.com
+            <i class="fas fa-envelope"></i> Email: pansionkipovi@gmail.com
             <br>
             <i class="fas fa-home"></i>Website: <a target="_blank" href="http://www.pansionkipovi.com/">pansionkipovi.com</a>
           </p>
@@ -493,26 +509,7 @@
     <!-- End of Pansion Kipovi -->
 
 
-    <!-- <div id="box" class="col-12 col-sm-12 col-md-12 col-lg-6">
-      <h3 class="text-center">So i Sol Hotel</h3>
-      <button class="btn btn-info"><a target="_blank" href="http://www.soisolhotel.ba/">Website</a></button>
-      <img src="https://tztz.ba/ba/wp-content/uploads/2018/08/soisol.jpg" alt="So i Sol Hotel">
-      <p>
-        Accommodation capacity of the hotel is 7 modern rooms, of which 6 are with terrace. Buffet / continental breakfast is served from 07:30 until 10:00. Smoking is not allowed in the rooms. Reception services are available from 08:00 to 22:00, until you can make reservations. Children are welcome. Pets are not allowed. The price of bed and breakfast services includes a residence tax, insurance, parking and VAT.
-      </p>
-      <div class="card border-dark mb-3" style="max-width: 95%;">
-        <div class="card-header">Reservation</div>
-          <div class="card-body text-dark">
-            <p class="card-text">
-              Address: Aleja Alija Izetbegović no. 3
-              <br>
-              Phone: +387 35 365 500
-              <br>
-              Email: info@mellainhotel.com
-            </p>
-          </div>
-        </div>
-      </div> -->
+    <app-booking></app-booking>
 
 
   </div>

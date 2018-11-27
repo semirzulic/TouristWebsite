@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-#box1 {
+.box1 {
     /* background: lightgrey; */
     /* border: 1px solid black; */
     border-left: 0.1pt solid black; 
@@ -10,7 +10,7 @@
 
 }
 
-#box2 {
+.box2 {
     /* background: lightgrey;  */
     /* border: 1px solid black; */
     border-right: 0.1pt solid black; 
@@ -18,17 +18,20 @@
     border-top: 0.1pt solid black;
 }
 
-#box1 p {
+.box1 p {
     padding: 20px 10px;
 }
 
-#box2 p {
+.box2 p {
     padding: 20px 10px;
 }
 
 h1 {
-    padding: 25px;
+    padding: 15px;
+    padding-bottom: 5px;
     margin-top: 60px;
+    margin-bottom: 0;
+    
 }
 
 h3 {
@@ -55,6 +58,7 @@ img {
 .btn {
     display: block;
     margin: 10px auto;
+    margin-top: 0;
 }
 
 /* .card {
@@ -97,8 +101,10 @@ img {
 
 .fixed-top {
     
-    background: white;
+    background: #f5f5f0;
     border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
     
 } 
 
