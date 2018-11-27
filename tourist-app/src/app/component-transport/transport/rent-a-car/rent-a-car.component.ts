@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { formatDate } from '@angular/common';
+import { ActivatedRoute } from '@angular/router';
+declare var jquery:any;
+declare var $ :any;
 
 @Component({
   selector: 'app-rent-a-car',
@@ -12,18 +15,29 @@ export class RentACarComponent implements OnInit {
   openedPerfect: boolean = false;
   openedIntercar: boolean = false;
   openedDalton: boolean = false;
+  showedInformation: boolean = false;
   time: any;
   day: any;
   workDays: string[] = ['Mon','Tue','Wed','Thu','Fri','Sat'];
+  private fragment: string;
 
+  constructor(private route: ActivatedRoute) { 
+    $('.collapse').collapse();
+    
 
-  constructor() { }
+    $(document).ready(function() {
+      $(".dropdown-toggle").dropdown();
+    });
+  }
 
   ngOnInit() {
 
     this.openedPerfect = this.checkOpened('14:00');
     this.openedIntercar = this.checkOpened('15:00');
+    this.route.fragment.subscribe(fragment => { this.fragment = fragment; });
 }
+
+// Checking open or close rent-a-car agency
 
 checkOpened(timeEndSunday:any) {
   for(var i = 0; i < this.workDays.length; i++)
@@ -49,6 +63,7 @@ checkOpened(timeEndSunday:any) {
 }
 }
 }
+
 
 
 }

@@ -44,6 +44,7 @@ import { BookingComponent, SearchPipe } from './booking/booking.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
