@@ -36,6 +36,7 @@ import { NextbikeComponent } from './component-transport/transport/nextbike/next
 import { AboutUsComponent } from './about/about-us/about-us.component';
 import { SnippetComponent } from './components-home/snippet/snippet.component';
 import { NewsComponent } from './components-home/news/news.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -72,15 +73,15 @@ import { NewsComponent } from './components-home/news/news.component';
     NextbikeComponent,
     AboutUsComponent,
     SnippetComponent,
-    NewsComponent
+    NewsComponent,
+   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-   // NgbModule.forRoot(),
-
-  
-    AngularFontAwesomeModule
+    FormsModule,
+    AngularFontAwesomeModule,
+    
    
   ],
  
