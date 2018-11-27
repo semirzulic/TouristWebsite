@@ -1,0 +1,19 @@
+h6, a, p {
+    color: #fff;
+}
+i{
+    
+    margin-right: 30px;
+    margin-top: -10px;
+    margin-bottom: 80px;
+    color: white;
+    float: right;
+}
+i:hover {
+    color: rgba(0, 0, 0, 0.6);
+    transform: scale(1.5);
+    transition: transform .2s; 
+ }
+ i:active {
+    color: rgba(0, 0, 0, 0.8);
+ }

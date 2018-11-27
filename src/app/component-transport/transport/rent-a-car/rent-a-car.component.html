@@ -1,0 +1,179 @@
+<div class="container fixed-top pb-2" style="background-color: #f5f5f0; margin-top:60px; border: solid 1px black;">
+    <h1 class="text-center" style="margin-top:30px;"> Rent a car </h1>
+     <div class="dropdown" style="text-align:center;">
+         <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" 
+         aria-haspopup="true" aria-expanded="false" style="width:125px;">
+           Rent a car:
+         </a>
+             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                 <a class="dropdown-item" (click)="window.location = '#rent1';" [routerLink]="['/rentacar']" 
+                 fragment="rent1" routerLinkActive="router-link-active">Perfect</a>
+                 <a class="dropdown-item" (click)="window.location = '#rent2';" [routerLink]="['/rentacar']" 
+                 fragment="rent2" routerLinkActive="router-link-active">Intercar</a>
+                 <a class="dropdown-item" (click)="window.location = '#rent3';" [routerLink]="['/rentacar']" 
+                 fragment="rent3" routerLinkActive="router-link-active">Dalton</a>
+                 </div>
+       </div>
+   </div>
+ <app-navbar></app-navbar>
+ 
+ <div class="pt-4 mb-2" style="margin-top:200px;">
+
+<div id="rent1" class="row mx-auto" style="width:75%; border-top: solid black 1px;">
+<div class="col-sm">
+    <span>    
+        <div>
+      <h2> Perfect </h2>
+    </div>
+
+<!-- Section Agency Perfect -->
+
+      <div class="float-left">
+      <img src="../../../../../assets/logoPerfect.png" class="img-fluid" alt="Logo Perfect">
+    </div>
+    <p>Perfect doo Tuzla is a renowned car rental agency, positioned at the very top of the Bosnian-Herzegovinian market,
+        which based its existence on long-term education, experience, knowledge and work of management and employees.
+        The leading position provides us with knowledge, reliability, experience, tradition, innovation and following the world trends
+        automotive industry and comfortable / safe travel. We are a professional and courteous young team of people who will come out at any moment
+        Meet the client and do everything to be satisfied with our services. This is supported by a large number of permanent clients,
+        who regularly show us their trust by choosing a vehicle from our offer. The company's headquarters are located in Tuzla and you can rent a vehicle
+        to be realized in the central office, as well as in the office at the International Airport Tuzla, as well as on request, in any city of BiH and Europe.
+        Inspired by the sophisticated wishes of long-time clients, they concentrated on renting car services that meet even the most demanding customers.
+         The fleet consists of brand new vehicles of all categories. All vehicles are fully insured, without any damage,
+         have a general and mobile warranty, all legally prescribed equipment and do not exceed the age of 2 years.
+          The fleet offers you passenger cars of world-renowned manufacturers that offer absolute comfort,
+          safety and speed, both in urban and out-of-town driving.
+          {{ datum }}
+
+          <div class="card border-dark mb-3" style="min-width: 180px; max-width: 70%;">
+              <div class="card-header"> Informations
+                  <p *ngIf='openedIntercar' style="font-size:20px; color: green; margin-bottom:-5px;">
+                      <b> Opened now</b></p>
+                      <p *ngIf='!openedIntercar' style="font-size:20px; margin-bottom:-5px; color:red;">
+                        <b> Closed now</b></p>
+              </div>
+              <div class="card-body text-dark">
+                <p class="card-text">
+                    <b class="fa fa-phone"> </b> <b> Phone:</b> +387(0) 35 255 535 <br>
+                    <b class="fa fa-envelope-o"> </b> <b> Email: </b> info@perfect.ba <br>
+                    <b class="fas fa-map-marker-alt"> </b> <b> Address: </b> Zavnobih-a 13 Hotel Tuzla, 75000 Tuzla, Bosna i Hercegovina <br>
+                    <b class="fas fa-home"> </b> <b> Website: </b> <a href="https://www.perfect.ba/" 
+                  target="_blank" style="color:black;"> https://www.perfect.ba/ </a> <br>
+                </p>
+                <hr>
+                <p class="card-text">
+                    <b> Opening hours: </b> <br>
+                     Mon-Fri: <br>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 08-17 <br>
+                     Saturday: <br>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 08-15 <br>
+                </p>
+              </div>
+            </div>
+  </span>
+</div>
+</div>
+
+<!-- Section Agency Intercar -->
+
+<div id="rent2" class="row mx-auto" style="width:75%; border-top: solid black 1px;">
+    <div class="col-sm">
+    <span>
+        <div>
+            <h2> Intercar </h2>
+          </div>
+            <div class="float-left">
+            <img src="../../../../../assets/logoIntercar.png" class="img-fluid" alt="Logo Intercar">
+          </div>
+        <p>Intercar je rent a car agency positioned at the very top of the Bosnian-Herzegovinian market.
+           A well-thought-out business organization and an experienced network of associates are able to
+           rent a car service to cover the whole area of ​​BiH, and at your request
+           organize a rental car in other parts of Europe. Provide complete mobility and transfers in the optimal way
+           conditions for users. Intercar also has cooperation with all the airports in the region
+            (Sarajevo, Belgrade, Zagreb, Split, Dubrovnik) and
+            carries out the delivery and takeover of the vehicle at the mentioned destinations. Intercar is a rent a car agency
+            positioned at the very top of the Bosnian-Herzegovinian market
+            since 2001. Leadership provides us with knowledge, reliability, experience, tradition, innovation and
+            tracking global trends in automotive industry innovation and travel.
+           We are able to work with a thoughtful organization of business and an experienced network of associates
+            Rent a car services to cover the whole area of ​​BiH in a good way, and we will ask for your request
+            Organize a rental car in other parts of Europe.
+            Intercar offers its services in 7 branches in all major cities of BiH.
+            We own a fleet with around 200 new models of passenger and freight vehicles from the group
+            AUDI, SEAT, VW, ŠKODA, TOYOTA, NISSAN, CHEVROLET, with the finest equipment tailored to business travel requirements.
+            We offer complete mobility and transfers under the optimum conditions for users.
+            Intercar also has cooperation with all airports in the region (Sarajevo, Belgrade, Zagreb, Split, Dubrovnik) and delivers
+            and download the vehicle at the mentioned destinations. And not just that. We are available 24 hours a day for all 365 days a year
+            whereby we guarantee you superior service and complete technical support!
+             </p>
+
+             <div class="card border-dark mb-3" style="min-width: 180px; max-width: 70%;">
+                <div class="card-header"> Informations
+                    <p *ngIf='openedIntercar' style="font-size:20px; color: green; margin-bottom:-5px;">
+                        <b> Opened now</b></p>
+                        <p *ngIf='!openedIntercar' style="font-size:20px; margin-bottom:-5px; color:red;">
+                          <b> Closed now</b></p>
+                </div>
+                <div class="card-body text-dark">
+                  <p class="card-text">
+                      <b class="fa fa-phone"> </b> <b> Phone:</b> +387(0) 35 247 247 <br>
+                      <b class="fa fa-envelope-o"> </b> <b> Email: </b> tuzla@intercar.ba <br>
+                      <b class="fas fa-map-marker-alt"> </b> <b> Address: </b> Turalibegova bb, Tuzla <br>
+                      <b class="fas fa-home"> </b> <b> Website: </b> <a href="https://www.intercar.ba/index.php" 
+                    target="_blank" style="color:black;"> https://www.intercar.ba/index.php </a> <br>
+                  </p>
+                  <hr>
+                  <p class="card-text">
+                      <b> Opening hours: </b> <br>
+                       Mon-Fri: <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 08-17 <br>
+                       Saturday: <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 08-15 <br>
+                  </p>
+                </div>
+              </div>
+   </span>
+</div>
+</div>
+
+<!-- Section Agency Dalton -->
+
+<div id="rent3" class="row mx-auto" style="width:75%; border-top: solid black 1px;">
+    <div class="col-sm">
+        <span>
+          <div>
+            <h2> Dalton </h2>
+          </div>
+            <div class="float-left">
+            <img src="../../../../../assets/logoDalton.png" class="img-fluid" alt="Logo Dalton">
+          </div>
+        <p>In Dalton rent a car agency there are no limits in terms of kilometers that you can cross the vehicles.
+            Travel safely and comfortably wherever you want. If you assign multiple vehicles, or one vehicle for a longer period of time,
+             approve additional discounts. It is possible to rent vehicles in one direction. You can download a vehicle in one location,
+             and bring it back to the other, the one that suits you.
+             
+             
+             <div class="card border-dark mb-3" style="min-width: 180px; max-width: 70%;">
+                <div class="card-header"> Informations
+                </div>
+                <div class="card-body text-dark">
+                  <p class="card-text">
+                      <b class="fa fa-phone"> </b> <b> Phone:</b> +387(0) 35 255 535 <br>
+                      <b class="fa fa-envelope-o"> </b> <b> Email: </b> ingo@dalton.ba <br>
+                      <b class="fas fa-map-marker-alt"> </b> <b> Address: </b> Armije BiH, Tuzla 75000 <br>
+                      <b class="fas fa-home"> </b> <b> Website: </b> <a href="https://dalton.ba/index.php?lang=en" 
+                    target="_blank" style="color:black;"> https://dalton.ba/index.php?lang=en </a> <br>
+                  </p>
+                  <hr>
+                      <b> Opening hours: </b> <br>
+                      <p class="text-center" style="font-size:20px; color: red; margin-bottom:-5px;">
+                          <b> Unavailable</b>
+                        </p>
+                </div>
+              </div>
+             
+      </span>
+    </div>
+</div>
+</div>
+<app-footer></app-footer>

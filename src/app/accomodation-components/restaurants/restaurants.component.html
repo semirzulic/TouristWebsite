@@ -1,0 +1,288 @@
+<div class="container">
+  
+    <div class="fixed-top container">
+      <h1 class="text-center">Restaurants</h1>
+
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          List of Restaurants
+        </button>
+
+        <!-- Routing inside a components -->
+
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" (click)="window.location = '#row1';" [routerLink]="['/accomodation/restaurants']"
+            fragment="row1" routerLinkActive="router-link-active">Pub Taverna</a>
+          <a class="dropdown-item" (click)="window.location = '#row2';" [routerLink]="['/accomodation/restaurants']"
+            fragment="row2" routerLinkActive="router-link-active">Zlatnik</a>
+          <a class="dropdown-item" (click)="window.location = '#row3';" [routerLink]="['/accomodation/restaurants']"
+            fragment="row3" routerLinkActive="router-link-active">Sezam</a>
+          <a class="dropdown-item" (click)="window.location = '#row4';" [routerLink]="['/accomodation/restaurants']"
+            fragment="row4" routerLinkActive="router-link-active">Royal</a>
+          <a class="dropdown-item" (click)="window.location = '#row5';" [routerLink]="['/accomodation/restaurants']"
+            fragment="row5" routerLinkActive="router-link-active">Citta del Sale</a>
+          <a class="dropdown-item" (click)="window.location = '#row6';" [routerLink]="['/accomodation/restaurants']"
+            fragment="row6" routerLinkActive="router-link-active">Česma</a>
+          <a class="dropdown-item" (click)="window.location = '#row7';" [routerLink]="['/accomodation/restaurants']"
+            fragment="row7" routerLinkActive="router-link-active">Heartland</a>
+          <a class="dropdown-item" (click)="window.location = '#row8';" [routerLink]="['/accomodation/restaurants']"
+            fragment="row8" routerLinkActive="router-link-active">Panonski Lovac</a>
+        </div>
+      </div>
+
+    </div>
+  
+
+  <app-navbar></app-navbar>
+
+  <div class="row">
+
+    <!-- Pub Taverna -->
+
+    <div id="row1" class="col-12 col-sm-12 col-md-12 col-lg-6 box1">
+      <h3 class="text-center">Pub Taverna</h3>
+
+      <img src="../../../assets/restaurants-img/taverna.jpg" alt="Hotel Mallain">
+      <p>
+        With many years of tradition and a new ambiance, Pub Taverna is an indispensable place for those who are
+        looking for the best. Famous for its specialties and unfiltered beer, it is a perfect place to come to a family
+        lunch, relaxing drinks after work or evening with friends. <br><br><br><br>
+      </p>
+
+      <div class="card border-dark mb-3" style="max-width: 95%;">
+        <div class="card-header">Reservation</div>
+        <div class="card-body text-dark">
+          <p class="card-text">
+            <i class="far fa-address-card"></i> Address: Aleja Alija Izetbegović no. 3
+            <br>
+            <i class="fas fa-phone-square"></i> Phone: +387 35 365 500
+            <br>
+            <i class="fas fa-envelope"></i> Email: info@mellainhotel.com
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- End of Pub Taverna -->
+
+    <!-- Zlatnik -->
+
+    <div id="row2" class="col-12 col-sm-12 col-md-12 col-lg-6 box2">
+      <h3 class="text-center">Zlatnik</h3>
+      
+      <img src="https://tztz.ba/ba/wp-content/uploads/2018/07/zlatnik.jpg" alt="Zlatnik">
+      <p>
+        In the very center of the city, next to the Slana Banja promenade, Restaurant Zlatnik is located. In the heart
+        of nature, next to the Pannonian Lake, there is a restaurant with a beautiful ambience decorated with a
+        spacious summer garden. An extraordinary rich gastronomic offer, ranging from traditional dishes to various
+        international dishes to the most demanding guest, will provide the ultimate pleasure in every bit of food.
+      </p>
+
+      <div class="card border-dark mb-3" style="max-width: 95%;">
+        <div class="card-header">Reservation</div>
+        <div class="card-body text-dark">
+          <p class="card-text">
+            <i class="far fa-address-card"></i> Address: Šetalište Slana banja, Tuzla
+            <br>
+            <i class="fas fa-phone-square"></i> Phone: 035 261-225
+            <br>
+            <i class="fas fa-envelope"></i> Email:
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- End of Zlatnik -->
+
+    <!-- Sezam -->
+
+    <div id="row3" class="col-12 col-sm-12 col-md-12 col-lg-6 box1">
+      <h3 class="text-center">Sezam</h3>
+      
+      <img src="https://tztz.ba/ba/wp-content/uploads/2018/07/tenis.jpg" alt="Sezam">
+      <p>
+        Restaurants 'Sezam'have long been known for their name and brand in Tuzla, as well as for visitors and for sure
+        a large number of visitors and tourists. From their rich offer, they offer grilled specialties, excellent
+        Bosnian cuisine, ready-to-eat dishes, various specialties to meat, dishes on order, cheeses, pizzas and a great
+        selection of cakes and treats.
+      </p>
+
+      <div class="card border-dark mb-3" style="max-width: 95%;">
+        <div class="card-header">Reservation</div>
+        <div class="card-body text-dark">
+          <p class="card-text">
+            <i class="far fa-address-card"></i> Address: Šetalište Slana Banja bb
+            <br>
+            <i class="fas fa-phone-square"></i> Phone: 035 273-544
+            <br>
+            <i class="fas fa-envelope"></i> Email:
+          </p>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <!-- End of Sezam -->
+
+    <!-- Royal -->
+
+    <div id="row4" class="col-12 col-sm-12 col-md-12 col-lg-6 box2">
+      <h3 class="text-center">Royal</h3>
+     
+      <img src="https://tztz.ba/ba/wp-content/uploads/2018/07/restoranlovac.jpg" alt="Royal">
+      <p>
+        The restaurant 'Royal' in a pleasant ambience offers its guests a diverse Mediterranean but also imaginative
+        Italian cuisine that is rare in this area. In addition to unusual dishes and unique, Royal Restaurant is able
+        to arrange weddings or other festive occasions or business lunches so that it remains in an unforgettable
+        memory.
+      </p>
+
+      <div class="card border-dark mb-3" style="max-width: 95%;">
+        <div class="card-header">Reservation</div>
+        <div class="card-body text-dark">
+          <p class="card-text">
+            <i class="far fa-address-card"></i> Address: Bosne srebrene 105/A
+            <br>
+            <i class="fas fa-phone-square"></i> Phone: +387 35 315 666
+            <br>
+            <i class="fas fa-envelope"></i> Email: info@royalmotel.ba
+          </p>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <!-- End of Royal -->
+
+    <!-- Citta del Sale -->
+
+    <div id="row5" class="col-12 col-sm-12 col-md-12 col-lg-6 box1">
+      <h3 class="text-center">Citta del Sale</h3>
+      
+      <img src="https://tztz.ba/ba/wp-content/uploads/2018/07/cittadelsale.jpg" alt="Royal">
+      <p>
+        In the Citta del Sale, you can enjoy grilled specialties, top-class Bosnian cuisine, prepared meals, a variety
+        of meat specialties, dishes to order. Meals prepared and served from always fresh foods, meat and carefully
+        selected ingredients are certainly a recipe for their success. <br><br><br>
+      </p>
+
+      <div class="card border-dark mb-3" style="max-width: 95%;">
+        <div class="card-header">Reservation</div>
+        <div class="card-body text-dark">
+          <p class="card-text">
+            <i class="far fa-address-card"></i> Address: Korzo, Tuzla
+            <br>
+            <i class="fas fa-phone-square"></i> Phone: +387 62 860 105
+            <br>
+            <i class="fas fa-envelope"></i> Email:
+          </p>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <!-- End of Citta del Sale -->
+
+    <!-- Česma -->
+
+    <div id="row6" class="col-12 col-sm-12 col-md-12 col-lg-6 box2">
+      <h3 class="text-center">Česma</h3>
+     
+      <img src="https://tztz.ba/ba/wp-content/uploads/2018/07/restorancesma.jpg" alt="Česma">
+      <p>
+        The 'Česma', as the Tuzlaci call this restaurant, is entirely decorated in Bosnian style. The exterior of the
+        building reminds you of an antique Bosnian house, and the interior of the ambience is full of details and items
+        that were once used and which will take you for a moment to the past. This restaurant, the first is a station
+        of tourists who come to visit the city.
+      </p>
+
+      <div class="card border-dark mb-3" style="max-width: 95%;">
+        <div class="card-header">Reservation</div>
+        <div class="card-body text-dark">
+          <p class="card-text">
+            <i class="far fa-address-card"></i> Address: Trg žrtava genocida u Srebrenici
+            <br>
+            <i class="fas fa-phone-square"></i> Phone: 035 258-408
+            <br>
+            <i class="fas fa-envelope"></i> Email:
+          </p>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <!-- End of Česma -->
+
+    <!-- Heartland -->
+
+
+    <div id="row7" class="col-12 col-sm-12 col-md-12 col-lg-6 box1">
+      <h3 class="text-center">Heartland</h3>
+      
+      <img src="https://tztz.ba/ba/wp-content/uploads/2018/07/heartland.jpg" alt="Heartland">
+      <p>
+        It will be a pleasure to welcome you to our newly opened City Hotel located in center of Tuzla, at Kazanmahala
+        number 10. Our hotel is a restaurant and cafe pizzeria in one, which makes Heartland one of the leading hotels
+        in the region. It is located in the city center, 300 meters from the spa Aqua Bristol, which offers a
+        traditional salt water healing. Hotel is located 200 meters from the Pannonian lake with healing salt water.
+      </p>
+
+      <div class="card border-dark mb-3" style="max-width: 95%;">
+        <div class="card-header">Reservation</div>
+        <div class="card-body text-dark">
+          <p class="card-text">
+            <i class="far fa-address-card"></i> Address: Kazan mahala 10, Tuzla
+            <br>
+            <i class="fas fa-phone-square"></i> Phone: +387 35 255 111
+            <br>
+            <i class="fas fa-envelope"></i> Email: info@heartland.ba
+          </p>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <!-- End of Heartland -->
+
+    <!-- Panonski lovac -->
+
+
+    <div id="row8" class="col-12 col-sm-12 col-md-12 col-lg-6 box1">
+      <h3 class="text-center">Panonski lovac</h3>
+      
+      <img src="https://tztz.ba/ba/wp-content/uploads/2018/07/lovac.jpg" alt="Panonski lovac">
+      <p>
+        On the third Pannonian Lake there is a restaurant ' Panonski Lovac ' which offers a rich gastronomic offer,
+        beautiful interior, parking, two summer gardens. The restaurant organizes New Year's celebrations, birthdays,
+        weddings, graduations, March 8th and all other forms of entertainment and celebrations with live music. <br><br><br>
+      </p>
+
+      <div class="card border-dark mb-3" style="max-width: 95%;">
+        <div class="card-header">Reservation</div>
+        <div class="card-body text-dark">
+          <p class="card-text">
+            <i class="far fa-address-card"></i> Address: Džindić Mahala 13
+            <br>
+            <i class="fas fa-phone-square"></i> Phone: + 387 62 154 433
+            <br>
+            <i class="fas fa-envelope"></i> Email: panonica@bih.net.ba
+          </p>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <!-- End of Panonski lovac -->
+
+  </div>
+</div>
+<app-footer></app-footer>
