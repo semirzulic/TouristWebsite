@@ -10,6 +10,7 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "target": "es5",
+    "noUnusedLocals": false,
     "typeRoots": [
       "node_modules/@types"
     ],
@@ -17,7 +18,8 @@
       "es2018",
       "dom"
     ]
-  }
-  
- 
+  },
+
 }
+
+

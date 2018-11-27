@@ -1,6 +1,6 @@
 <div class="fixed-top">
   <nav class="navbar container  navbar-expand-lg navbar-dark bg-info">
-    <h2><a class="navbar-brand" [routerLink]="['/']" routerLinkActive="router-link-active" >Tuzla Tourist Website </a></h2>
+    <h2><a class="navbar-brand" [routerLink]="['/']" routerLinkActive="router-link-active" >Tourist Website</a></h2>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -70,6 +70,21 @@
           <a class="nav-link" [routerLink]="['/aboutus']" routerLinkActive="router-link-active" >About us</a>
         </li>
         
+
+        <li class="nav-item">
+            <form role="form" >
+                <div class="form-group">
+                  <div class="input-group">
+                    <input id="1" class="form-control" type="text" name="search" placeholder="Search..." required/>
+                    <span class="input-group-btn">
+                    <button class="btn btn-success" type="submit">
+                    <i class="glyphicon glyphicon-search" aria-hidden="true"></i> Search
+                    </button>
+                    </span>
+                  </div>
+                </div>
+            </form>
+          </li>
       </ul>
     
     </div>
